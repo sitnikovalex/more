@@ -1,0 +1,13 @@
+{
+  "name": "frontend/bubble-html",
+  "description": "Front html for Bubble",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Oleg",
+      "email": "nexxxt.07@gmail.com"
+    }
+  ],
+  "require": {}
+}
+
