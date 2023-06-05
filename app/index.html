@@ -1,12 +1,12 @@
 <!--#set var="title" value="Главная" -->
 <!--#include virtual="/parts/header.html" -->
 
-<div class="wrapper">
+<div class="cinema__wrapper">
 
     <div class="index-slider">
         <div id="indexSlider" class="swiper">
-            <div class="swiper-wrapper" >
-                <div class="swiper-slide" >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <a href="" class="index-slider__item">
                         <picture>
                             <!--source media="(max-width: 600px)" srcset="images/dist/sl1_mob.jpg"-->
@@ -15,7 +15,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="swiper-slide" >
+                <div class="swiper-slide">
                     <a href="" class="index-slider__item">
                         <picture>
                             <!--source media="(max-width: 600px)" srcset="images/dist/sl1_mob.jpg"-->
@@ -24,7 +24,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="swiper-slide" >
+                <div class="swiper-slide">
                     <a href="" class="index-slider__item">
                         <picture>
                             <!--source media="(max-width: 600px)" srcset="images/dist/sl1_mob.jpg"-->
@@ -33,7 +33,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="swiper-slide" >
+                <div class="swiper-slide">
                     <a href="" class="index-slider__item">
                         <picture>
                             <!--source media="(max-width: 600px)" srcset="images/dist/sl1_mob.jpg"-->
@@ -48,7 +48,544 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="cinema__top-filter">
+            <div class="cinema__top-filter__row">
+                <ul class="nav cinema__top-filter__date flex-grow-1">
+                    <li>
+                        <label class="cinema__top-filter__date__item">
+                            <input class="d-none" type="radio" name="date" value="today" checked>
+                            <div class="cinema__top-filter__date__item__val">
+                                Сегодня
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="cinema__top-filter__date__item">
+                            <input class="d-none" type="radio" name="date" value="tomorrow">
+                            <div class="cinema__top-filter__date__item__val">
+                                Завтра
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="cinema__top-filter__date__item">
+                            <input class="d-none" type="radio" name="date" value="soon">
+                            <div class="cinema__top-filter__date__item__val">
+                                Скоро
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <div class="cinema__top-filter__date__item">
+                            <input id="dateCustom" class="d-none" type="radio" name="date" value="custom">
+                            <div class="cinema__top-filter__date__item__val cinema__top-filter__date__item__val--date">
+                                <div class="cinema__top-filter__date__ico">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-date"></use>
+                                    </svg>
+                                </div>
+                                <input class="cinema__top-filter__date-inp" id="datepicker" type="text" readonly
+                                       placeholder="ВЫБРАТЬ ДАТУ">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <span class="cinema__header__city" data-bs-toggle="modal" data-bs-target="#cityFirstModal">
+                    <svg width="10" height="12">
+                        <use xlink:href="#svg-adr"></use>
+                    </svg>
+                    <span>Санкт-Петербург</span>
+                </span>
+            </div>
+        </div>
+        <ul class="nav cinema__top-filter__params">
+            <li>
+                <label class="custom-chekbox">
+                    <input type="radio" name="fiter" value="all" class="d-none" checked>
+                    <span class="custom-chekbox__value">Все</span>
+                </label>
+            </li>
+            <li>
+                <label class="custom-chekbox">
+                    <input type="radio" name="fiter" value="Пушкинская карта" class="d-none">
+                    <span class="custom-chekbox__value">Пушкинская карта</span>
+                </label>
+            </li>
+            <li>
+                <label class="custom-chekbox">
+                    <input type="radio" name="fiter" value="2D" class="d-none">
+                    <span class="custom-chekbox__value">2D</span>
+                </label>
+            </li>
+            <li>
+                <label class="custom-chekbox">
+                    <input type="radio" name="fiter" value="3D" class="d-none">
+                    <span class="custom-chekbox__value">3D</span>
+                </label>
+            </li>
+            <li>
+                <label class="custom-chekbox">
+                    <input type="radio" name="fiter" value="Dolby Atmos" class="d-none">
+                    <span class="custom-chekbox__value">Dolby Atmos</span>
+                </label>
+            </li>
+            <li>
+                <label class="custom-chekbox">
+                    <input type="radio" name="fiter" value="1" class="d-none">
+                    <span class="custom-chekbox__value">
+                        <svg width="16" height="18">
+                            <use xlink:href="#svg-invalid"></use>
+                        </svg>
+                    </span>
+                </label>
+            </li>
+        </ul>
+        <div class="row fpad60">
+            <div class="col-lg-3 col-sm-6 col-6 fpad40">
+                <div class="cinema__film">
+                    <div class="cinema__film__img">
+                        <picture>
+                            <!--source media="(max-width: 767px)" data-srcset="" /-->
+                            <source media="(min-width: 768px)"
+                                    data-srcset="images/dist/film.jpg 1x, mages/dist/film@2.jpg 2x"/>
+                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                 width="270" height="385"/>
+                        </picture>
+                        <div class="cinema__film__img__hover">
+                            <ul class="nav cinema__film__info-list justify-content-center">
+                                <li>2D</li>
+                                <li>3D</li>
+                                <li>Dolby Atmos</li>
+                            </ul>
+                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
+                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
+                        </div>
+                    </div>
+                    <div class="cinema__film__footer">
+                        <a href="" class="cinema__film__title">Сердце пармы</a>
+                        <div class="cinema__film__genre">Драма, История</div>
+                        <ul class="nav justify-content-center cinema__film__tags">
+                            <li>
+                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">12+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 fpad40">
+                <div class="cinema__film">
+                    <div class="cinema__film__img">
+                        <picture>
+                            <!--source media="(max-width: 767px)" data-srcset="" /-->
+                            <source media="(min-width: 768px)"
+                                    data-srcset="images/dist/film.jpg 1x, mages/dist/film@2.jpg 2x"/>
+                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                 width="270" height="385"/>
+                        </picture>
+                        <div class="cinema__film__img__hover">
+                            <ul class="nav cinema__film__info-list justify-content-center">
+                                <li>2D</li>
+                                <li>Dolby Atmos</li>
+                            </ul>
+                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
+                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
+                        </div>
+                    </div>
+                    <div class="cinema__film__footer">
+                        <a href="" class="cinema__film__title">
+                            Либерея: Охотники за сокровищами
+                        </a>
+                        <div class="cinema__film__genre">Драма, История</div>
+                        <ul class="nav justify-content-center cinema__film__tags">
+                            <li>
+                                <span class="cinema__film__tags__item">
+                                    <svg width="11" height="12">
+                                        <use xlink:href="#svg-invalid"></use>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">16+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 fpad40">
+                <div class="cinema__film">
+                    <div class="cinema__film__img">
+                        <picture>
+                            <!--source media="(max-width: 767px)" data-srcset="" /-->
+                            <source media="(min-width: 768px)"
+                                    data-srcset="images/dist/film.jpg 1x, mages/dist/film@2.jpg 2x"/>
+                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                 width="270" height="385"/>
+                        </picture>
+                        <div class="cinema__film__img__hover">
+                            <ul class="nav cinema__film__info-list justify-content-center">
+                                <li>2D</li>
+                                <li>3D</li>
+                                <li>Dolby Atmos</li>
+                            </ul>
+                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
+                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
+                        </div>
+                    </div>
+                    <div class="cinema__film__footer">
+                        <a href="" class="cinema__film__title">Сердце пармы</a>
+                        <div class="cinema__film__genre">Драма, История</div>
+                        <ul class="nav justify-content-center cinema__film__tags">
+                            <li>
+                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">12+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 fpad40">
+                <div class="cinema__film">
+                    <div class="cinema__film__img">
+                        <picture>
+                            <!--source media="(max-width: 767px)" data-srcset="" /-->
+                            <source media="(min-width: 768px)"
+                                    data-srcset="images/dist/film.jpg 1x, mages/dist/film@2.jpg 2x"/>
+                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                 width="270" height="385"/>
+                        </picture>
+                        <div class="cinema__film__img__hover">
+                            <ul class="nav cinema__film__info-list justify-content-center">
+                                <li>2D</li>
+                                <li>Dolby Atmos</li>
+                            </ul>
+                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
+                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
+                        </div>
+                    </div>
+                    <div class="cinema__film__footer">
+                        <a href="" class="cinema__film__title">
+                            Либерея: Охотники за сокровищами
+                        </a>
+                        <div class="cinema__film__genre">Драма, История</div>
+                        <ul class="nav justify-content-center cinema__film__tags">
+                            <li>
+                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">16+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 fpad40">
+                <div class="cinema__film">
+                    <div class="cinema__film__img">
+                        <picture>
+                            <!--source media="(max-width: 767px)" data-srcset="" /-->
+                            <source media="(min-width: 768px)"
+                                    data-srcset="images/dist/film.jpg 1x, mages/dist/film@2.jpg 2x"/>
+                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                 width="270" height="385"/>
+                        </picture>
+                        <div class="cinema__film__img__hover">
+                            <ul class="nav cinema__film__info-list justify-content-center">
+                                <li>2D</li>
+                                <li>3D</li>
+                                <li>Dolby Atmos</li>
+                            </ul>
+                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
+                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
+                        </div>
+                    </div>
+                    <div class="cinema__film__footer">
+                        <a href="" class="cinema__film__title">Сердце пармы</a>
+                        <div class="cinema__film__genre">Драма, История</div>
+                        <ul class="nav justify-content-center cinema__film__tags">
+                            <li>
+                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">12+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 fpad40">
+                <div class="cinema__film">
+                    <div class="cinema__film__img">
+                        <picture>
+                            <!--source media="(max-width: 767px)" data-srcset="" /-->
+                            <source media="(min-width: 768px)"
+                                    data-srcset="images/dist/film.jpg 1x, mages/dist/film@2.jpg 2x"/>
+                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                 width="270" height="385"/>
+                        </picture>
+                        <div class="cinema__film__img__hover">
+                            <ul class="nav cinema__film__info-list justify-content-center">
+                                <li>2D</li>
+                                <li>Dolby Atmos</li>
+                            </ul>
+                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
+                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
+                        </div>
+                    </div>
+                    <div class="cinema__film__footer">
+                        <a href="" class="cinema__film__title">
+                            Либерея: Охотники за сокровищами
+                        </a>
+                        <div class="cinema__film__genre">Драма, История</div>
+                        <ul class="nav justify-content-center cinema__film__tags">
+                            <li>
+                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">16+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 fpad40">
+                <div class="cinema__film">
+                    <div class="cinema__film__img">
+                        <picture>
+                            <!--source media="(max-width: 767px)" data-srcset="" /-->
+                            <source media="(min-width: 768px)"
+                                    data-srcset="images/dist/film.jpg 1x, mages/dist/film@2.jpg 2x"/>
+                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                 width="270" height="385"/>
+                        </picture>
+                        <div class="cinema__film__img__hover">
+                            <ul class="nav cinema__film__info-list justify-content-center">
+                                <li>2D</li>
+                                <li>Dolby Atmos</li>
+                            </ul>
+                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
+                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
+                        </div>
+                    </div>
+                    <div class="cinema__film__footer">
+                        <a href="" class="cinema__film__title">
+                            Либерея: Охотники за сокровищами
+                        </a>
+                        <div class="cinema__film__genre">Драма, История</div>
+                        <ul class="nav justify-content-center cinema__film__tags">
+                            <li>
+                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                            </li>
+                            <li>
+                                <span class="cinema__film__tags__item">16+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 fpad40">
+                <div class="cinema__film">
+                    <div class="cinema__film__img">
+                        <picture>
+                            <!--source media="(max-width: 767px)" data-srcset="" /-->
+                            <source media="(min-width: 768px)"
+                                    data-srcset="images/dist/film.jpg 1x, mages/dist/film@2.jpg 2x"/>
+                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                 width="270" height="385"/>
+                        </picture>
+                        <div class="cinema__film__img__hover">
+                            <ul class="nav cinema__film__info-list justify-content-center">
+                                <li>2D</li>
+                                <li>Dolby Atmos</li>
+                            </ul>
+                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
+                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
+                        </div>
+                    </div>
+                    <div class="cinema__film__footer">
+                        <a href="" class="cinema__film__title">
+                            Либерея: Охотники за сокровищами
+                        </a>
+                        <div class="cinema__film__genre">Драма, История</div>
+                        <ul class="nav justify-content-center cinema__film__tags">
+                            <li>
+                                <span class="cinema__film__tags__item">
+                                    <svg width="11" height="12">
+                                        <use xlink:href="#svg-invalid"></use>
+                                    </svg>
+                                </span>
+                            </li>
 
+                            <li>
+                                <span class="cinema__film__tags__item">16+</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="cinema__action-slider">
+            <div class="cinema__action-slider__header">
+                <div class="cinema__action-slider__caption">
+                    Новости и акции
+                    <div class="dropdown cinema__action-slider__caption__dropdown">
+                        <a class="dropdown__caption" data-bs-toggle="dropdown">
+                            <span>во всех городах</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active">
+                                <a href="">во всех городах</a>
+                            </li>
+                            <li><a href="">в Санкт-Петербурге</a></li>
+                            <li><a href="">в Красноярске</a></li>
+                            <li><a href="">в Череповце</a></li>
+                            <li><a href="">в Красногорске</a></li>
+                            <li><a href="">в Мытищах</a></li>
+                            <li><a href="">в Волгограде</a></li>
+                            <li><a href="">в Тольятти</a></li>
+                            <li><a href="">в Кунцево</a></li>
+                            <li><a href="">в Пушкино</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hidden-mob">
+                    <a href="" class="more-link">Смотреть все</a>
+                </div>
+            </div>
+            <div class="cinema__action-slider__wrap">
+                <div id="actionSlider" class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="cinema__action-item">
+                                <div class="cinema__action-item__img">
+                                    <picture>
+                                        <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                                        <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                                    </picture>
+                                </div>
+                                <div class="cinema__action-item__title">
+                                    Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                                </div>
+                                <div class="cinema__action-item__date">
+                                    19 Октября
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="cinema__action-item">
+                                <div class="cinema__action-item__img">
+                                    <picture>
+                                        <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                                        <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                                    </picture>
+                                </div>
+                                <div class="cinema__action-item__title">
+                                    Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                                </div>
+                                <div class="cinema__action-item__date">
+                                    21 Октября
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="cinema__action-item">
+                                <div class="cinema__action-item__img">
+                                    <picture>
+                                        <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                                        <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                                    </picture>
+                                </div>
+                                <div class="cinema__action-item__title">
+                                    Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                                </div>
+                                <div class="cinema__action-item__date">
+                                    22 Октября
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="cinema__action-item">
+                                <div class="cinema__action-item__img">
+                                    <picture>
+                                        <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                                        <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                                    </picture>
+                                </div>
+                                <div class="cinema__action-item__title">
+                                    Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                                </div>
+                                <div class="cinema__action-item__date">
+                                    19 Октября
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="cinema__action-item">
+                                <div class="cinema__action-item__img">
+                                    <picture>
+                                        <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                                        <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                                    </picture>
+                                </div>
+                                <div class="cinema__action-item__title">
+                                    Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                                </div>
+                                <div class="cinema__action-item__date">
+                                    19 Октября
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <button id="actionSliderNext" class="swiper__nav swiper__nav--next swiper-button-disabled">
+                    <svg width="15" height="28">
+                        <use xlink:href="#svg-next"></use>
+                    </svg>
+                </button>
+                <button id="actionSliderPrev" class="swiper__nav swiper__nav--prev swiper-button-disabled">
+                    <svg width="15" height="28">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!--#include virtual="/parts/footer.html" -->

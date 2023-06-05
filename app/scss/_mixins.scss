@@ -18,3 +18,24 @@
     }
   }
 }
+
+:root {
+  --bg-wrapp: #1c1c1c;
+  --color-border: #393939;
+  --color-text: #ffffff;
+  --adp-background-color: #050407;
+  --bg-active: linear-gradient(135deg, #fccb36 0%, #f49f24 100%);
+  --color-link: #ccc;
+  --color-link-hover: #ffffff;
+  --bg-nav-slider: #393939;
+}
+
+body.cinema-white {
+  --bg-wrapp: #fff;
+  --color-border: #e0e0e0;
+  --color-text: #1b1b1b;
+  --adp-background-color: #fff;
+  --color-link: #1b1b1b;
+  --color-link-hover: #8d8d8d;
+  --bg-nav-slider: #fff;
+}
