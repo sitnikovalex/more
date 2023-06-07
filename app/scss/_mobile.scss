@@ -1,11 +1,345 @@
-
 @media screen and (max-width: 1200px) {
-
+  .cinema__header__col-menu {
+    display: none;
+  }
+  .modal-dialog.modal-xl {
+    --bs-modal-width: 900px;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .modal-dialog.modal-xl {
+    --bs-modal-width: 640px;
+  }
 
+}
 
+@media screen and (max-width: 768px) {
+  .modal-dialog.modal-xl {
+    --bs-modal-width: 520px;
+  }
+  .cinema__header {
+    .cinema__header__city {
+      svg {
+        width: 15px;
+        height: 18px;
+        margin-right: 0;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  .index-slider {
+    .swiper-pagination {
+      display: none;
+    }
+  }
+  .cinema__top-filter {
+    padding-top: 17px;
+  }
+  .cinema__top-filter__date li:not(:last-child) {
+    padding-right: 20px;
+  }
+  .cinema__top-filter__date li:last-child {
+    margin-left: auto;
+  }
+  .cinema__top-filter__row .cinema__header__city {
+    display: none;
+  }
+  .cinema__top-filter__params {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -10px;
+    li {
+      padding: 0 0 10px 10px;
+    }
+  }
+  .custom-chekbox__value {
+    height: 24px;
+    padding: 2px 10px;
+    font-size: 12px;
+  }
+  .custom-chekbox input:checked + .custom-chekbox__value {
+    padding: 2px 10px;
+  }
+  .cinema__top-filter__date__item__val,
+  .cinema__top-filter__date__item {
+    height: 30px;
+  }
+  .cinema__header {
+    height: 45px;
+    padding-top: 10px;
+  }
+  .cinema__header__wrap .row {
+    height: 25px;
+  }
+  .cinema__header__logo {
+    width: 116px;
+    height: 24px;
+  }
+  .cinema__top-filter__date-inp {
+    width: 20px;
+    overflow: hidden;
+    padding-left: 20px;
+  }
+  .cinema__top-filter__date__ico {
+    padding-left: 2px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .cinema__top-filter__date__item__val,
+  .cinema__film__title,
+  .button-border span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .cinema__film__genre {
+    font-size: 10px;
+    line-height: 12px;
+    padding-top: 8px;
+  }
+  .cinema__film__tags {
+    display: none;
+  }
+  .cinema__film__img__hover {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .button-border {
+    height: 36px;
+    padding: 2px 5px;
+  }
+  .hidden-mob {
+    display: none;
+  }
+  .fpad40 {
+    padding-bottom: 24px;
+  }
+  .fpad60 {
+    padding-bottom: 25px;
+  }
+  .cinema {
+    padding-top: 45px;
+    &__header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 210;
+    }
+  }
+  .cinema__action-slider__caption {
+    font-size: 24px;
+  }
+  .swiper__nav {
+    width: 35px;
+    height: 35px;
+    border-radius: 18px;
+    margin-top: -18px;
+    svg {
+      width: 10px;
+      height: 18px;
+    }
+  }
+  .swiper__nav--next {
+    right: 10px;
+  }
+  .swiper__nav--prev {
+    left: 10px;
+  }
+  .cinema__action-item__img img {
+    border-radius: 20px;
+  }
+  .cinema__account-menu__container__col:after {
+    display: none;
+  }
+  .cinema__footer {
+    padding-top: 25px;
+    &__logo {
+      width: 155px;
+      display: block;
+      margin: 0 auto;
+      img {
+        width: 155px;
+        height: auto;
+      }
+    }
+    &__nav {
+      padding-bottom: 16px;
+    }
+  }
+  .cinema__footer__app-row {
+    flex-direction: column;
+  }
+  .cinema__footer__app-desc {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 10px;
+  }
+  .cinema__footer__app-link {
+    width: 100%;
+  }
+  .cinema__account-menu__footer {
+    justify-content: center;
+    padding-left: 10px;
+    li {
+      padding-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .modal-dialog.modal-xl {
+    --bs-modal-width: 100%;
+  }
+  .modal-dialog.modal-xl {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mob-fpad10 {
+    padding-bottom: 10 !important;
+  }
+
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+    & > * {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  .cinema__action-slider__wrap .swiper__nav {
+    top: 195px;
+  }
+  .cinema__action-slider__header {
+    padding-bottom: 35px;
+  }
+  .cinema__action-slider__wrap {
+    margin-bottom: 55px;
+  }
+  .cinema__account-menu__close {
+    right: 10px;
+    top: 17px;
+    a {
+      color: #ccc !important;
+    }
+  }
+  .cinema__account-menu__header {
+    padding-right: 50px;
+  }
+  .cinema__account-menu__wrap {
+    padding: 0 10px 20px !important;
+  }
+  .cinema__account-menu__header {
+    display: block;
+    padding: 20px 50px 20px 10px;
+    background: #141414;
+    margin: 0 -10px;
+  }
+  .cinema__account-menu__btn {
+    padding-top: 10px;
+  }
+  .cinema__header__col-right__link {
+    margin-left: 20px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .cinema__action-slider__caption {
+    display: block;
+    line-height: 1.1;
+  }
+  .cinema__action-slider__caption__dropdown {
+    margin-left: 0;
+    .dropdown__caption {
+      padding-right: 15px;
+    }
+  }
+  .fpad80 {
+    padding-bottom: 20px;
+  }
+  .cinema__footer__bottom span {
+    display: block;
+    text-align: center;
+  }
+  .cinema__footer__bottom {
+    text-align: center;
+  }
+  .cinema__footer__nav li a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .cinema__header__logo {
+    width: 116px;
+    height: 25px;
+  }
+  .cinema__header__col-right {
+    max-width: 143px;
+  }
+  .cinema__header__col-logo {
+    flex-grow: 1;
+  }
+  .cinema__header__menu {
+    width: 18px;
+  }
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .cinema__film__footer {
+    padding-top: 12px;
+    line-height: 16px;
+  }
+  .cinema__action-item__title {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .cinema__footer__top-row {
+    padding-bottom: 27px;
+  }
+  .cinema__footer__nav li {
+    padding-bottom: 13px;
+  }
+  .cinema__footer__app-desc {
+    font-size: 12px;
+    b {
+      font-size: 14px;
+    }
+  }
+  .btn-yellow__app-ico {
+    padding-left: 5px;
+    svg {
+      width: 16px;
+    }
+  }
+  .btn-yellow.btn-yellow--app .btn-yellow__app-text b {
+    font-size: 14px;
+  }
+  .cinema__account-menu__footer {
+    padding-top: 5px;
+  }
+  .cinema__footer__bottom__copy,
+  .cinema__footer__col-link {
+    padding-bottom: 7px;
+  }
+  .modal-content {
+    padding: 0 10px;
+    .modal-header {
+      padding: 15px 0;
+      .modal-title {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+  .modal-dialog {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 360px) {

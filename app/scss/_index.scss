@@ -765,6 +765,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   width: 320px;
+  min-width: 320px;
   padding-right: 15px;
 
   b {
@@ -776,20 +777,15 @@ body {
 }
 
 .cinema__account-menu {
-  position: absolute;
-  z-index: 200;
-  top: 0;
-  right: 0;
-  width: 100%;
-  overflow: hidden;
+
 
   &__wrap {
     min-height: 100vh;
     background: var(--bg-wrapp);
     position: relative;
     z-index: 210;
-    padding: 25px 30px;
-
+    padding: 25px 30px !important;
+    border-radius: 0 !important;
   }
 
   &__mask {
@@ -865,8 +861,7 @@ body {
     position: absolute;
     z-index: 1222;
     top: 35px;
-    left: 100%;
-    margin-left: -30px;
+    right: 0;
 
     a {
       color: var(--color-link);
@@ -875,6 +870,8 @@ body {
       width: 30px;
       height: 30px;
       align-items: center;
+      cursor: pointer;
+      justify-content: flex-end;
 
       &:hover {
         color: var(--color-link-active);
@@ -1038,5 +1035,82 @@ label.cinema__modal-city {
   cursor: pointer;
 }
 
+.btn-yellow.btn-yellow--app {
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  padding-left: 12px;
+  justify-content: flex-start;
+  padding-right: 5px;
+  .btn-yellow__app-text {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+    b {
+      display: block;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .btn-yellow__app-ico {
+    padding-right: 10px;
+    svg {
+      display: block;
+    }
+  }
+}
+
+.cinema__footer__bottom {
+  background: #0a0a0a;
+  padding: 15px 0;
+  .row {
+    min-height: 40px;
+  }
+  span {
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  a {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+.text-right {
+  text-align: right;
+}
+
+.modal-dialog.modal-xl {
+  margin-top: 0;
+  margin-bottom: 0;
+  --bs-modal-width: 1200px;
+}
 
 
+@media screen and (min-width: 768px) {
+  body.fixed-menu {
+    .cinema__header__wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #141414;
+      z-index: 220;
+    }
+    .cinema__header__logo img {
+      width: 169px;
+      height: 35px;
+    }
+  }
+}
+
+.cinema__account-menu__header {
+  display: none;
+}
