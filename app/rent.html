@@ -1,0 +1,215 @@
+<!--#set var="title" value="Аренда зала" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="cinema__wrapper cinema-page">
+    <div class="cinema-page__header">
+        <div class="container cinema-page__header__container cinema-page__header__container--min">
+            <div class="cinema-page__header__wrap">
+                <h1 class="text-uppercase fs-42">Весь зал в твоих руках!</h1>
+                <p>Мы подберем кинозал под любой Ваш повод.</p>
+                <p>Возьми ключи от зала уже сейчас.</p>
+            </div>
+        </div>
+        <picture>
+            <source
+                    data-srcset="images/dist/bg-rent.jpg 1x, images/dist/bg-rent@2.jpg 2x"/>
+            <img alt="" class="lazy cinema-page__header__pic" data-src="images/dist/bg-rent.jpg"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 width="1920" height="270"/>
+        </picture>
+    </div>
+
+    <div class="cinema-page__body container">
+        <div class="row fpad100">
+            <div class="col-lg-6">
+                <h2 class="fs-26">Аренда залов предоставляется под:</h2>
+                <div class="cinema__rental-purposes d-flex align-items-center">
+                    <div class="cinema__rental-purposes__ico">
+                        <img src="images/dist/prim1.svg" alt="" width="64" height="62">
+                    </div>
+                    <div class="cinema__rental-purposes__text">
+                        Закрытые индивидуальные просмотры кинофильмов*
+                    </div>
+                </div>
+                <div class="cinema__rental-purposes d-flex align-items-center">
+                    <div class="cinema__rental-purposes__ico">
+                        <img src="images/dist/prim2.svg" alt="" width="64" height="56">
+                    </div>
+                    <div class="cinema__rental-purposes__text">
+                        Игровые вечеринки с использованием приставок
+                        PlayStation и Xbox*
+                    </div>
+                </div>
+                <div class="cinema__rental-purposes d-flex align-items-center">
+                    <div class="cinema__rental-purposes__ico">
+                        <img src="images/dist/prim3.svg" alt="" width="64" height="64">
+                    </div>
+                    <div class="cinema__rental-purposes__text">
+                        Конференции и презентации
+                    </div>
+                </div>
+                <div class="cinema__rental-purposes d-flex align-items-center">
+                    <div class="cinema__rental-purposes__ico">
+                        <img src="images/dist/prim4.svg" alt="" width="64" height="64">
+                    </div>
+                    <div class="cinema__rental-purposes__text">
+                        Семинары и тренинги
+                    </div>
+                </div>
+                <div class="cinema__rental-purposes d-flex align-items-center">
+                    <div class="cinema__rental-purposes__ico">
+                        <img src="images/dist/prim5.svg" alt="" width="64" height="64">
+                    </div>
+                    <div class="cinema__rental-purposes__text">
+                        Корпоративные мероприятия
+                    </div>
+                </div>
+                <div class="cinema__rental-purposes d-flex align-items-center">
+                    <div class="cinema__rental-purposes__ico">
+                        <img src="images/dist/prim6.svg" alt="" width="35" height="64">
+                    </div>
+                    <div class="cinema__rental-purposes__text">
+                        Организация развлекательных программ и шоу
+                    </div>
+                </div>
+                <div class="cinema__rental-purposes d-flex align-items-center">
+                    <div class="cinema__rental-purposes__ico">
+                        <img src="images/dist/prim7.svg" alt="" width="58" height="64">
+                    </div>
+                    <div class="cinema__rental-purposes__text">
+                        А также другие варианты, подобранные специально
+                        для вас, учитывая особенности и индивидуальность
+                        вашей компании.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-start justify-content-end">
+                <div class="cinema__form cinema__form--w50">
+                    <div class="cinema__form__header">
+                        <h3 class="cinema__form__title">Рассчитать стоимость зала</h3>
+                    </div>
+                    <div class="cinema__form__body">
+                        <form action="">
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Город*</label>
+                                <select name="city" class="js-select">
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                </select>
+                            </div>
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Тип мероприятия*</label>
+                                <select name="event" class="js-select">
+                                    <option>Индивидуальный просмотр</option>
+                                    <option>Индивидуальный просмотр</option>
+                                    <option>Индивидуальный просмотр</option>
+                                </select>
+                            </div>
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Количество гостей*</label>
+                                <input type="text" class="cinema__form__input" autocomplete="off">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="cinema__form__row">
+                                        <label class="cinema__form__label">Дата мероприятия*</label>
+                                        <input readonly type="text"
+                                               class="js-date cinema__form__input cinema__form__input--date"
+                                               autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="cinema__form__row">
+                                        <label class="cinema__form__label">Время мероприятия*</label>
+                                        <select name="time" class="js-select">
+                                            <option>Утро: до 12.59</option>
+                                            <option>Утро: до 12.58</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">ФИО*</label>
+                                <input type="text" class="cinema__form__input" autocomplete="off">
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="cinema__form__row">
+                                        <label class="cinema__form__label">Телефон*</label>
+                                        <input type="tel" class="cinema__form__input js-mask-phone" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="cinema__form__row">
+                                        <label class="cinema__form__label">E-mail*</label>
+                                        <input type="email" class="cinema__form__input" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cinema__form__footer">
+                                <label class="cinema__form__chekbox cinema__form__chekbox--politika">
+                                    <input type="checkbox" class="d-none">
+                                    <span class="cinema__form__chekbox__value">
+                                        Я принимаю условия Пользовательского соглашения и даю своё согласие на обработку моих персональныхданных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,на условиях и для целей, определенных <a
+                                            href="" target="_blank">Политикой конфиденциальности</a>.
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="cinema__form__submit">
+                                <button type="submit" class="btn-yellow btn-yellow--submit w-27">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cinema__action-table">
+            <div class="cinema__action-slider__caption justify-content-center cinema__action-table__header">
+                Условия аренды в
+                <div class="dropdown cinema__action-slider__caption__dropdown">
+                    <a class="dropdown__caption" data-bs-toggle="dropdown">
+                        <span>Санкт-Петербурге</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="">Санкт-Петербурге</a></li>
+                        <li><a href="">Красноярске</a></li>
+                        <li><a href="">Череповце</a></li>
+                        <li><a href="">Красногорске</a></li>
+                        <li><a href="">Мытищах</a></li>
+                        <li><a href="">Волгограде</a></li>
+                        <li><a href="">Тольятти</a></li>
+                        <li><a href="">Кунцево</a></li>
+                        <li><a href="">Пушкино</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cinema__action-table__body">
+
+            </div>
+            <div class="row cinema__action-table__footer">
+                <div class="col-lg-6">
+                    <p>Для оформления аренды необходимо подать заявку не позднее, чем за 5 рабочих дней.</p>
+                    <p>Бронирование зала оформляется по 100% предоплате и не позднее, чем за три дня до начала аренды.</p>
+                    <p>Передача собственного контента на конвертацию осуществляется не позднее, чем за три дня до начала аренды.</p>
+                </div>
+                <div class="col-lg-6">
+                    <p>В стоимость аренды включены проекционное оборудование и акустика зала, аренда дополнительного оборудования рассчитывается индивидуально. Пространство холла можно использовать для размещения информационных стоек, стендов во время выставок-продаж, проведения кофе-брейков и фуршетов, а также организации welcome зоны.</p>
+                    <p>* Аренда зала на фильмы блокбастера рассчитывается индивидуально</p>
+                    <p>* Игровые приставки PlayStation и Xbox не входят в аренду и не предоставляются компанией. Вы можете воспользоваться своей</p>
+                </div>
+            </div>
+            <div class="cinema__action-table__btn">
+                <button class="btn-yellow btn-yellow--submit w-34 h-64">ЗАБРОНИРОВАТЬ СЕЙЧАС</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

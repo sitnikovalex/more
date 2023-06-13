@@ -684,6 +684,10 @@ body {
     line-height: 20px;
     font-weight: 600;
   }
+  .btn-yellow {
+    margin-top: 10px;
+    font-size: 12px !important;
+  }
 }
 
 .swiper-button-disabled {
@@ -1044,18 +1048,22 @@ label.cinema__modal-city {
   padding-left: 12px;
   justify-content: flex-start;
   padding-right: 5px;
+
   .btn-yellow__app-text {
     font-size: 10px;
     font-weight: 500;
     line-height: 1.2;
+
     b {
       display: block;
       font-weight: bold;
       font-size: 16px;
     }
   }
+
   .btn-yellow__app-ico {
     padding-right: 10px;
+
     svg {
       display: block;
     }
@@ -1065,24 +1073,29 @@ label.cinema__modal-city {
 .cinema__footer__bottom {
   background: #0a0a0a;
   padding: 15px 0;
+
   .row {
     min-height: 40px;
   }
+
   span {
     color: #fff;
     font-size: 12px;
     line-height: 16px;
   }
+
   a {
     color: #ccc;
     font-size: 12px;
     line-height: 16px;
     text-decoration: none;
+
     &:hover {
       color: #fff;
     }
   }
 }
+
 .text-right {
   text-align: right;
 }
@@ -1104,6 +1117,7 @@ label.cinema__modal-city {
       background: #141414;
       z-index: 220;
     }
+
     .cinema__header__logo img {
       width: 169px;
       height: 35px;
@@ -1113,4 +1127,340 @@ label.cinema__modal-city {
 
 .cinema__account-menu__header {
   display: none;
+}
+
+.cinema-page {
+  border-top: 1px solid #393939;
+
+  &__header {
+    position: relative;
+    overflow: hidden;
+    background: #141414;
+    color: #fff;
+    z-index: 1;
+
+    &__pic {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center right;
+    }
+
+    &__container {
+      position: relative;
+      z-index: 10;
+      padding: 50px 0 40px;
+      display: flex;
+      align-items: center;
+
+      &--min {
+        min-height: 270px;
+      }
+    }
+
+    &__wrap {
+      width: 100%;
+
+      h1 {
+
+        font-weight: bold;
+        margin: 0 0 26px;
+        color: #fff;
+        &.fs-42 {
+          font-size: 42px;
+          line-height: 44px;
+        }
+        &.fs-32 {
+          font-size: 32px;
+          line-height: 36px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 15px;
+        &.fs-14 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__body {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    color: var(--color-text);
+    position: relative;
+    z-index: 2;
+
+    h2 {
+      font-weight: bold;
+      margin-bottom: 40px;
+      line-height: 1.1;
+      color: var(--color-text);
+    }
+  }
+}
+
+.fpad100 {
+  padding-bottom: 100px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.cinema__rental-purposes {
+  min-height: 64px;
+  margin-bottom: 40px;
+
+  &__ico {
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 64px;
+  }
+
+  &__text {
+    width: 200px;
+    flex-grow: 1;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+}
+
+.js-select {
+  opacity: 0;
+}
+
+.cinema__form {
+  background: var(--bg-form-wrap);
+  padding: 0 30px;
+  border-radius: 10px;
+  width: 100%;
+
+  &--w50 {
+    max-width: 500px;
+  }
+
+  &__row {
+    padding-bottom: 25px;
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    padding-bottom: 15px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+
+  &__header {
+    padding: 25px 0;
+    border-bottom: 1px solid var(--color-border-form-header);
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  &__body {
+    padding: 25px 0 30px;
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 3px;
+    display: block;
+    height: 48px;
+    padding: 5px 12px;
+    border: 1px solid var(--color-border-input);
+    background: transparent;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--color-text);
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &--date {
+      padding-right: 30px !important;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 493.04 512'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Capa_1' data-name='Capa 1'%3E%3Cpath fill='%23f5a735' d='M67.89,512H425.15A68,68,0,0,0,493,444.11V105.81a67.94,67.94,0,0,0-67.89-67.88H398.22V19a19,19,0,0,0-37.92,0v19H132.74V19a19,19,0,0,0-37.93,0v19H67.89A67.94,67.94,0,0,0,0,105.81v338.3A68,68,0,0,0,67.89,512Zm-30-406.19a30,30,0,0,1,30-30H94.81v19a19,19,0,1,0,37.93,0v-19H360.3v19a19,19,0,1,0,37.92,0v-19h26.93a30,30,0,0,1,30,30v55.38H37.93Zm0,93.3H455.11v245a30,30,0,0,1-30,30H67.89a30,30,0,0,1-30-30Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-position: right 12px top 50%;
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__footer {
+    padding-bottom: 25px;
+  }
+  &__submit {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+.cinema__form__chekbox {
+  display: block;
+  &__value {
+    display: block;
+    padding-left: 26px;
+    position: relative;
+    user-select: none;
+    a {
+      text-decoration: underline;
+      color: var(--color-text);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 3px;
+      border: 1px solid var(--color-border-input);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 9px 6px;
+    }
+  }
+  &--politika {
+    .cinema__form__chekbox__value {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  input:checked + .cinema__form__chekbox__value::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 234.93 160'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23f5a735;%7D%3C/style%3E%3C/defs%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Icons'%3E%3Cpath class='cls-1' d='M199.17,5.61,86.24,109.14,36.68,59.59A21.33,21.33,0,1,0,6,89.23l.52.52,64,64a21.34,21.34,0,0,0,29.51.64L228,37.06A21.34,21.34,0,1,0,199.17,5.61Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+.btn-yellow--submit {
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.w-27 {
+  max-width: 270px;
+}
+.w-34 {
+  max-width: 340px;
+}
+.btn-yellow.h-64 {
+  height: 64px;
+  font-size: 16px;
+}
+.cinema__action-table {
+  &__header {
+    padding-bottom: 40px;
+  }
+  &__body {
+    padding-bottom: 55px;
+  }
+  &__footer {
+    padding-bottom: 55px;
+    p {
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  &__btn {
+    justify-content: center;
+    display: flex;
+  }
+}
+.cinema__action-item__desc {
+  color: var(--color-link);
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 12px;
+}
+h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.fs-18 {
+  font-size: 18px;
+  line-height: 24px;
+}
+.fs-14 {
+  font-size: 14px;
+  line-height: 18px;
+}
+p.fs-14 {
+  margin-bottom: 15px;
+}
+.link-text {
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  &::after {
+    background: #f5a735;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    width: 100%;
+  }
+  &:hover {
+    color: #f5a735;
+    &::after {
+      width: 0;
+    }
+  }
+}
+.fpad30 {
+  padding-bottom: 30px;
+}
+.cinema__form.cinema__form--border {
+  background: transparent;
+  border: 1px solid var(--color-border);
+}
+.cinema__form__text {
+  background: transparent;
+  border: 1px solid var(--color-border-input);
+  border-radius: 3px;
+  color: var(--color-text);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 5px 12px;
+  width: 100%;
+  height: 115px;
+  resize: none;
 }
