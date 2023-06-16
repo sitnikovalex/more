@@ -81,7 +81,7 @@ body {
 .cinema__wrapper,
 html,
 body {
-  background: var(--bg-wrapp);
+  background-color: var(--bg-wrapp);
 }
 
 .cinema__top-filter {
@@ -1466,4 +1466,123 @@ p.fs-14 {
   width: 100%;
   height: 115px;
   resize: none;
+}
+.cinema-page__bonus-item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  &__ico {
+    min-width: 53px;
+    width: 53px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+}
+.cinema-page__bonus-card {
+  display: block;
+  border-radius: 20px;
+  box-shadow: 15px 15px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.tpad60 {
+  padding-top: 60px;
+}
+h1 {
+  font-weight: bold;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.cinema-page__title {
+  margin-bottom: 40px;
+}
+.cinema-page__contact-info {
+  padding-bottom: 45px;
+  &__header {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    margin-bottom: 15px;
+    min-height: 24px;
+    &__ico {
+      width: 52px;
+      min-width: 52px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+  }
+  &__body {
+    padding-left: 52px;
+    p {
+      color: var(--color-link);
+    }
+  }
+  &__user {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    padding-bottom: 5px;
+    color: var(--color-text);
+  }
+}
+.cinema-page__contact-info.cinema-page__contact-info--not-ico {
+  padding: 0;
+  .cinema-page__contact-info__body {
+    padding-left: 0;
+  }
+}
+.phone-link {
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cinema__wrapper--404 {
+  background-image: url("../images/dist/bg_404.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 1920px 638px;
+  min-height: 638px;
+  padding-top: 350px;
+  text-align: center;
+}
+.cinema-page__404 {
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  &__text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  &__btn {
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 270px;
+  }
+}
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .cinema__wrapper--404 {
+    background-image: url("../images/dist/bg_404@2.jpg");
+  }
 }
