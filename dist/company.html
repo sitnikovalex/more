@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>Вакансии</title>
+    <title>Контакты</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -153,117 +153,60 @@
 
 
 <div class="cinema__wrapper cinema-page">
-    <div class="cinema-page__header">
-        <div class="container cinema-page__header__container cinema-page__header__container--jobs">
-            <div class="cinema-page__header__wrap">
-                <h1 class="fs-32">Вакансии</h1>
-                <div class="row">
-                    <div class="col-xl-6 xol-lg-6">
-                        <p class="fs-14">Cтань частью нашей команды. Если ты:</p>
-                        <ul class="text-li">
-                            <li>хочешь работать в дружной команде</li>
-                            <li>стремишься к карьерному росту</li>
-                            <li>амбициозен и активен</li>
-                        </ul>
-                        <p class="fs-14 fw-semibold">MORI CINEMA — это работа для Вас!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <picture>
-            <source
-                    data-srcset="images/dist/bg-rent2.jpg 1x, images/dist/bg-rent2@2.jpg 2x"/>
-            <img alt="" class="lazy cinema-page__header__pic" data-src="images/dist/bg-rent2.jpg"
-                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                 width="1920" height="270"/>
-        </picture>
-    </div>
-
     <div class="cinema-page__body container">
-
-        <div class="cinema__form cinema__form--border">
-            <div class="cinema__form__header border-bottom">
-                <div class="cinema__form__title">Отправь заявку и стань частью команды МОРИ СИНЕМА</div>
-            </div>
-            <div class="cinema__form__body">
-
-                <form action="">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="cinema__form__row">
-                                <label class="cinema__form__label">Город*</label>
-                                <select name="city" class="js-select">
-                                    <option>Санкт-Петербург</option>
-                                    <option>Санкт-Петербург</option>
-                                    <option>Санкт-Петербург</option>
-                                    <option>Санкт-Петербург</option>
-                                    <option>Санкт-Петербург</option>
-                                    <option>Санкт-Петербург</option>
-                                    <option>Санкт-Петербург</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="cinema__form__row">
-                                <label class="cinema__form__label">Выберите вакансию *</label>
-                                <select name="jobs" class="js-select">
-                                    <option>Администратор</option>
-                                    <option>Администратор</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="cinema__form__row">
-                                <label class="cinema__form__label">ФИО *</label>
-                                <input type="text" class="cinema__form__input" autocomplete="off">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="cinema__form__row">
-                                <label class="cinema__form__label">Телефон *</label>
-                                <input type="tel"
-                                       class="js-mask-phone cinema__form__input"
-                                       autocomplete="off">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="cinema__form__row">
-                                <label class="cinema__form__label">Электронный адрес *</label>
-                                <input type="email" class="cinema__form__input" autocomplete="off">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="cinema__form__row">
-                        <label class="cinema__form__label" for="field__file-2">Прикрепить резюме</label>
-                        <label class="field__file-wrapper" >
-                            <input name="file" type="file"  id="field__file-2" class="field field__file" >
-                            <div id="field__file-2__value" class="field__file-fake cinema__form__input">Файл не выбран</div>
-                            <div class="field__file-button btn-yellow">Загрузить файл</div>
-                        </label>
-                    </div>
-
-                    <div class="cinema__form__footer">
-                        <label class="cinema__form__chekbox cinema__form__chekbox--politika">
-                            <input type="checkbox" class="d-none" checked>
-                            <span class="cinema__form__chekbox__value">
-                                        Я принимаю условия Пользовательского соглашения и даю своё согласие на обработку моих персональныхданных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,на условиях и для целей, определенных <a
-                                    href="" target="_blank">Политикой конфиденциальности</a>.
-                                    </span>
-                        </label>
-                    </div>
-                    <div class="cinema__form__submit">
-                        <button type="submit" class="btn-yellow btn-yellow--submit w-27">Отправить</button>
-                    </div>
-                </form>
-            </div>
+       <h1 class="fs-32 cinema-page__title">О компании</h1>
+        <div class="cinema__map">
+            <div id="map" class="cinema__map__wrap"></div>
         </div>
-
     </div>
 </div>
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=31109fba-fd89-4525-9d8c-0c74074ed7e9" ></script>
+<script>
+    ymaps.ready(init);
+    var customMap;
+    function init () {
+        customMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 10, // масштаб карты
+            controls: ["zoomControl", "fullscreenControl"]
+        });
+        customMap.behaviors.disable('scrollZoom');
+
+        customPlacemark0 = new ymaps.Placemark([55.752577,37.632134], {
+            balloonContentHeader: '<h4 class="cinema__map__baloon__title">Тольятти</h4>'+
+                '<a class="cinema__map__baloon__close" onclick="customMap.balloon.close()">' +
+                '<svg width="13" height="13"> <use xlink:href="#svg-close"></use> </svg></a>',
+            balloonContentBody: '<div class="cinema__map__baloon__body">' +
+                '<div class="d-flex">' +
+                '<div class="cinema__map__baloon__hall">8 залов</div>' +
+                '<div class="cinema__map__baloon__places">1 237 мест</div>' +
+                '</div>' +
+                '<div class="cinema__map__baloon__adr">Автозаводское шоссе, д 6, ТРК «PARK HOUSE»</div>' +
+                '<div class="cinema__map__baloon__time">9:00 - 24:00</div>' +
+                '<ul class="nav cinema__map__baloon__film-tag"><li>2D</li><li>3D</li><li>Dolby Atmos</li></ul>' +
+                '</div>',
+            balloonContentFooter: '<div class="cinema__map__baloon__footer">' +
+                '<a href="#" class="cinema__map__baloon__link">Расписание</a>' +
+                '</div>'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: '/images/dist/marker.svg',
+            iconImageSize: [40, 48], // размер иконки в пикселях
+            iconImageOffset: [-20, -48], // позиция иконки в пикселях(считается от верхнего левого угла)
+            balloonContentSize: [350, 240], // размер нашего кастомного балуна в пикселях
+            balloonLayout: "default#imageWithContent", // указываем что содержимое балуна - стилизовано
+            balloonImageHref: '/images/dist/baloon.png', // Картинка бэкграунд балуна
+            balloonImageOffset: [-35, -250], // смещание балуна, его необходимо подогнать
+            balloonImageSize: [350, 248], // размер картинки-бэкграунда балуна
+            balloonShadow: true
+        });
+
+        // Добавляем метки на карту
+        customMap.geoObjects.add(customPlacemark0);
+    }
+</script>
 
 <footer class="cinema__footer">
     <div class="container fpad80">

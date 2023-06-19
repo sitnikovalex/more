@@ -1192,6 +1192,29 @@ label.cinema__modal-city {
           font-size: 14px;
         }
       }
+      ul {
+        list-style-type: none;
+        margin: 0 0 20px 0;
+        padding: 0;
+        li {
+          padding: 0 0 0 32px;
+          display: block;
+          font-size: 14px;
+          line-height: 24px;
+          position: relative;
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 12px;
+            left: 0;
+            height: 1px;
+            width: 20px;
+            background: #f5a735;
+          }
+        }
+      }
     }
   }
 
@@ -1573,7 +1596,92 @@ h1 {
   }
 }
 
-
+.field__file-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  .field__file {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  .field__file-fake {
+    max-width: 340px;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    margin-right: 30px;
+  }
+  .field__file-button {
+    width: 170px;
+    font-size: 12px;
+  }
+}
+.cinema__map {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  &__wrap {
+    height: 466px;
+    width: 100%;
+  }
+}
+.cinema__map__baloon__title {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  padding: 18px 20px 15px 0;
+  width: 310px;
+  margin: 0 auto;
+  border-bottom: 1px solid #393939;
+  text-align: left;
+}
+.cinema__map__baloon__close {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 20px;
+  color: #ccc;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
+}
+.cinema__map__baloon__body {
+  padding: 15px 20px 0 20px;
+  color: #fff;
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+}
+.cinema__map__baloon__hall {
+  width: 85px;
+}
+.cinema__map__baloon__adr {
+  padding: 10px 0;
+}
+.cinema__map__baloon__time {
+  padding-bottom: 15px;
+}
+.cinema__map__baloon__film-tag {
+  padding-bottom: 15px;
+  li {
+    margin: 0 5px 5px 0;
+    height: 24px;
+    padding: 6px;
+    border-radius: 5px;
+    background: #000;
+    line-height: 1;
+  }
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),

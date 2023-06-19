@@ -31,21 +31,38 @@
     <div class="cinema-page__body container">
 
         <div class="cinema__form cinema__form--border">
+            <div class="cinema__form__header border-bottom">
+                <div class="cinema__form__title">Отправь заявку и стань частью команды МОРИ СИНЕМА</div>
+            </div>
             <div class="cinema__form__body">
+
                 <form action="">
-                    <div class="cinema__form__row">
-                        <label class="cinema__form__label">Город*</label>
-                        <select name="city" class="js-select">
-                            <option>Санкт-Петербург</option>
-                            <option>Санкт-Петербург</option>
-                            <option>Санкт-Петербург</option>
-                            <option>Санкт-Петербург</option>
-                            <option>Санкт-Петербург</option>
-                            <option>Санкт-Петербург</option>
-                            <option>Санкт-Петербург</option>
-                        </select>
-                    </div>
                     <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Город*</label>
+                                <select name="city" class="js-select">
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Выберите вакансию *</label>
+                                <select name="jobs" class="js-select">
+                                    <option>Администратор</option>
+                                    <option>Администратор</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="col-lg-4">
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">ФИО *</label>
@@ -67,9 +84,15 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="cinema__form__row">
-                        <label class="cinema__form__label">Текст сообщения</label>
-                        <textarea class="cinema__form__text"></textarea>
+                        <label class="cinema__form__label" for="field__file-2">Прикрепить резюме</label>
+                        <label class="field__file-wrapper" >
+                            <input name="file" type="file"  id="field__file-2" class="field field__file" >
+                            <div id="field__file-2__value" class="field__file-fake cinema__form__input">Файл не выбран</div>
+                            <div class="field__file-button btn-yellow">Загрузить файл</div>
+                        </label>
                     </div>
 
                     <div class="cinema__form__footer">

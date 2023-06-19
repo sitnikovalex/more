@@ -1,0 +1,60 @@
+<!--#set var="title" value="Контакты" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="cinema__wrapper cinema-page">
+    <div class="cinema-page__body container">
+       <h1 class="fs-32 cinema-page__title">О компании</h1>
+        <div class="cinema__map">
+            <div id="map" class="cinema__map__wrap"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=31109fba-fd89-4525-9d8c-0c74074ed7e9" ></script>
+<script>
+    ymaps.ready(init);
+    var customMap;
+    function init () {
+        customMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 10, // масштаб карты
+            controls: ["zoomControl", "fullscreenControl"]
+        });
+        customMap.behaviors.disable('scrollZoom');
+
+        customPlacemark0 = new ymaps.Placemark([55.752577,37.632134], {
+            balloonContentHeader: '<h4 class="cinema__map__baloon__title">Тольятти</h4>'+
+                '<a class="cinema__map__baloon__close" onclick="customMap.balloon.close()">' +
+                '<svg width="13" height="13"> <use xlink:href="#svg-close"></use> </svg></a>',
+            balloonContentBody: '<div class="cinema__map__baloon__body">' +
+                '<div class="d-flex">' +
+                '<div class="cinema__map__baloon__hall">8 залов</div>' +
+                '<div class="cinema__map__baloon__places">1 237 мест</div>' +
+                '</div>' +
+                '<div class="cinema__map__baloon__adr">Автозаводское шоссе, д 6, ТРК «PARK HOUSE»</div>' +
+                '<div class="cinema__map__baloon__time">9:00 - 24:00</div>' +
+                '<ul class="nav cinema__map__baloon__film-tag"><li>2D</li><li>3D</li><li>Dolby Atmos</li></ul>' +
+                '</div>',
+            balloonContentFooter: '<div class="cinema__map__baloon__footer">' +
+                '<a href="#" class="cinema__map__baloon__link">Расписание</a>' +
+                '</div>'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: '/images/dist/marker.svg',
+            iconImageSize: [40, 48], // размер иконки в пикселях
+            iconImageOffset: [-20, -48], // позиция иконки в пикселях(считается от верхнего левого угла)
+            balloonContentSize: [350, 240], // размер нашего кастомного балуна в пикселях
+            balloonLayout: "default#imageWithContent", // указываем что содержимое балуна - стилизовано
+            balloonImageHref: '/images/dist/baloon.png', // Картинка бэкграунд балуна
+            balloonImageOffset: [-35, -250], // смещание балуна, его необходимо подогнать
+            balloonImageSize: [350, 248], // размер картинки-бэкграунда балуна
+            balloonShadow: true
+        });
+
+        // Добавляем метки на карту
+        customMap.geoObjects.add(customPlacemark0);
+    }
+</script>
+
+<!--#include virtual="/parts/footer.html" -->
