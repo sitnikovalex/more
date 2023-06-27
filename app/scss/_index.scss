@@ -1629,6 +1629,13 @@ h1 {
   &__wrap {
     height: 466px;
     width: 100%;
+    [class*="ymaps-2-1"][class*="-ground-pane"] {
+      filter: grayscale(1);
+      -ms-filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+      -moz-filter: grayscale(1);
+      -o-filter: grayscale(1);
+    }
   }
 }
 .cinema__map__baloon__title {
@@ -1666,13 +1673,13 @@ h1 {
   width: 85px;
 }
 .cinema__map__baloon__adr {
-  padding: 10px 0;
+  padding: 2px 0;
 }
 .cinema__map__baloon__time {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .cinema__map__baloon__film-tag {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   li {
     margin: 0 5px 5px 0;
     height: 24px;
@@ -1680,6 +1687,91 @@ h1 {
     border-radius: 5px;
     background: #000;
     line-height: 1;
+  }
+}
+.cinema__map__baloon__footer {
+  padding: 0 20px;
+}
+.cinema__map__baloon__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: #000;
+    background: #fff;
+  }
+}
+.cinema__text {
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+}
+.cinema-page__history {
+  position: relative;
+  overflow: hidden;
+  li {
+    width: 100%;
+    position: relative;
+    &:not(:last-child) {
+      padding-bottom: 30px;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        height: 30px;
+        width: 1px;
+        left: 50px;
+        background: #fccb36;
+      }
+    }
+  }
+  &__item {
+    &__year {
+      width: 102px;
+      height: 102px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 51px;
+      border: 2px solid #fccb36;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: bold;
+      text-align: center;
+      min-width: 102px;
+    }
+    &__city {
+      width: 270px;
+      padding: 0 15px 0 30px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 18px;
+    }
+    &__halls {
+      width: 130px;
+      padding-right: 15px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    &__places {
+      width: 130px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
+    }
   }
 }
 
