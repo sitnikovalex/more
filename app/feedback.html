@@ -1,0 +1,110 @@
+<!--#set var="title" value="Обратная связь" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="cinema__wrapper cinema-page">
+
+    <div class="cinema-page__body container">
+        <h1 class="fs-32">Обратная связь</h1>
+        <div class="fpad30 tpad35">
+            <p class="fs-14">
+                Здесь Вы можете задать интересующие Вас вопросы, выразить свое мнение о качестве услуг или оставить предложение.
+                <br>Специалист ответит в течение 24 часов.</p>
+
+            <p class="fs-14">Поля помеченные * обязательны для заполнения</p>
+
+        </div>
+
+
+        <div class="cinema__form cinema__form--border">
+            <div class="cinema__form__body">
+                <form action="">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Кинотеатр *</label>
+                                <select name="city" class="js-select">
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Раздел *</label>
+                                <select name="city" class="js-select">
+                                    <option>Общие вопросы</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Санкт-Петербург</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">ФИО *</label>
+                                <input type="text" class="cinema__form__input" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Телефон *</label>
+                                <input type="tel"
+                                       class="js-mask-phone cinema__form__input"
+                                       autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Электронный адрес *</label>
+                                <input type="email" class="cinema__form__input" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__label">Бонусная карта</label>
+                                <input type="text" class="cinema__form__input" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cinema__form__row">
+                        <label class="cinema__form__label" for="field__file-2">Загрузить файл</label>
+                        <label class="field__file-wrapper" >
+                            <input name="file" type="file"  id="field__file-2" class="field field__file" >
+                            <div id="field__file-2__value" class="field__file-fake cinema__form__input">Файл не выбран</div>
+                            <div class="field__file-button btn-yellow">Загрузить файл</div>
+                        </label>
+                    </div>
+                    <div class="cinema__form__row">
+                        <label class="cinema__form__label">Текст сообщения</label>
+                        <textarea class="cinema__form__text"></textarea>
+                    </div>
+
+                    <div class="cinema__form__footer">
+                        <label class="cinema__form__chekbox cinema__form__chekbox--politika">
+                            <input type="checkbox" class="d-none" checked>
+                            <span class="cinema__form__chekbox__value">
+                                        Я принимаю условия Пользовательского соглашения и даю своё согласие на обработку моих персональныхданных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,на условиях и для целей, определенных <a
+                                    href="" target="_blank">Политикой конфиденциальности</a>.
+                                    </span>
+                        </label>
+                    </div>
+                    <div class="cinema__form__submit">
+                        <button type="submit" class="btn-yellow btn-yellow--submit w-27">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

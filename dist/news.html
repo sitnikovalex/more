@@ -1,0 +1,709 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Новости</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="cinema">
+
+    <header class="cinema__header">
+        <div class="cinema__header__wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-sm-7 col-lg-7 col-xl-4 cinema__header__col-logo d-flex align-items-center justify-content-between">
+                        <a href="/" class="cinema__header__logo">
+                            <img src="images/dist/logo.svg" alt="" width="199" height="41">
+                        </a>
+                        <span class="cinema__header__city" data-bs-toggle="modal" data-bs-target="#cityFirstModal">
+                            <svg width="10" height="12">
+                                <use xlink:href="#svg-adr"></use>
+                            </svg>
+                            <span>Санкт-Петербург</span>
+                        </span>
+                    </div>
+                    <div class="col-xl-6 cinema__header__col-menu">
+                        <ul class="nav cinema__header__nav justify-content-center">
+                            <li>
+                                <a href="">РАСПИСАНИЕ</a>
+                            </li>
+                            <li>
+                                <a href="">Бонусная карта</a>
+                            </li>
+                            <li>
+                                <a href="">Сертификаты</a>
+                            </li>
+                            <li>
+                                <a href="">АРЕНДА ЗАЛА</a>
+                            </li>
+                            <li>
+                                <a href="">АКЦИИ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-5 col-lg-5 col-xl-2 cinema__header__col-right d-flex align-items-center justify-content-end">
+                        <label class="cinema__theme-switch">
+                            <input class="d-none" type="checkbox" name="theme" id="themeSwitch" value="black" checked>
+                            <span class="cinema__theme-switch__value"></span>
+                        </label>
+                        <a href="#menuAccount" class="cinema__header__col-right__link">
+                            <svg width="24" height="24">
+                                <use xlink:href="#svg-account"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="cinema__header__col-right__link" data-bs-toggle="modal"
+                           data-bs-target="#menuAccount">
+                            <i class="cinema__header__menu"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="menuAccount" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+
+            <div class="cinema__account-menu ">
+                <div class=" cinema__account-menu__container">
+                    <div class="row justify-content-end">
+                        <div class="col-xl-3 col-lg-4 col-sm-6 cinema__account-menu__container__col">
+
+                            <div class="cinema__account-menu__wrap modal-content">
+                                <div class="cinema__account-menu__close">
+                                    <a data-bs-dismiss="modal" >
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-close"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="cinema__account-menu__header">
+                                    <img src="images/dist/logo.svg" alt="" width="116" height="24">
+                                </div>
+                                <div class="cinema__account-menu__btn">
+                                    <a href="" class="btn-yellow mb-15">
+                                        <svg width="24" height="24" class="mr-10">
+                                            <use xlink:href="#svg-account"></use>
+                                        </svg>
+                                        Личный кабинет
+                                    </a>
+                                </div>
+                                <ul class="nav flex-column cinema__account-menu__list">
+                                    <li><a href="">Расписание</a></li>
+                                    <li><a href="">Moriart</a></li>
+                                    <li><a href="">Бонусная карта</a></li>
+                                    <li><a href="">Сертификаты</a></li>
+                                    <li><a href="">Аренда зала</a></li>
+                                    <li class="mb-15"><a href="">Новости и акции</a></li>
+                                    <li><a href="">История компании</a></li>
+                                    <li><a href="">Реклама в кинотеатрах</a></li>
+                                    <li><a href="">Услуги кинотеатра</a></li>
+                                    <li><a href="">Аренда площадей</a></li>
+                                    <li><a href="">Вакансии</a></li>
+                                    <li><a href="">Обратная связь</a></li>
+                                    <li><a href="">Возврат билетов</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                </ul>
+                                <ul class="nav cinema__account-menu__footer">
+                                    <li>
+                                        <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
+                                            <svg width="24" height="13">
+                                                <use xlink:href="#svg-vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
+                                            <svg width="24" height="20">
+                                                <use xlink:href="#svg-telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+<div class="cinema__wrapper cinema-page">
+    <div class="cinema-page__body container">
+
+        <div class="cinema__action-slider__caption cinema__action-slider__caption--h1">
+            <h1>Новости и акции</h1>
+            <div class="dropdown cinema__action-slider__caption__dropdown">
+                <a class="dropdown__caption" data-bs-toggle="dropdown">
+                    <span>Санкт-Петербурге</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="">во всех городах</a>
+                    </li>
+                    <li class="active"><a href="">Санкт-Петербурге</a></li>
+                    <li><a href="">Красноярске</a></li>
+                    <li><a href="">Череповце</a></li>
+                    <li><a href="">Красногорске</a></li>
+                    <li><a href="">Мытищах</a></li>
+                    <li><a href="">Волгограде</a></li>
+                    <li><a href="">Тольятти</a></li>
+                    <li><a href="">Кунцево</a></li>
+                    <li><a href="">Пушкино</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <ul class="nav cinema__top-link">
+            <li>
+                <a href="" class="cinema__top-link__item active">
+                    Новости
+                </a>
+            </li>
+            <li>
+                <a href="" class="cinema__top-link__item">
+                    Акции
+                </a>
+            </li>
+            <li>
+                <a href="" class="cinema__top-link__item">
+                    АФИША
+                </a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 fpad60">
+                <a href="" class="cinema__action-item">
+                    <div class="cinema__action-item__img">
+                        <picture>
+                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                        </picture>
+                    </div>
+                    <div class="cinema__action-item__title">
+                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                    </div>
+                    <div class="cinema__action-item__desc">Но, если вы не торопитесь, то можете испытать удачу и
+                        выиграть билет в кино на этот фильм!
+                    </div>
+                    <div class="cinema__action-item__date">
+                        19 Октября
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fpad60">
+                <a href="" class="cinema__action-item">
+                    <div class="cinema__action-item__img">
+                        <picture>
+                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                        </picture>
+                    </div>
+                    <div class="cinema__action-item__title">
+                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                    </div>
+                    <div class="cinema__action-item__desc">Но, если вы не торопитесь, то можете испытать удачу и
+                        выиграть билет в кино на этот фильм!
+                    </div>
+                    <div class="cinema__action-item__date">
+                        19 Октября
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fpad60">
+                <a href="" class="cinema__action-item">
+                    <div class="cinema__action-item__img">
+                        <picture>
+                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                        </picture>
+                    </div>
+                    <div class="cinema__action-item__title">
+                        Смотрите на наших экранах 8 и 9 мая лучшие фильмы, посвящённые Второй мировой войне по
+                        специальной цене!
+                    </div>
+                    <div class="cinema__action-item__date">
+                        19 Октября
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fpad60">
+                <a href="" class="cinema__action-item">
+                    <div class="cinema__action-item__img">
+                        <picture>
+                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                        </picture>
+                    </div>
+                    <div class="cinema__action-item__title">
+                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                    </div>
+                    <div class="cinema__action-item__desc">Но, если вы не торопитесь, то можете испытать удачу и
+                        выиграть билет в кино на этот фильм!
+                    </div>
+                    <div class="cinema__action-item__date">
+                        19 Октября
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fpad60">
+                <a href="" class="cinema__action-item">
+                    <div class="cinema__action-item__img">
+                        <picture>
+                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                        </picture>
+                    </div>
+                    <div class="cinema__action-item__title">
+                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                    </div>
+                    <div class="cinema__action-item__desc">Но, если вы не торопитесь, то можете испытать удачу и
+                        выиграть билет в кино на этот фильм!
+                    </div>
+                    <div class="cinema__action-item__date">
+                        19 Октября
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 fpad60">
+                <a href="" class="cinema__action-item">
+                    <div class="cinema__action-item__img">
+                        <picture>
+                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
+                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
+                        </picture>
+                    </div>
+                    <div class="cinema__action-item__title">
+                        Смотрите на наших экранах 8 и 9 мая лучшие фильмы, посвящённые Второй мировой войне по
+                        специальной цене!
+                    </div>
+                    <div class="cinema__action-item__date">
+                        19 Октября
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <ul class="nav cinema__pagination">
+    <li class="cinema__pagination__btn cinema__pagination__btn--prev">
+        <a href="" class="cinema__pagination__btn__nav">
+            <svg width="9" height="16">
+            <use xlink:href="#svg-prev"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="cinema__pagination__item">
+        <a href="" class="cinema__pagination__item__link">1</a>
+    </li>
+    <li class="cinema__pagination__item">
+        <a href="" class="cinema__pagination__item__link active">2</a>
+    </li>
+    <li class="cinema__pagination__item">
+        <a href="" class="cinema__pagination__item__link">3</a>
+    </li>
+    <li class="cinema__pagination__item">
+        <a href="" class="cinema__pagination__item__link">4</a>
+    </li>
+    <li class="cinema__pagination__item">
+        <a href="" class="cinema__pagination__item__link">5</a>
+    </li>
+    <li class="cinema__pagination__item">
+        <a href="" class="cinema__pagination__item__dotts">...</a>
+    </li>
+    <li class="cinema__pagination__item">
+        <a href="" class="cinema__pagination__item__link">25</a>
+    </li>
+    <li class="cinema__pagination__btn cinema__pagination__btn--next">
+        <a href="" class="cinema__pagination__btn__nav">
+            <svg width="9" height="16">
+                <use xlink:href="#svg-next"></use>
+            </svg>
+        </a>
+    </li>
+</ul>
+    </div>
+</div>
+
+<footer class="cinema__footer">
+    <div class="container fpad80">
+        <div class="row">
+            <div class="col-12 cinema__footer__top-row">
+                <a href="/" class="cinema__footer__logo">
+                    <img src="images/dist/logo.svg" alt="" width="199" height="41">
+                </a>
+            </div>
+            <div class="col-lg-5 col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="nav flex-column cinema__footer__nav">
+                            <li><a href="">Расписание</a></li>
+                            <li><a href="">MoriArt</a></li>
+                            <li><a href="">MoriBonus</a></li>
+                            <li><a href="">MoriRent</a></li>
+                            <li><a href="">Киновподарок</a></li>
+                            <li><a href="">Акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="nav flex-column cinema__footer__nav">
+                            <li><a href="">История компании</a></li>
+                            <li><a href="">Реклама в кинотеатрах</a></li>
+                            <li><a href="">Услуги кинотеатра</a></li>
+                            <li><a href="">Аренда площадей</a></li>
+                            <li><a href="">Вакансии</a></li>
+                            <li><a href="">Обратная связь</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-12">
+                <div class="d-flex cinema__footer__app-row align-items-center fpad40">
+                    <div class="cinema__footer__app-desc">
+                        <b>Приложение MORI CINEMA</b>
+                        Загружайте и покупайте билеты онлайн
+                    </div>
+                    <div class="cinema__footer__app-link flex-grow-1">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="" class="btn-yellow btn-yellow--app" target="_blank">
+                                    <span class="btn-yellow__app-ico">
+                                        <svg width="23" height="28">
+                                            <use xlink:href="#svg-apple"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-yellow__app-text">
+                                        Загрузить в
+                                        <b>App Store</b>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="" class="btn-yellow btn-yellow--app" target="_blank">
+                                    <span class="btn-yellow__app-ico">
+                                        <svg width="26" height="28">
+                                            <use xlink:href="#svg-gp"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="btn-yellow__app-text">
+                                    Доступно в
+                                    <b>Google Play</b>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex cinema__footer__app-row align-items-center fpad40">
+                    <div class="cinema__footer__app-desc">
+                        <b>Мы в социальных сетях</b>
+                        Будьте в курсе последних событий
+                    </div>
+                    <div class="cinema__footer__app-link flex-grow-1">
+                        <ul class="nav cinema__account-menu__footer">
+                            <li>
+                                <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
+                                    <svg width="24" height="13">
+                                        <use xlink:href="#svg-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
+                                    <svg width="24" height="20">
+                                        <use xlink:href="#svg-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cinema__footer__bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <span class="cinema__footer__bottom__copy">© 2022 Сеть кинотеатров MORI CINEMA. <span>Все права защищены.</span></span>
+                </div>
+                <div class="col-lg-4 cinema__footer__col-link">
+                    <a href="" target="_blank">Политика конфиденциальности</a>
+                </div>
+                <div class="col-lg-3 text-right">
+                    <span>Разработка сайта - <a href="" target="_blank">“Клондайк”</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="cityFirstModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    Ваш город:
+                </div>
+                <div class="btn-close2" data-bs-dismiss="modal">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="cinema__modal-city active">
+                    <span class="cinema__modal-city__wrap">
+                        <span class="cinema__modal-city__ico">
+                            <svg width="20" height="24" viewBox="0 0 433.1 512" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                <linearGradient id="yellow-gradient" x1="60.6" y1="66.25" x2="372.5" y2="378.15"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#fccb36"/>
+                                    <stop offset="1"
+                                          stop-color="#f49f24"/>
+                                </linearGradient>
+                                </defs>
+                                <path fill="url(#yellow-gradient)"
+                                      d="M369.67,63.43A216.55,216.55,0,0,0,0,216.55c0,117,110.64,214.34,170.08,266.62,8.26,7.27,15.39,13.54,21.07,18.85a37.31,37.31,0,0,0,50.8,0c5.68-5.31,12.81-11.58,21.07-18.85C322.46,430.89,433.1,333.56,433.1,216.55A215.13,215.13,0,0,0,369.67,63.43ZM216.55,303.8A95.43,95.43,0,1,1,312,208.37,95.54,95.54,0,0,1,216.55,303.8Z"/>
+                            </svg>
+                        </span>
+                        <span class="cinema__modal-city__val">
+                            <span class="cinema__modal-city__val__name">Санкт-Петербург</span>
+                            <span class="cinema__modal-city__val__adr">Индустриальный просп., д. 24, литера А, ТРЦ «ИЮНЬ»</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-yellow" data-bs-dismiss="modal">ДА</button>
+                <button class="btn-yellow" data-bs-dismiss="modal" data-bs-toggle="modal"
+                        data-bs-target="#cityLastModal">НЕТ
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cityLastModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    Выбор города
+                </div>
+                <div class="btn-close2" data-bs-dismiss="modal">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <ul class="modal__list-city nav flex-column">
+                    <li>
+                        <label class="cinema__modal-city">
+                            <input type="radio" name="city" value="Санкт-Петербург" checked>
+                            <span class="cinema__modal-city__wrap">
+                                <span class="cinema__modal-city__ico">
+                                     <svg class="marker" width="20" height="24">
+                                       <use xlink:href="#svg-marker"></use>
+                                    </svg>
+                                    <img width="20" height="24" src="images/dist/marker-active.svg" alt=""
+                                         class="marker-active">
+                                </span>
+                                <span class="cinema__modal-city__val">
+                                    <span class="cinema__modal-city__val__name">Санкт-Петербург</span>
+                                    <span class="cinema__modal-city__val__adr">Индустриальный просп., д. 24, литера А, ТРЦ «ИЮНЬ»</span>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="cinema__modal-city">
+                            <input type="radio" name="city" value="Красноярск">
+                            <span class="cinema__modal-city__wrap">
+                                <span class="cinema__modal-city__ico">
+                                    <svg class="marker" width="20" height="24">
+                                       <use xlink:href="#svg-marker"></use>
+                                    </svg>
+                                    <img width="20" height="24" src="images/dist/marker-active.svg" alt=""
+                                         class="marker-active">
+                                </span>
+                                <span class="cinema__modal-city__val">
+                                    <span class="cinema__modal-city__val__name">Красноярск</span>
+                                    <span class="cinema__modal-city__val__adr">ул. Партизана Железняка, д. 23, ТРЦ «ИЮНЬ»</span>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="cinema__modal-city">
+                            <input type="radio" name="city" value="Красноярск">
+                            <span class="cinema__modal-city__wrap">
+                                <span class="cinema__modal-city__ico">
+                                    <svg class="marker" width="20" height="24">
+                                       <use xlink:href="#svg-marker"></use>
+                                    </svg>
+                                    <img width="20" height="24" src="images/dist/marker-active.svg" alt=""
+                                         class="marker-active">
+                                </span>
+                                <span class="cinema__modal-city__val">
+                                    <span class="cinema__modal-city__val__name">Красноярск</span>
+                                    <span class="cinema__modal-city__val__adr">ул. Партизана Железняка, д. 23, ТРЦ «ИЮНЬ»</span>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="cinema__modal-city">
+                            <input type="radio" name="city" value="Красноярск">
+                            <span class="cinema__modal-city__wrap">
+                                <span class="cinema__modal-city__ico">
+                                    <svg class="marker" width="20" height="24">
+                                       <use xlink:href="#svg-marker"></use>
+                                    </svg>
+                                    <img width="20" height="24" src="images/dist/marker-active.svg" alt=""
+                                         class="marker-active">
+                                </span>
+                                <span class="cinema__modal-city__val">
+                                    <span class="cinema__modal-city__val__name">Красноярск</span>
+                                    <span class="cinema__modal-city__val__adr">ул. Партизана Железняка, д. 23, ТРЦ «ИЮНЬ»</span>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="cinema__modal-city">
+                            <input type="radio" name="city" value="Красноярск">
+                            <span class="cinema__modal-city__wrap">
+                                <span class="cinema__modal-city__ico">
+                                    <svg class="marker" width="20" height="24">
+                                       <use xlink:href="#svg-marker"></use>
+                                    </svg>
+                                    <img width="20" height="24" src="images/dist/marker-active.svg" alt=""
+                                         class="marker-active">
+                                </span>
+                                <span class="cinema__modal-city__val">
+                                    <span class="cinema__modal-city__val__name">Красноярск</span>
+                                    <span class="cinema__modal-city__val__adr">ул. Партизана Железняка, д. 23, ТРЦ «ИЮНЬ»</span>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div style="display: none">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <symbol id="svg-adr" viewBox="0 0 433.1 512">
+            <path fill="currentColor"
+                  d="M369.67,63.43A216.55,216.55,0,0,0,0,216.55c0,117,110.64,214.34,170.08,266.62,8.26,7.27,15.39,13.54,21.07,18.85a37.31,37.31,0,0,0,50.8,0c5.68-5.31,12.81-11.58,21.07-18.85C322.46,430.89,433.1,333.56,433.1,216.55A215.13,215.13,0,0,0,369.67,63.43ZM243.21,460.65c-8.44,7.43-15.73,13.84-21.74,19.45a7.22,7.22,0,0,1-9.84,0c-6-5.61-13.3-12-21.75-19.45C134,411.5,30,320,30,216.55,30,113.68,113.68,30,216.55,30S403.1,113.68,403.1,216.55C403.11,320,299.09,411.5,243.21,460.65Z"/>
+            <path fill="currentColor"
+                  d="M216.55,112.94A95.43,95.43,0,1,0,312,208.37,95.54,95.54,0,0,0,216.55,112.94Zm0,160.86A65.44,65.44,0,1,1,282,208.37,65.51,65.51,0,0,1,216.55,273.8Z"/>
+        </symbol>
+
+        <symbol id="svg-date" viewBox="0 0 493.04 512">
+            <path fill="currentColor"
+                  d="M67.89,512H425.15A68,68,0,0,0,493,444.11V105.81a67.94,67.94,0,0,0-67.89-67.88H398.22V19a19,19,0,0,0-37.92,0v19H132.74V19a19,19,0,0,0-37.93,0v19H67.89A67.94,67.94,0,0,0,0,105.81v338.3A68,68,0,0,0,67.89,512Zm-30-406.19a30,30,0,0,1,30-30H94.81v19a19,19,0,1,0,37.93,0v-19H360.3v19a19,19,0,1,0,37.92,0v-19h26.93a30,30,0,0,1,30,30v55.38H37.93Zm0,93.3H455.11v245a30,30,0,0,1-30,30H67.89a30,30,0,0,1-30-30Z"/>
+        </symbol>
+
+        <symbol id="svg-invalid" viewBox="0 0 451.5 512">
+            <path fill="currentColor"
+                  d="M302.55,360.73c-11.64-4.66-25.6,4.65-27.93,16.29-11.64,51.2-58.18,86.11-111.71,86.11-65.16,0-116.36-51.2-116.36-116.37,0-44.21,25.59-86.11,67.49-104.72,11.63-4.66,16.29-18.62,11.63-30.26s-18.62-16.29-30.25-11.64C37.24,228.07,0,286.25,0,349.09,0,439.86,72.14,512,162.91,512c72.15,0,137.31-51.2,155.93-123.35C323.49,377,314.18,363.05,302.55,360.73Z"/>
+            <path fill="currentColor"
+                  d="M428.23,418.91H411.94L379.36,307.2c-2.33-9.31-11.64-16.29-23.28-16.29l-151.27,9.31L186.26,135.3c26.47-9.55,46.47-34.56,46.47-65.48C232.73,30.25,202.47,0,162.91,0S93.09,30.25,93.09,69.82c0,31.12,18.85,56.22,46.09,65.63l21.41,192.7c2.33,11.63,14,20.94,25.6,20.94l155.93-9.31,30.25,109.39c4.66,9.3,11.64,16.29,23.28,16.29h34.91c11.63,0,20.94-9.31,20.94-23.28S442.19,418.91,428.23,418.91ZM162.91,46.55a23.32,23.32,0,0,1,23.27,23.27c0,14-9.31,23.27-23.27,23.27s-23.27-9.31-23.27-23.27S149,46.55,162.91,46.55Z"/>
+            <path fill="currentColor"
+                  d="M221.09,209.45c0,14,9.31,23.28,23.27,23.28h93.09a23.33,23.33,0,0,0,23.28-23.28c0-14-9.31-23.27-23.28-23.27H244.36C230.4,186.18,221.09,195.49,221.09,209.45Z"/>
+        </symbol>
+
+        <symbol id="svg-account" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                  d="M437,75A256,256,0,0,0,75,437,256,256,0,0,0,437,75ZM128.34,442.39a129.63,129.63,0,0,1,255.32,0,225.52,225.52,0,0,1-255.32,0ZM174.6,223.87a81.4,81.4,0,1,1,81.4,81.4A81.49,81.49,0,0,1,174.6,223.87Zm235,197.71A159.86,159.86,0,0,0,316.7,317.23a111.4,111.4,0,1,0-121.4,0,159.87,159.87,0,0,0-92.94,104.34A225.39,225.39,0,0,1,30,256C30,131.38,131.38,30,256,30S482,131.38,482,256A225.41,225.41,0,0,1,409.64,421.58Z"/>
+        </symbol>
+
+        <symbol id="svg-next" viewBox="0 0 255.99 454.76">
+            <path fill="currentColor"
+                  d="M0,426.32a28.33,28.33,0,0,1,8.33-20.11l179-179-179-179A28.45,28.45,0,0,1,48.55,8L247.67,207.1a28.45,28.45,0,0,1,0,40.22L48.55,446.43A28.45,28.45,0,0,1,0,426.32Z"/>
+        </symbol>
+
+        <symbol id="svg-prev" viewBox="0 0 255.99 454.76">
+            <path fill="currentColor"
+                  d="M256,28.44a28.33,28.33,0,0,1-8.33,20.11l-179,179,179,179a28.44,28.44,0,0,1-40.22,40.22L8.33,247.66a28.43,28.43,0,0,1,0-40.22L207.44,8.33A28.44,28.44,0,0,1,256,28.44Z"/>
+        </symbol>
+
+        <symbol id="svg-vk" viewBox="0 0 511.96 292.11">
+            <path fill="currentColor"
+                  d="M507.4,260.55c-1.38-2.31-9.89-20.8-50.85-58.82-42.88-39.81-37.12-33.34,14.53-102.18,31.46-41.92,44-67.52,40.1-78.46-3.75-10.43-26.88-7.68-26.88-7.68l-76.93.45s-5.7-.77-9.95,1.76-6.79,8.25-6.79,8.25-12.19,32.45-28.45,60c-34.27,58.2-48,61.28-53.6,57.66-13-8.42-9.76-33.86-9.76-51.9,0-56.42,8.55-79.94-16.67-86-8.38-2-14.53-3.36-35.93-3.58-27.46-.29-50.72.09-63.88,6.52C173.58,10.88,166.82,20.45,171,21c5.09.68,16.61,3.11,22.72,11.43,7.91,10.72,7.62,34.85,7.62,34.85s4.54,66.4-10.59,74.65c-10.4,5.67-24.64-5.89-55.2-58.72-15.65-27-27.49-57-27.49-57s-2.27-5.57-6.34-8.54c-4.93-3.62-11.84-4.77-11.84-4.77l-73.15.45s-11,.32-15,5.09c-3.58,4.25-.29,13-.29,13S58.66,165.47,123.5,233c59.48,61.92,127,57.85,127,57.85h30.6s9.24-1,13.95-6.11c4.35-4.67,4.19-13.44,4.19-13.44s-.61-41.06,18.46-47.1c18.79-6,42.92,39.68,68.48,57.24,19.33,13.28,34,10.37,34,10.37l68.38-1S524.36,288.67,507.4,260.55Z"/>
+        </symbol>
+
+        <symbol id="svg-telegram" viewBox="0 0 511.99 426.67">
+            <path fill="currentColor"
+                  d="M200.9,281.2l-8.47,119.13c12.12,0,17.37-5.21,23.66-11.46l56.81-54.29,117.72,86.21c21.59,12,36.8,5.69,42.62-19.86L510.51,38.86l0,0C517.38,6.92,499-5.56,478,2.27L23.77,176.16c-31,12-30.53,29.31-5.27,37.14l116.12,36.12L404.33,80.65c12.7-8.41,24.24-3.76,14.75,4.65Z"/>
+        </symbol>
+
+        <symbol id="svg-close" viewBox="0 0 329 328.99">
+            <path fill="currentColor"
+                  d="M194.64,164.5,322.75,36.39A21.31,21.31,0,0,0,292.61,6.25L164.5,134.36,36.39,6.25A21.31,21.31,0,0,0,6.25,36.39L134.36,164.5,6.25,292.61a21.31,21.31,0,0,0,30.14,30.14L164.5,194.64,292.61,322.75a21.31,21.31,0,0,0,30.14-30.14Z"/>
+        </symbol>
+
+
+        <symbol id="svg-marker" viewBox="0 0 433.1 512">
+            <path fill="currentColor"
+                  d="M369.67,63.43A216.55,216.55,0,0,0,0,216.55c0,117,110.64,214.34,170.08,266.62,8.26,7.27,15.39,13.54,21.07,18.85a37.31,37.31,0,0,0,50.8,0c5.68-5.31,12.81-11.58,21.07-18.85C322.46,430.89,433.1,333.56,433.1,216.55A215.13,215.13,0,0,0,369.67,63.43ZM216.55,303.8A95.43,95.43,0,1,1,312,208.37,95.54,95.54,0,0,1,216.55,303.8Z"/>
+        </symbol>
+
+        <symbol id="svg-apple" viewBox="0 0 18.57 22.77">
+            <path fill="currentColor"
+                  d="M13.67,0h.16A4.87,4.87,0,0,1,12.6,3.67,3.78,3.78,0,0,1,9.25,5.25,4.69,4.69,0,0,1,10.5,1.69,5.38,5.38,0,0,1,13.67,0Z"/>
+            <path fill="currentColor"
+                  d="M18.57,16.72v0a13.51,13.51,0,0,1-1.9,3.66c-.72,1-1.61,2.33-3.19,2.33-1.37,0-2.28-.88-3.68-.9s-2.29.73-3.65.92H5.69a4.07,4.07,0,0,1-2.38-1.64A14.38,14.38,0,0,1,0,12.86v-1A6.69,6.69,0,0,1,2.91,6.36a5,5,0,0,1,3.31-.77,8.64,8.64,0,0,1,1.62.47,4.42,4.42,0,0,0,1.62.48,4.16,4.16,0,0,0,1.13-.34,6.89,6.89,0,0,1,3.65-.65A5.06,5.06,0,0,1,18,7.77a4.77,4.77,0,0,0-2.43,4.74A4.89,4.89,0,0,0,18.57,16.72Z"/>
+        </symbol>
+
+        <symbol id="svg-gp"  viewBox="0 0 480 512.03">
+            <path fill="currentColor" d="M95.74,8.19a65,65,0,0,0-63.45.16l233.28,215.2,78.37-78.37Z"/>
+            <path fill="currentColor" d="M9,30.36A59.67,59.67,0,0,0,0,61.63V450.3a60,60,0,0,0,8.35,30.5L242.94,246.2Z"/>
+            <path fill="currentColor" d="M447.84,202.52l-74.75-41.24-84,84L392,340.19l55.84-30.82C468,298.24,480,278.27,480,255.93S468,213.63,447.84,202.52Z"/>
+            <path fill="currentColor" d="M266.46,267.9,31.23,503.13a64.84,64.84,0,0,0,64.51.61L362.53,356.51Z"/>
+        </symbol>
+
+    </svg>
+</div>
+
+</div> <!-- end main-->
+<script src="js/vendor.min.js"></script>
+
+<script src="js/app.min.js"></script>
+</body>
+</html>
