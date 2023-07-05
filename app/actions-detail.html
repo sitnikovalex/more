@@ -1,0 +1,49 @@
+<!--#set var="title" value="Новость" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="cinema__wrapper cinema-page ">
+    <div class="cinema-page__body pt-0 container">
+        <article class="cinema__news-detail">
+            <div class="cinema__news-detail__top">
+                <a href="" class="cinema__news-detail__back">
+                    <i class="cinema__news-detail__back__ico">
+                        <svg width="4" height="7">
+                            <use xlink:href="#svg-prev"></use>
+                        </svg>
+                    </i>
+                    Назад
+                </a>
+            </div>
+            <figure class="cinema__news-detail__pic">
+                <picture>
+                    <source srcset="images/dist/actioms2.jpg 1x, images/dist/actioms@2.jpg 2x">
+                    <img alt="" class="lazy " data-src="images/dist/actioms2.jpg"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         width="1174" height="490"/>
+                </picture>
+            </figure>
+            <h1 class="cinema__news-detail__title">Культурный комбо за 150 руб.</h1>
+            <div class="cinema__news-detail__date">19 Октября</div>
+            <div class="cinema__text cinema__news-detail__body">
+                <p>Культурное предложение от "МОРИ СИНЕМА" для студентов и держателей Пушкинских карт! Малый стакан попкорна любого вкуса и напиток 0,5 всего за 150 рублей. Запомни, это культурный комбо.</p>
+                <br>
+                <ul>
+                    <li class="mb-3">Специальное предложение действует только для студентов и держателей Пушкинских карт (предъявление студенческого билета и "Пушкинской карты" обязательно);</li>
+                    <li class="mb-3">Продажа по предъявленным документам доступна в течение всей недели;</li>
+                    <li>При предъявлении Пушкинской карты кассир, при возникновении сомнений, вправе запросить документ удостоверяющий личность для верификации (подтверждения) владения платежной картой именно этим Предъявителем.</li>
+                </ul>
+
+            </div>
+        </article>
+        <div class="cinema__action-slider cinema__action-slider--footer">
+            <div class="cinema__action-slider__header">
+                <div class="cinema__action-slider__caption">
+                    Другие акции
+                </div>
+            </div>
+            <!--#include virtual="/parts/slider-actions.html" -->
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
