@@ -41,6 +41,8 @@
   --bs-border-color: #393939;
   --color-yellow: #f5a735;
   --color-tags: #9c9c9c;
+  --color-border-not-active: #9c9c9c;
+  --color-border-is-valid: #fff;
 }
 
 body.cinema-white {
@@ -54,4 +56,5 @@ body.cinema-white {
   --color-ico-back: #141414;
   --bg-ico-back: #fff;
   --color-tags: #1b1b1b;
+  --color-border-is-valid: #1c1c1c;
 }

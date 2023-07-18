@@ -41,5 +41,8 @@
 		"terser-webpack-plugin": "^5.3.1",
 		"webpack": "^5.70.0",
 		"webpack-stream": "^7.0.0"
+	},
+	"dependencies": {
+		"just-validate": "^4.2.0"
 	}
 }
