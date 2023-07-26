@@ -2154,7 +2154,11 @@ h1 {
   justify-content: center;
 
   .modal-logo {
+    height: 40px;
+    width: 100%;
     color: var(--color-text);
+    background: url('../images/dist/logo-modal-black.svg') 50% 50% no-repeat;
+    background-size: 199px 41px;
   }
 
   .btn-close2 {
@@ -2163,6 +2167,10 @@ h1 {
     top: 20px;
     right: 20px;
   }
+}
+
+.cinema-white .modal-header.modal-header--logo .modal-logo {
+  background-image: url("../images/dist/logo-modal-white.svg") !important;
 }
 
 .cinema__form__input-ico {
@@ -2375,6 +2383,47 @@ h1 {
   padding-bottom: 20px;
 }
 
+.cinema__form-modal__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+.just-validate-error-box {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.radio-btn {
+  display: block;
+  cursor: pointer;
+  &__input {
+    display: none;
+    &:checked + .radio-btn__value {
+      border: none;
+      background: var(--bg-active);
+      color: #1c1c1c;
+    }
+  }
+  &__value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border-not-active);
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+}
 
 
 
