@@ -567,12 +567,77 @@
                                                 <input required type="radio" class="radio-btn__input" name="genderReg"
                                                        value="Женский">
                                                 <span class="radio-btn__value">
-                                                Женский
-                                            </span>
+                                                    Женский
+                                                </span>
                                             </label>
                                         </div>
                                     </div>
                                     <div id="errors-container-gender" class="just-validate-error-box"></div>
+                                </div>
+                            </div>
+
+                            <div class="cinema__form__row">
+                                <label for="dateReg" class="cinema__form__label">Дата рождения:*</label>
+                                <div class="cinema__form__input-ico">
+                                    <input type="text"
+                                           required
+                                           readonly
+                                           name="dateReg"
+                                           id="dateReg"
+                                           class="cinema__form__input-ico__value cinema__form__input-ico__value--date"
+                                           autocomplete="off"
+                                           placeholder="дд.мм.гггг"
+                                    >
+                                    <div class="cinema__form__input-ico__box">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-datepicker"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cinema__form__row">
+                                <label for="cityReg" class="cinema__form__label">Город:*</label>
+                                <div class="cinema__form__input-ico" id="cityRegBox">
+                                    <select required name="cityReg" id="cityReg" class="choices__input">
+                                        <option value="">Выберите город</option>
+                                        <option value="Москва">Москва</option>
+                                        <option value="Москва2">Москва2</option>
+                                        <option value="Москва3">Москва3</option>
+                                        <option value="Москва4">Москва4</option>
+                                    </select>
+                                    <div class="cinema__form__input-ico__box">
+                                        <svg width="15" height="18">
+                                            <use xlink:href="#svg-marker"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__chekbox cinema__form__chekbox--politika">
+                                    <input id="isBonusCard" type="checkbox" name="bonus" class="d-none">
+                                    <span class="cinema__form__chekbox__value">
+                                        У меня есть бонусная карта MoriCinema
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="cinema__form__row d-none" id="bonusCardBox">
+                                <label for="bonusCardReg" class="cinema__form__label">Номер бонусной карты:</label>
+                                <div class="cinema__form__input-ico">
+                                    <input type="text"
+                                           name="bonusCardReg"
+                                           id="bonusCardReg"
+                                           class="cinema__form__input-ico__value"
+                                           autocomplete="off"
+                                           placeholder="_ _ _ _ _ _"
+                                    >
+                                    <div class="cinema__form__input-ico__box">
+                                        <svg width="14" height="18">
+                                            <use xlink:href="#svg-user"></use>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
 

@@ -871,12 +871,77 @@
                                                 <input required type="radio" class="radio-btn__input" name="genderReg"
                                                        value="Женский">
                                                 <span class="radio-btn__value">
-                                                Женский
-                                            </span>
+                                                    Женский
+                                                </span>
                                             </label>
                                         </div>
                                     </div>
                                     <div id="errors-container-gender" class="just-validate-error-box"></div>
+                                </div>
+                            </div>
+
+                            <div class="cinema__form__row">
+                                <label for="dateReg" class="cinema__form__label">Дата рождения:*</label>
+                                <div class="cinema__form__input-ico">
+                                    <input type="text"
+                                           required
+                                           readonly
+                                           name="dateReg"
+                                           id="dateReg"
+                                           class="cinema__form__input-ico__value cinema__form__input-ico__value--date"
+                                           autocomplete="off"
+                                           placeholder="дд.мм.гггг"
+                                    >
+                                    <div class="cinema__form__input-ico__box">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-datepicker"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cinema__form__row">
+                                <label for="cityReg" class="cinema__form__label">Город:*</label>
+                                <div class="cinema__form__input-ico" id="cityRegBox">
+                                    <select required name="cityReg" id="cityReg" class="choices__input">
+                                        <option value="">Выберите город</option>
+                                        <option value="Москва">Москва</option>
+                                        <option value="Москва2">Москва2</option>
+                                        <option value="Москва3">Москва3</option>
+                                        <option value="Москва4">Москва4</option>
+                                    </select>
+                                    <div class="cinema__form__input-ico__box">
+                                        <svg width="15" height="18">
+                                            <use xlink:href="#svg-marker"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__chekbox cinema__form__chekbox--politika">
+                                    <input id="isBonusCard" type="checkbox" name="bonus" class="d-none">
+                                    <span class="cinema__form__chekbox__value">
+                                        У меня есть бонусная карта MoriCinema
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="cinema__form__row d-none" id="bonusCardBox">
+                                <label for="bonusCardReg" class="cinema__form__label">Номер бонусной карты:</label>
+                                <div class="cinema__form__input-ico">
+                                    <input type="text"
+                                           name="bonusCardReg"
+                                           id="bonusCardReg"
+                                           class="cinema__form__input-ico__value"
+                                           autocomplete="off"
+                                           placeholder="_ _ _ _ _ _"
+                                    >
+                                    <div class="cinema__form__input-ico__box">
+                                        <svg width="14" height="18">
+                                            <use xlink:href="#svg-user"></use>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
 
@@ -1000,6 +1065,16 @@
             <path fill="currentColor"
                   d="M192,298.67c-106,.11-191.88,86-192,192a21.34,21.34,0,0,0,42.67,0,149.33,149.33,0,1,1,298.66,0,21.34,21.34,0,0,0,42.67,0C383.88,384.68,298,298.78,192,298.67Z"/>
         </symbol>
+
+        <symbol id="svg-datepicker" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                  d="M405.33,42.67H384V21.33a21.34,21.34,0,0,0-42.67,0V42.67H170.67V21.33a21.34,21.34,0,0,0-42.67,0V42.67H106.67A106.79,106.79,0,0,0,0,149.33v256A106.79,106.79,0,0,0,106.67,512H405.33A106.79,106.79,0,0,0,512,405.33v-256A106.79,106.79,0,0,0,405.33,42.67ZM106.67,85.33H405.33a64.08,64.08,0,0,1,64,64v21.34H42.67V149.33A64.08,64.08,0,0,1,106.67,85.33Zm298.66,384H106.67a64.07,64.07,0,0,1-64-64v-192H469.33v192A64.07,64.07,0,0,1,405.33,469.33ZM349.8,327.51c0,8.08-5.63,14.89-12.07,18.47l-33.37,18.56,14.81,40.39a18.91,18.91,0,0,1-6.38,21.61h0a18.92,18.92,0,0,1-22.93-.15l-33.2-25.66-33.19,25.66a18.93,18.93,0,0,1-22.94.15h0a18.94,18.94,0,0,1-6.38-21.61L209,364.54,175.59,346c-6.44-3.58-12.07-10.39-12.07-18.47,0-6.85,5.95-14.42,15.59-14.42h47.94l12.72-48.71a17.4,17.4,0,0,1,33.79,0l12.71,48.71h47.94C343.85,313.09,349.8,320.64,349.8,327.51Z"/>
+        </symbol>
+
+        <svg id="svg-marker" viewBox="0 0 428.76 511.97">
+            <path fill="currentColor" d="M214.38,512l-14.87-12.74C179,482.06,0,327.46,0,214.38,0,96,96,0,214.38,0S428.76,96,428.76,214.38c0,113.08-179,267.68-199.43,284.93Zm0-465.61a168.2,168.2,0,0,0-168,168c0,71,110.13,184.53,168,236.47,57.89-52,168-165.52,168-236.47A168.2,168.2,0,0,0,214.38,46.36Z"/>
+            <path fill="currentColor" d="M214.38,299.36a85,85,0,1,1,85-85A85,85,0,0,1,214.38,299.36Zm0-127.47a42.49,42.49,0,1,0,42.49,42.49A42.49,42.49,0,0,0,214.38,171.89Z"/>
+        </svg>
 
     </svg>
 </div>
