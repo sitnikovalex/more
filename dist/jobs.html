@@ -880,8 +880,8 @@
                             </div>
 
                             <div class="cinema__form__row">
-                                <label class="cinema__form__chekbox cinema__form__chekbox--politika">
-                                    <input id="isBonusCard" type="checkbox" name="bonus" class="d-none">
+                                <label id="isBonusCard" class="cinema__form__chekbox cinema__form__chekbox--politika">
+                                    <input type="checkbox" name="bonus" class="d-none" value="1">
                                     <span class="cinema__form__chekbox__value">
                                         У меня есть бонусная карта MoriCinema
                                     </span>
@@ -903,6 +903,31 @@
                                             <use xlink:href="#svg-user"></use>
                                         </svg>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="cinema__form__row">
+                                <label class="cinema__form__chekbox cinema__form__chekbox--politika">
+                                    <input type="checkbox" name="send" class="d-none" value="1">
+                                    <span class="cinema__form__chekbox__value">
+                                        Хочу получать информацию о новостях и акциях кинотеатров MoriCinema.
+                                    </span>
+                                </label>
+
+                            </div>
+
+                            <div class="cinema__form__row">
+                                <div class="position-relative">
+                                    <label for="politikaReg"
+                                           class="cinema__form__chekbox cinema__form__chekbox--politika">
+                                        <input required type="checkbox" name="politikaReg" id="politikaReg"
+                                               class="d-none" value="1">
+                                        <span class="cinema__form__chekbox__value">
+                                        *Я принимаю условия Пользовательского соглашения и даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным законом от  27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных
+                                        <a href="">Политикой конфиденциальности</a>.
+                                    </span>
+                                    </label>
+                                    <div id="errors-container-politika" class="just-validate-error-box"></div>
                                 </div>
                             </div>
 
