@@ -38,6 +38,26 @@
   .hidden-mob {
     display: none !important;
   }
+  .cinema-page__header__wrap h1.fs-32 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .fs-18 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .fpad60 {
+    padding-bottom: 30px;
+  }
+  .tpad60 {
+    padding-top: 30px;
+  }
+  .cinema-page__contact-info__header__title {
+    font-size: 14px;
+  }
+  body {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 768px) {

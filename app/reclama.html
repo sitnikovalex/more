@@ -18,6 +18,10 @@
         </div>
         <picture>
             <source
+                    media="(max-width: 640px)"
+                    data-srcset="images/dist/bg-reclama_mob.jpg "/>
+            <source
+                    media="(min-width: 641px)"
                     data-srcset="images/dist/bg-reclama.jpg 1x, images/dist/bg-reclama@2.jpg 2x"/>
             <img alt="" class="lazy cinema-page__header__pic" data-src="images/dist/bg-reclama.jpg"
                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -98,13 +102,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex align-items-start justify-content-end">
+                <div class="col-lg-6 d-flex align-items-start justify-content-end mob-order-1 mob-mb-30">
                     <div class="cinema__form cinema__form--w50">
                         <div class="cinema__form__header">
                             <h3 class="cinema__form__title">Рассчитать стоимость зала</h3>
                         </div>
                         <div class="cinema__form__body">
-                            <form action="">
+                            <form action="" id="formReclama">
                                 <div class="cinema__form__row">
                                     <label class="cinema__form__label">Город*</label>
                                     <select name="city" class="js-select">
@@ -128,31 +132,33 @@
                                 <div class="cinema__form__row">
                                     <label class="cinema__form__label">Дата начала сотрудничества*</label>
                                     <input readonly type="text"
+                                           name="date_start"
+                                           id="formReclamaDate"
                                            class="js-date cinema__form__input cinema__form__input--date"
                                            autocomplete="off">
                                 </div>
                                 <div class="cinema__form__row">
                                     <label class="cinema__form__label">ФИО*</label>
-                                    <input type="text" class="cinema__form__input" autocomplete="off">
+                                    <input name="fio" id="formReclamaFio" type="text" class="cinema__form__input" autocomplete="off">
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="cinema__form__row">
                                             <label class="cinema__form__label">Телефон*</label>
-                                            <input type="tel" class="cinema__form__input js-mask-phone"
+                                            <input name="phone" id="formReclamaPhone" type="tel" class="cinema__form__input js-mask-phone"
                                                    autocomplete="off">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="cinema__form__row">
                                             <label class="cinema__form__label">E-mail*</label>
-                                            <input type="email" class="cinema__form__input" autocomplete="off">
+                                            <input name="email" id="formReclamaEmail" type="email" class="cinema__form__input" autocomplete="off">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="cinema__form__footer">
                                     <label class="cinema__form__chekbox cinema__form__chekbox--politika">
-                                        <input type="checkbox" class="d-none">
+                                        <input id="formReclamaPolitika" name="politika" type="checkbox" class="d-none">
                                         <span class="cinema__form__chekbox__value">
                                         Я принимаю условия Пользовательского соглашения и даю своё согласие на обработку моих персональныхданных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,на условиях и для целей, определенных <a
                                                 href="" target="_blank">Политикой конфиденциальности</a>.
