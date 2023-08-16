@@ -1332,15 +1332,19 @@ label.cinema__modal-city {
 
   &__row {
     padding-bottom: 25px;
-    position: relative;
-    z-index: 1;
+    position: static;
     &:hover {
       z-index: 10;
     }
 
-    .choices__inner {
-      padding-left: 64px;
+    .just-validate-error-label {
+      position: relative;
+      left: auto;
+      top: auto;
+      height: 20px;
+      margin-bottom: -20px;
     }
+
     .choices {
       margin-bottom: 0;
     }
@@ -1366,6 +1370,7 @@ label.cinema__modal-city {
     font-weight: bold;
     line-height: 20px;
     margin: 0;
+    color: var(--color-text);
   }
 
   &__body {
@@ -1379,7 +1384,7 @@ label.cinema__modal-city {
     height: 48px;
     padding: 5px 12px;
     border: 1px solid var(--color-border-input);
-    background: transparent;
+    background-color: var(--bg-input);
     font-size: 14px;
     line-height: 28px;
     font-weight: 500;
@@ -1402,6 +1407,13 @@ label.cinema__modal-city {
 
   &__footer {
     padding-bottom: 25px;
+    .just-validate-error-label {
+      position: relative;
+      left: auto;
+      top: auto;
+      height: 20px;
+      margin-bottom: -20px;
+    }
   }
 
   &__submit {
@@ -1444,6 +1456,7 @@ label.cinema__modal-city {
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: 9px 6px;
+      background-color: var(--bg-input);
     }
   }
 
@@ -2460,9 +2473,6 @@ h1 {
   }
 }
 
-
-
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -2472,4 +2482,52 @@ only screen and (min-resolution: 2dppx) {
   .cinema__wrapper--404 {
     background-image: url("../images/dist/bg_404@2.jpg");
   }
+}
+.choices__list--dropdown {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.modal-content {
+  .choices__list.choices__list--dropdown {
+    margin: 3px 0 3px 48px;
+    max-width: calc(100% - 48px);
+    .choices__placeholder {
+      display: none;
+    }
+  }
+  .choices__inner {
+    padding-left: 64px;
+  }
+}
+.choices__inner,
+.choices[data-type*=select-one] .choices__inner {
+  background-color: var(--bg-input) !important;
+}
+
+.cinema__price-table {
+  &__header {
+    display: flex;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #393939;
+    &__col-rooms {
+      padding-right: 36px;
+    }
+  }
+  &__label,
+  &__row {
+    border-bottom: 1px solid #393939;
+    padding: 25px 0;
+  }
+  &__mob-label {
+    display: none;
+  }
+  &__value {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+b {
+  font-weight: bold;
 }

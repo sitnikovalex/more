@@ -11,7 +11,33 @@
   .modal-dialog.modal-xl {
     --bs-modal-width: 640px;
   }
-
+  .mob-order-1 {
+    order: -1;
+  }
+  .cinema__form--w50 {
+    max-width: 100%;
+  }
+  .mob-mb-30 {
+    margin-bottom: 30px;
+  }
+  .fpad100 {
+    padding-bottom: 50px;
+  }
+  .cinema__price-table__label {
+    display: none;
+  }
+  .cinema__price-table__mob-label {
+    display: block;
+  }
+  .mob-fpad20 {
+    padding-bottom: 20px;
+  }
+  .cinema-page__body {
+    padding-bottom: 50px;
+  }
+  .hidden-mob {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -189,6 +215,60 @@
       padding-right: 10px;
     }
   }
+  .cinema-page__header__wrap h1.fs-42 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .cinema-page__header__container {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .cinema-page__header__container--min {
+    min-height: 197px;
+  }
+  .cinema-page__header__wrap p {
+    font-size: 14px;
+  }
+  .cinema-page__body {
+    padding-top: 30px;
+  }
+  .cinema__form__title {
+    font-size: 16px;
+  }
+  .cinema__form__label,
+  .cinema__rental-purposes__text {
+    font-size: 14px;
+  }
+  .choices__inner,
+  .cinema__form__input,
+  .fs-14,
+  .cinema__action-table__footer p {
+    font-size: 12px;
+  }
+  .cinema__form__chekbox--politika .cinema__form__chekbox__value {
+    font-size: 10px;
+  }
+  .fs-26 {
+    font-size: 18px;
+  }
+  .cinema-page__body h2 {
+    margin-bottom: 25px;
+  }
+  .cinema__rental-purposes__ico {
+    width: 46px;
+    min-width: 46px;
+  }
+  .cinema__rental-purposes {
+    min-height: 50px;
+    margin-bottom: 25px;
+  }
+  .cinema__rental-purposes__text {
+    padding-left: 20px;
+  }
+  .cinema__action-table__body,
+  .cinema__action-table__footer {
+    padding-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 574px) {
@@ -201,7 +281,7 @@
   }
 
   .mob-fpad10 {
-    padding-bottom: 10 !important;
+    padding-bottom: 10px !important;
   }
 
   .row {
@@ -256,6 +336,7 @@
   }
   .cinema__action-slider__caption__dropdown {
     margin-left: 0;
+    display: inline-flex;
     .dropdown__caption {
       padding-right: 15px;
     }
@@ -288,8 +369,8 @@
     width: 18px;
   }
   .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .cinema__film__footer {
     padding-top: 12px;
@@ -339,6 +420,21 @@
   }
   .modal-dialog {
     margin: 0;
+  }
+  .cinema__form {
+    padding: 0 20px;
+  }
+  .cinema__action-slider__caption__dropdown .dropdown__caption span:after {
+    bottom: 0;
+  }
+  .cinema__action-table__header {
+    padding-bottom: 25px;
+  }
+  .cinema__price-table__header {
+    display: block;
+  }
+  .cinema__price-table__header__col-rooms {
+    padding: 0 0 5px;
   }
 }
 

@@ -43,6 +43,7 @@
   --color-tags: #9c9c9c;
   --color-border-not-active: #9c9c9c;
   --color-border-is-valid: #fff;
+  --bg-input: transparent;
 }
 
 body.cinema-white {
@@ -57,4 +58,11 @@ body.cinema-white {
   --bg-ico-back: #fff;
   --color-tags: #1b1b1b;
   --color-border-is-valid: #1c1c1c;
+  --color-border-form-header: #e0e0e0;
+  --bg-select-options: #fff;
+  --color-border-select-options: #e0e0e0;
+  --color-select-options: #1c1c1c;
+  --color-select-options-active: #8d8d8d;
+  --bg-form-wrap: #f4f4f4;
+  --bg-input: #fff;
 }
