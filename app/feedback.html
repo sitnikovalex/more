@@ -17,13 +17,12 @@
 
         <div class="cinema__form cinema__form--border">
             <div class="cinema__form__body">
-                <form action="">
-
+                <form action="" id="formFeedback">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">Кинотеатр *</label>
-                                <select name="city" class="js-select">
+                                <select name="rooms" class="js-select">
                                     <option>Санкт-Петербург</option>
                                     <option>Санкт-Петербург</option>
                                     <option>Санкт-Петербург</option>
@@ -37,7 +36,7 @@
                         <div class="col-lg-6">
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">Раздел *</label>
-                                <select name="city" class="js-select">
+                                <select name="section" class="js-select">
                                     <option>Общие вопросы</option>
                                     <option>Санкт-Петербург</option>
                                     <option>Санкт-Петербург</option>
@@ -51,13 +50,15 @@
                         <div class="col-lg-3">
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">ФИО *</label>
-                                <input type="text" class="cinema__form__input" autocomplete="off">
+                                <input id="formFeedbackFio" name="fio" type="text" class="cinema__form__input" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">Телефон *</label>
                                 <input type="tel"
+                                       id="formFeedbackTel"
+                                       name="phone"
                                        class="js-mask-phone cinema__form__input"
                                        autocomplete="off">
                             </div>
@@ -65,7 +66,7 @@
                         <div class="col-lg-3">
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">Электронный адрес *</label>
-                                <input type="email" class="cinema__form__input" autocomplete="off">
+                                <input name="email" id="formFeedbackEmail" type="email" class="cinema__form__input" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-lg-3">
@@ -90,7 +91,7 @@
 
                     <div class="cinema__form__footer">
                         <label class="cinema__form__chekbox cinema__form__chekbox--politika">
-                            <input type="checkbox" class="d-none" checked>
+                            <input id="formFeedbackPolitika" type="checkbox" class="d-none" checked>
                             <span class="cinema__form__chekbox__value">
                                         Я принимаю условия Пользовательского соглашения и даю своё согласие на обработку моих персональныхданных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,на условиях и для целей, определенных <a
                                     href="" target="_blank">Политикой конфиденциальности</a>.

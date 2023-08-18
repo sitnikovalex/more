@@ -72,6 +72,11 @@
   }
   .cinema__action-slider__caption {
     font-size: 24px;
+
+  }
+  .cinema__news-detail__title {
+    line-height: 30px;
+    margin-bottom: 20px;
   }
   .cinema__top-link__item {
     padding: 12px 0;
@@ -92,11 +97,22 @@
   .cinema__pagination__btn--next {
     margin-left: 0;
   }
+  .cinema__news-detail__pic {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .modal-dialog.modal-xl {
     --bs-modal-width: 520px;
+  }
+  .cinema__news-detail__date {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+  .cinema__news-detail__title,
+  .cinema__news-detail__pic {
+    margin-bottom: 15px;
   }
   .cinema__header__wrap {
     margin-left: -10px;
@@ -109,15 +125,34 @@
         height: 18px;
         margin-right: 0;
       }
+
       span {
         display: none;
       }
     }
   }
+  .cinema__text  {
+    p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    ul {
+      li {
+        font-size: 12px;
+      }
+    }
+  }
+  .cinema__action-slider__caption {
+    font-size: 20px;
+  }
   .index-slider {
     .swiper-pagination {
       display: none;
     }
+  }
+  .cinema__news-detail__body {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
   }
   .cinema__top-filter {
     padding-top: 17px;
@@ -135,6 +170,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: -10px;
+
     li {
       padding: 0 0 10px 10px;
     }
@@ -169,6 +205,7 @@
   }
   .cinema__top-filter__date__ico {
     padding-left: 2px;
+
     svg {
       width: 18px;
       height: 18px;
@@ -207,6 +244,7 @@
   }
   .cinema {
     padding-top: 45px;
+
     &__header {
       position: fixed;
       top: 0;
@@ -221,6 +259,7 @@
     height: 35px;
     border-radius: 18px;
     margin-top: -18px;
+
     svg {
       width: 10px;
       height: 18px;
@@ -240,15 +279,18 @@
   }
   .cinema__footer {
     padding-top: 25px;
+
     &__logo {
       width: 155px;
       display: block;
       margin: 0 auto;
+
       img {
         width: 155px;
         height: auto;
       }
     }
+
     &__nav {
       padding-bottom: 16px;
     }
@@ -267,6 +309,7 @@
   .cinema__account-menu__footer {
     justify-content: center;
     padding-left: 10px;
+
     li {
       padding-right: 10px;
     }
@@ -325,6 +368,57 @@
   .cinema__action-table__footer {
     padding-bottom: 25px;
   }
+  .cinema__news-detail__top {
+    padding: 15px 0;
+  }
+  .fs-32 {
+    font-size: 24px;
+  }
+  .cinema-page__title {
+    margin-bottom: 25px;
+  }
+  .cinema-page__contact-info {
+    padding-bottom: 25px;
+  }
+  .cinema-page__history__item {
+    display: block;
+    position: relative;
+    padding: 5px 0 0 100px;
+    min-height: 80px;
+    &__year {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 80px;
+      min-width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      font-size: 16px;
+      background: var(--bg-wrapp);
+    }
+    &__city {
+      padding: 0 0 15px 0;
+      font-size: 14px;
+      width: 100%;
+    }
+    &__halls,
+    &__places {
+      width: 100%;
+      padding: 0;
+      font-size: 14px;
+    }
+  }
+  .cinema-page__history li:not(:last-child) {
+
+    position: relative;
+    overflow: hidden;
+    &::after {
+      left: 39.5px;
+      height: 100%;
+    }
+  }
+
 }
 
 @media screen and (max-width: 574px) {
@@ -343,16 +437,17 @@
   .row {
     margin-left: -10px;
     margin-right: -10px;
+
     & > * {
       padding-left: 10px;
       padding-right: 10px;
     }
   }
-  .cinema__action-slider__wrap .swiper__nav {
+ /* .cinema__action-slider__wrap .swiper__nav {
     top: 195px;
-  }
+  }*/
   .cinema__action-slider__header {
-    padding-bottom: 35px;
+    padding-bottom: 25px;
   }
   .cinema__action-slider__wrap {
     margin-bottom: 55px;
@@ -360,6 +455,7 @@
   .cinema__account-menu__close {
     right: 10px;
     top: 17px;
+
     a {
       color: #ccc !important;
     }
@@ -381,6 +477,7 @@
   }
   .cinema__header__col-right__link {
     margin-left: 20px;
+
     svg {
       width: 18px;
       height: 18px;
@@ -393,6 +490,7 @@
   .cinema__action-slider__caption__dropdown {
     margin-left: 0;
     display: inline-flex;
+
     .dropdown__caption {
       padding-right: 15px;
     }
@@ -444,12 +542,14 @@
   }
   .cinema__footer__app-desc {
     font-size: 12px;
+
     b {
       font-size: 14px;
     }
   }
   .btn-yellow__app-ico {
     padding-left: 5px;
+
     svg {
       width: 16px;
     }
@@ -466,8 +566,10 @@
   }
   .modal-content {
     padding: 0 10px;
+
     .modal-header {
       padding: 15px 0;
+
       .modal-title {
         font-size: 12px;
         line-height: 20px;
@@ -491,6 +593,43 @@
   }
   .cinema__price-table__header__col-rooms {
     padding: 0 0 5px;
+  }
+  .cinema__map {
+   border-radius: 0;
+    margin: 0 -20px 30px;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+  .field__file-wrapper {
+    flex-direction: column;
+    .field__file-fake {
+      margin: 0 0 20px;
+    }
+    .field__file-button {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 343px) {
+  [class*="-balloon__content"] {
+    background: #1c1c1c !important;
+    margin-right: 0 !important;
+  }
+  .cinema__map__baloon__body {
+    padding: 15px 0 0;
+  }
+  .cinema__map__baloon__title {
+    padding: 10px 20px 10px 0;
+    width: 100%;
+  }
+  [class*="-balloon__close"] {
+    display: none !important;
+  }
+  .cinema__map__baloon__footer {
+    padding: 0;
   }
 }
 

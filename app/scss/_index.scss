@@ -1320,6 +1320,14 @@ label.cinema__modal-city {
   opacity: 0;
 }
 
+.cinema__form__row .just-validate-error-label {
+  position: relative;
+  left: auto;
+  top: auto;
+  height: 20px;
+  margin-bottom: -20px;
+}
+
 .cinema__form {
   background: var(--bg-form-wrap);
   padding: 0 30px;
@@ -1335,14 +1343,6 @@ label.cinema__modal-city {
     position: static;
     &:hover {
       z-index: 10;
-    }
-
-    .just-validate-error-label {
-      position: relative;
-      left: auto;
-      top: auto;
-      height: 20px;
-      margin-bottom: -20px;
     }
 
     .choices {
@@ -2326,16 +2326,21 @@ h1 {
     display: none;
   }*/
 }
-.just-validate-error-label {
+.modal .just-validate-error-label {
   top: 100%;
-  left: 0;
+  left: 0 !important;
+  position: absolute !important;
+}
+.just-validate-error-label {
   font-size: 12px;
   line-height: 20px;
-  position: absolute;
   color: #e9443a !important;
   font-weight: 500;
 }
-
+.cinema-page__history__item {
+  display: flex;
+  align-items: center;
+}
 
 
 .modal-content__form__tab1 {

@@ -21,6 +21,10 @@
         </div>
         <picture>
             <source
+                    media="(max-width: 640px)"
+                    data-srcset="images/dist/bg-jobs_mob.jpg "/>
+            <source
+                    media="(min-width: 641px)"
                     data-srcset="images/dist/bg-rent2.jpg 1x, images/dist/bg-rent2@2.jpg 2x"/>
             <img alt="" class="lazy cinema-page__header__pic" data-src="images/dist/bg-rent2.jpg"
                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -32,11 +36,11 @@
 
         <div class="cinema__form cinema__form--border">
             <div class="cinema__form__header border-bottom">
-                <div class="cinema__form__title">Отправь заявку и стань частью команды МОРИ СИНЕМА</div>
+                <div class="cinema__form__title">Отправь заявку и стань частью команды <span class="text-nowrap">МОРИ СИНЕМА</span></div>
             </div>
             <div class="cinema__form__body">
 
-                <form action="">
+                <form action="" id="formJobs">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="cinema__form__row">
@@ -66,13 +70,15 @@
                         <div class="col-lg-4">
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">ФИО *</label>
-                                <input type="text" class="cinema__form__input" autocomplete="off">
+                                <input name="name" id="formJobsName" type="text" class="cinema__form__input" autocomplete="off">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">Телефон *</label>
                                 <input type="tel"
+                                       name="phone"
+                                       id="formJobsTel"
                                        class="js-mask-phone cinema__form__input"
                                        autocomplete="off">
                             </div>
@@ -80,7 +86,12 @@
                         <div class="col-lg-4">
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">Электронный адрес *</label>
-                                <input type="email" class="cinema__form__input" autocomplete="off">
+                                <input
+                                        type="email"
+                                        class="cinema__form__input"
+                                        name="email"
+                                        id="formJobsEmail"
+                                        autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -97,7 +108,7 @@
 
                     <div class="cinema__form__footer">
                         <label class="cinema__form__chekbox cinema__form__chekbox--politika">
-                            <input type="checkbox" class="d-none" checked>
+                            <input id="formJobsPolitika" name="politika" type="checkbox" class="d-none" checked>
                             <span class="cinema__form__chekbox__value">
                                         Я принимаю условия Пользовательского соглашения и даю своё согласие на обработку моих персональныхданных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,на условиях и для целей, определенных <a
                                     href="" target="_blank">Политикой конфиденциальности</a>.
