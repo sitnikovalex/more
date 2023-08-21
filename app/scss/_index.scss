@@ -1341,6 +1341,7 @@ label.cinema__modal-city {
   &__row {
     padding-bottom: 25px;
     position: static;
+
     &:hover {
       z-index: 10;
     }
@@ -1407,6 +1408,7 @@ label.cinema__modal-city {
 
   &__footer {
     padding-bottom: 25px;
+
     .just-validate-error-label {
       position: relative;
       left: auto;
@@ -1633,10 +1635,7 @@ p.fs-14 {
 .cinema-page__bonus-item {
   display: flex;
   align-items: center;
-
-  &:not(:last-child) {
-    margin-bottom: 25px;
-  }
+  margin-bottom: 25px;
 
   &__ico {
     min-width: 53px;
@@ -2282,15 +2281,18 @@ h1 {
     width: 35px;
     height: 100%;
     color: var(--color-border-not-active);
+
     &:hover,
     &.active {
       color: var(--color-border-is-valid);
     }
   }
+
   &.is-valid {
     .choices__inner {
       border-color: var(--color-border-is-valid);
     }
+
     .cinema__form__input-ico__box {
       border-right-color: var(--color-border-is-valid);
     }
@@ -2321,22 +2323,26 @@ h1 {
 .cinema-white .cinema__form__input-ico__value--date {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 493.04 512'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Capa_1' data-name='Capa 1'%3E%3Cpath fill='%231c1c1c' d='M67.89,512H425.15A68,68,0,0,0,493,444.11V105.81a67.94,67.94,0,0,0-67.89-67.88H398.22V19a19,19,0,0,0-37.92,0v19H132.74V19a19,19,0,0,0-37.93,0v19H67.89A67.94,67.94,0,0,0,0,105.81v338.3A68,68,0,0,0,67.89,512Zm-30-406.19a30,30,0,0,1,30-30H94.81v19a19,19,0,1,0,37.93,0v-19H360.3v19a19,19,0,1,0,37.92,0v-19h26.93a30,30,0,0,1,30,30v55.38H37.93Zm0,93.3H455.11v245a30,30,0,0,1-30,30H67.89a30,30,0,0,1-30-30Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
+
 .cinema__form-modal:not(.show-error) {
   /*.just-validate-error-label {
     display: none;
   }*/
 }
+
 .modal .just-validate-error-label {
   top: 100%;
   left: 0 !important;
   position: absolute !important;
 }
+
 .just-validate-error-label {
   font-size: 12px;
   line-height: 20px;
   color: #e9443a !important;
   font-weight: 500;
 }
+
 .cinema-page__history__item {
   display: flex;
   align-items: center;
@@ -2347,8 +2353,10 @@ h1 {
   flex-wrap: nowrap;
   border-bottom: 1px solid var(--color-border);
   margin-bottom: 30px;
+
   li {
     width: 50%;
+
     .nav-link {
       display: block;
       position: relative;
@@ -2359,6 +2367,7 @@ h1 {
       line-height: 20px;
       text-decoration: none;
       color: #e0e0e0;
+
       &::after {
         content: '';
         display: block;
@@ -2371,8 +2380,10 @@ h1 {
         transition: all 0.2s ease-in-out;
         height: 3px;
       }
+
       &.active {
         color: var(--color-text);
+
         &::after {
           width: 100%;
         }
@@ -2384,17 +2395,21 @@ h1 {
 .modal-content__form__tab2 {
   flex-wrap: nowrap;
   margin-bottom: 25px;
+
   li {
     border: 1px solid var(--color-border);
     width: 50%;
     overflow: hidden;
     height: 36px;
+
     &:first-child {
       border-radius: 8px 0 0 8px;
     }
+
     &:last-child {
       border-radius: 0 8px 8px 0;
     }
+
     .nav-link {
       display: flex;
       align-items: center;
@@ -2409,6 +2424,7 @@ h1 {
       text-decoration: none;
       color: var(--color-text);
       height: 36px;
+
       &.active {
         color: #1b1b1b;
         background: var(--bg-active);
@@ -2416,12 +2432,14 @@ h1 {
     }
   }
 }
+
 .cinema__form__p {
   font-size: 12px;
   line-height: 20px;
   color: var(--color-text);
   padding-bottom: 20px;
 }
+
 .cinema__form-modal__footer-timer {
   font-size: 12px;
   line-height: 20px;
@@ -2446,6 +2464,7 @@ h1 {
 .fs-12 {
   font-size: 12px;
 }
+
 .just-validate-error-box {
   position: absolute;
   z-index: 10;
@@ -2453,17 +2472,21 @@ h1 {
   left: 0;
   width: 100%;
 }
+
 .radio-btn {
   display: block;
   cursor: pointer;
+
   &__input {
     display: none;
+
     &:checked + .radio-btn__value {
       border: none;
       background: var(--bg-active);
       color: #1c1c1c;
     }
   }
+
   &__value {
     display: flex;
     align-items: center;
@@ -2488,22 +2511,27 @@ only screen and (min-resolution: 2dppx) {
     background-image: url("../images/dist/bg_404@2.jpg");
   }
 }
+
 .choices__list--dropdown {
   margin-top: 3px;
   margin-bottom: 3px;
 }
+
 .modal-content {
   .choices__list.choices__list--dropdown {
     margin: 3px 0 3px 48px;
     max-width: calc(100% - 48px);
+
     .choices__placeholder {
       display: none;
     }
   }
+
   .choices__inner {
     padding-left: 64px;
   }
 }
+
 .choices__inner,
 .choices[data-type*=select-one] .choices__inner {
   background-color: var(--bg-input) !important;
@@ -2514,18 +2542,22 @@ only screen and (min-resolution: 2dppx) {
     display: flex;
     padding-bottom: 25px;
     border-bottom: 1px solid #393939;
+
     &__col-rooms {
       padding-right: 36px;
     }
   }
+
   &__label,
   &__row {
     border-bottom: 1px solid #393939;
     padding: 25px 0;
   }
+
   &__mob-label {
     display: none;
   }
+
   &__value {
     font-weight: bold;
     font-size: 20px;
@@ -2535,4 +2567,33 @@ only screen and (min-resolution: 2dppx) {
 
 b {
   font-weight: bold;
+}
+
+.cinema__price-table__card {
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 10px;
+
+  &--silver {
+    background: #c0c0c0;
+  }
+
+  &--gold {
+    background: #ffd700;
+  }
+
+  &--platinum {
+    background: #e5e4e2;
+  }
+}
+
+.cinema__price-table--only-mob {
+  display: none;
+}
+.tpad50 {
+  padding-top: 50px;
+}
+.fpad50 {
+  padding-bottom: 50px;
 }
