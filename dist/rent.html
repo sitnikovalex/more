@@ -265,7 +265,7 @@
                             </div>
                             <div class="cinema__form__row">
                                 <label class="cinema__form__label">Количество гостей*</label>
-                                <input id="formRentRoomQuest" name="guest" type="text" class="cinema__form__input" autocomplete="off">
+                                <input onkeypress='validate(event)' id="formRentRoomQuest" name="guest" type="text" class="cinema__form__input" autocomplete="off">
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -494,7 +494,7 @@
                                     </span>
                                     <span class="btn-yellow__app-text">
                                         Загрузить в
-                                        <b>App Store</b>
+                                        <b class="text-nowrap">App Store</b>
                                     </span>
                                 </a>
                             </div>
@@ -507,7 +507,7 @@
                                     </span>
                                     <span class="btn-yellow__app-text">
                                     Доступно в
-                                    <b>Google Play</b>
+                                    <b class="text-nowrap">Google Play</b>
                                     </span>
                                 </a>
                             </div>

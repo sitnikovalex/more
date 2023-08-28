@@ -44,6 +44,7 @@
   --color-border-not-active: #9c9c9c;
   --color-border-is-valid: #fff;
   --bg-input: transparent;
+  --bg-form-border: transparent;
 }
 
 body.cinema-white {
@@ -65,4 +66,6 @@ body.cinema-white {
   --color-select-options-active: #8d8d8d;
   --bg-form-wrap: #f4f4f4;
   --bg-input: #fff;
+  --bg-form-border: #f4f4f4;
+  --bs-border-color: #e0e0e0;
 }

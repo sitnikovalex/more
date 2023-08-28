@@ -1239,6 +1239,8 @@ label.cinema__modal-city {
 
         &.fs-14 {
           font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 10px;
         }
       }
 
@@ -1613,8 +1615,20 @@ p.fs-14 {
 }
 
 .cinema__form.cinema__form--border {
-  background: transparent;
+  background: var(--bg-form-border);
   border: 1px solid var(--color-border);
+}
+.cinema-white .cinema__form.cinema__form--border {
+  border: none;
+}
+.cinema-white .cinema__form {
+  & .cinema__form__text,
+  & .cinema__form__input,
+  & .choices__inner,
+  & .cinema__form__chekbox__value:after {
+    background-color: #fff;
+    border-color: #e0e0e0;
+  }
 }
 
 .cinema__form__text {
@@ -1727,6 +1741,7 @@ h1 {
 
 .cinema__wrapper--404 {
   background-image: url("../images/dist/bg_404.jpg");
+  background-color: #0a0a0a;
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 1920px 638px;
@@ -1735,17 +1750,24 @@ h1 {
   text-align: center;
 }
 
+.cinema__wrapper--404 .cinema-page__body {
+  padding-bottom: 30px;
+}
+
 .cinema-page__404 {
+
   &__title {
     font-size: 48px;
     font-weight: bold;
     line-height: 1;
+    color: #fff;
   }
 
   &__text {
     font-size: 24px;
     font-weight: 600;
     line-height: 1;
+    color: #fff;
   }
 
   &__btn {
