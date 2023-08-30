@@ -5,6 +5,36 @@
   .modal-dialog.modal-xl {
     --bs-modal-width: 900px;
   }
+  .cinema__account-menu__pc {
+    display: none;
+  }
+  .cinema__account-menu__mob {
+    display: block;
+    .cinema__account-menu__list {
+      padding-left: 30px;
+    }
+  }
+  .cinema__account-menu__mob__top {
+    padding-bottom: 5px;
+    li {
+      border-bottom: 1px solid var(--color-border);
+    }
+  }
+  .cinema__account-menu__mob__link {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: var(--color-link);
+    text-decoration: none;
+    &__ico {
+      width: 30px;
+      color: var(--color-link);
+    }
+    span {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {

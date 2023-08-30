@@ -62,7 +62,8 @@
                             <input class="d-none" type="checkbox" name="theme" id="themeSwitch" value="black" checked>
                             <span class="cinema__theme-switch__value"></span>
                         </label>
-                        <a data-bs-toggle="modal" data-bs-target="#regModal" href="#regModal" class="cinema__header__col-right__link">
+                        <a data-bs-toggle="modal" data-bs-target="#regModal" href="#regModal"
+                           class="cinema__header__col-right__link">
                             <svg width="24" height="24">
                                 <use xlink:href="#svg-account"></use>
                             </svg>
@@ -86,56 +87,100 @@
 
                             <div class="cinema__account-menu__wrap modal-content">
                                 <div class="cinema__account-menu__close">
-                                    <a data-bs-dismiss="modal" >
+                                    <a data-bs-dismiss="modal">
                                         <svg width="18" height="18">
                                             <use xlink:href="#svg-close"></use>
                                         </svg>
                                     </a>
                                 </div>
-                                <div class="cinema__account-menu__header">
-                                    <img src="images/dist/logo.svg" alt="" width="116" height="24">
-                                </div>
-                                <div class="cinema__account-menu__btn">
-                                    <a href="" class="btn-yellow mb-15">
-                                        <svg width="24" height="24" class="mr-10">
-                                            <use xlink:href="#svg-account"></use>
-                                        </svg>
-                                        Личный кабинет
-                                    </a>
-                                </div>
-                                <ul class="nav flex-column cinema__account-menu__list">
-                                    <li><a href="">Расписание</a></li>
-                                    <li><a href="">Moriart</a></li>
-                                    <li><a href="">Бонусная карта</a></li>
-                                    <li><a href="">Сертификаты</a></li>
-                                    <li><a href="">Аренда зала</a></li>
-                                    <li class="mb-15"><a href="">Новости и акции</a></li>
-                                    <li><a href="">История компании</a></li>
-                                    <li><a href="">Реклама в кинотеатрах</a></li>
-                                    <li><a href="">Услуги кинотеатра</a></li>
-                                    <li><a href="">Аренда площадей</a></li>
-                                    <li><a href="">Вакансии</a></li>
-                                    <li><a href="">Обратная связь</a></li>
-                                    <li><a href="">Возврат билетов</a></li>
-                                    <li><a href="">Контакты</a></li>
-                                </ul>
-                                <ul class="nav cinema__account-menu__footer">
-                                    <li>
-                                        <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
-                                            <svg width="24" height="13">
-                                                <use xlink:href="#svg-vk"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
-                                            <svg width="24" height="20">
-                                                <use xlink:href="#svg-telegram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="cinema__account-menu__pc">
 
+                                    <div class="cinema__account-menu__btn">
+                                        <a href="" class="btn-yellow mb-15">
+                                            <svg width="24" height="24" class="mr-10">
+                                                <use xlink:href="#svg-account"></use>
+                                            </svg>
+                                            Личный кабинет
+                                        </a>
+                                    </div>
+                                    <ul class="nav flex-column cinema__account-menu__list">
+                                        <li><a href="">Расписание</a></li>
+                                        <li><a href="">Moriart</a></li>
+                                        <li><a href="">Бонусная карта</a></li>
+                                        <li><a href="">Сертификаты</a></li>
+                                        <li><a href="">Аренда зала</a></li>
+                                        <li class="mb-15"><a href="">Новости и акции</a></li>
+                                        <li><a href="">История компании</a></li>
+                                        <li><a href="">Реклама в кинотеатрах</a></li>
+                                        <li><a href="">Услуги кинотеатра</a></li>
+                                        <li><a href="">Аренда площадей</a></li>
+                                        <li><a href="">Вакансии</a></li>
+                                        <li><a href="">Обратная связь</a></li>
+                                        <li><a href="">Возврат билетов</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                    <ul class="nav cinema__account-menu__footer">
+                                        <li>
+                                            <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
+                                                <svg width="24" height="13">
+                                                    <use xlink:href="#svg-vk"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
+                                                <svg width="24" height="20">
+                                                    <use xlink:href="#svg-telegram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cinema__account-menu__mob">
+                                    <div class="cinema__account-menu__header">
+                                        <img src="images/dist/logo.svg" alt="" width="116" height="24">
+                                    </div>
+                                    <ul class="nav flex-column cinema__account-menu__mob__top">
+                                        <li>
+                                            <a href="" class="cinema__account-menu__mob__link" data-bs-toggle="modal"
+                                               data-bs-target="#cityLastModal">
+                                                <div class="cinema__account-menu__mob__link__ico">
+                                                    <svg width="17" height="20">
+                                                        <use xlink:href="#svg-adr"></use>
+                                                    </svg>
+                                                </div>
+                                                <span>Санкт-Петербург</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="cinema__account-menu__mob__link">
+                                                <div class="cinema__account-menu__mob__link__ico">
+                                                    <svg width="20" height="20">
+                                                        <use xlink:href="#svg-account"></use>
+                                                    </svg>
+                                                </div>
+                                                <span>Личный кабинет</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav flex-column cinema__account-menu__list">
+                                        <li><a href="">Кинотеатры</a></li>
+                                        <li><a href="">Фильмы</a></li>
+                                        <li><a href="">MoriBonus</a></li>
+                                        <li><a href="">MoriEvent</a></li>
+                                        <li><a href="">MoriFamily</a></li>
+                                        <li><a href="">MoriАrt</a></li>
+                                        <li><a href="">Новости и акции</a></li>
+                                        <li><a href="">Подарочные карты</a></li>
+                                        <li><a href="">История компании</a></li>
+                                        <li><a href="">Реклама в кинотеатрах</a></li>
+                                        <li><a href="">Услуги кинотеатра</a></li>
+                                        <li><a href="">Аренда площадей</a></li>
+                                        <li><a href="">Вакансии</a></li>
+                                        <li><a href="">Обратная связь</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
