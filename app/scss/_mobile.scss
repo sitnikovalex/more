@@ -171,6 +171,11 @@
       }
     }
   }
+  .cinema__cookies__box {
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+  }
   .cinema__text  {
     p {
       font-size: 12px;
@@ -470,7 +475,15 @@
   .fpad50 {
     padding-bottom: 20px;
   }
-
+  .film-single {
+    &__poster {
+      width: 180px;
+      margin: 0 auto;
+    }
+    .cinema__film__tags {
+      display: flex !important;
+    }
+  }
 }
 
 @media screen and (max-width: 574px) {
@@ -480,6 +493,25 @@
   .modal-dialog.modal-xl {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .fpad30 {
+    padding-bottom: 15px;
+  }
+
+  .film-info .cinema__film__tags,
+  .film-info__params {
+    margin-bottom: 15px;
+  }
+
+  .film-info__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .cinema__cookies__box {
+    background-position: 20px 20px;
+    background-size: 30px 30px;
   }
 
   .mob-fpad10 {
@@ -653,6 +685,37 @@
   }
   .cinema__action-slider__wrap .swiper {
     overflow: hidden;
+  }
+
+  .cinema__cookies__box {
+    padding-left: 70px;
+    display: block;
+    &__btn {
+      min-width: 140px;
+      width: 140px;
+      padding: 15px 0 0 0;
+    }
+  }
+
+  .btn-yellow--tickets {
+    width: 100%;
+  }
+
+  .film-info__metadate__item {
+    padding-bottom: 25px;
+    & .film-info__metadate__item__label {
+      padding-bottom: 10px;
+    }
+  }
+  .film-info__metadate__item__label,
+  .film-info__metadate__item__value {
+    font-size: 12px;
+  }
+  .fpad25 {
+    padding-bottom: 10px;
+  }
+  .cinema__video:after {
+    background-size: 48px 48px;
   }
 }
 
