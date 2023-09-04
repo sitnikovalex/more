@@ -2762,3 +2762,28 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
     background-size: 65px 65px;
   }
 }
+
+.cinema__film-bg {
+  min-height: 350px;
+  padding-bottom: 15px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .cinema__news-detail__back__ico {
+    background: #393939;
+    color: #fff;
+  }
+  & .cinema__news-detail__back,
+  & .film-info__title,
+  & .cinema__film__tags__item,
+  & .film-info__params {
+    color: #fff;
+  }
+  .cinema__film__tags__item {
+    border-color: #fff;
+  }
+}
+.film-info__btn {
+  width: 100%;
+  max-width: 420px;
+}
