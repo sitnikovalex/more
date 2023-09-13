@@ -404,6 +404,14 @@ body {
   text-decoration: none;
   position: relative;
 
+  &.h-40 {
+    height: 40px !important;
+  }
+
+  &.h-36 {
+    height: 36px !important;
+  }
+
   span {
     position: relative;
     color: #fefefe;
@@ -1011,8 +1019,15 @@ body {
   .btn-close2 {
     color: var(--color-text);
     cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border: none;
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: none;
+      outline: none;
       color: var(--color-link-hover);
     }
   }
@@ -1619,9 +1634,11 @@ p.fs-14 {
   background: var(--bg-form-border);
   border: 1px solid var(--color-border);
 }
+
 .cinema-white .cinema__form.cinema__form--border {
   border: none;
 }
+
 .cinema-white .cinema__form {
   & .cinema__form__text,
   & .cinema__form__input,
@@ -2485,8 +2502,13 @@ h1 {
 }
 
 .fs-12 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
+
+.cinema-page__header__btn2 {
+  max-width: 460px;
+}
+
 
 .just-validate-error-box {
   position: absolute;
@@ -2564,7 +2586,7 @@ only screen and (min-resolution: 2dppx) {
   &__header {
     display: flex;
     padding-bottom: 25px;
-    border-bottom: 1px solid #393939;
+    border-bottom: 1px solid var(--bs-border-color);
 
     &__col-rooms {
       padding-right: 36px;
@@ -2573,7 +2595,7 @@ only screen and (min-resolution: 2dppx) {
 
   &__label,
   &__row {
-    border-bottom: 1px solid #393939;
+    border-bottom: 1px solid var(--bs-border-color);
     padding: 25px 0;
   }
 
@@ -2614,21 +2636,26 @@ b {
 .cinema__price-table--only-mob {
   display: none;
 }
+
 .tpad50 {
   padding-top: 50px;
 }
+
 .fpad50 {
   padding-bottom: 50px;
 }
+
 .cinema__account-menu__mob {
   display: none;
 }
+
 .cinema__cookies {
   position: fixed;
   bottom: 20px;
   left: 0;
   z-index: 100;
   right: 0;
+
   &__box {
     padding: 30px 35px 30px 105px;
     border-radius: 10px;
@@ -2640,11 +2667,13 @@ b {
     background-image: url("../images/dist/coockies.svg");
     display: flex;
     align-items: center;
+
     &__desc {
       font-size: 12px;
       line-height: 16px;
       flex-grow: 1;
     }
+
     &__btn {
       min-width: 185px;
       width: 185px;
@@ -2662,12 +2691,14 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
   .cinema__film__tags {
     margin: -4px -2px 25px;
   }
+
   &__title {
     font-size: 32px;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 25px;
   }
+
   &__params {
     font-size: 12px;
     line-height: 24px;
@@ -2697,6 +2728,7 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
   overflow: hidden;
   width: 169px;
   font-weight: bold;
+
   &::after,
   &::before {
     content: '';
@@ -2710,21 +2742,26 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
     background: var(--bg-wrapp);
     border-radius: 5px;
   }
+
   &::after {
     left: -5px;
   }
-  &::before{
+
+  &::before {
     right: -5px;
   }
 }
+
 .film-info__metadate {
   &__item {
     padding-bottom: 30px;
+
     &__label {
       font-size: 14px;
       font-weight: bold;
       line-height: 18px;
     }
+
     &__value {
       font-size: 14px;
       line-height: 18px;
@@ -2741,11 +2778,13 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
   overflow: hidden;
   border-radius: 10px;
   display: block;
+
   img {
     display: block;
     position: relative;
     z-index: 1;
   }
+
   &::after {
     content: '';
     display: block;
@@ -2755,7 +2794,7 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-image: url("../images/dist/play.svg");
@@ -2769,24 +2808,29 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+
   .cinema__news-detail__back__ico {
     background: #393939;
     color: #fff;
   }
+
   & .cinema__news-detail__back,
   & .film-info__title,
   & .cinema__film__tags__item,
   & .film-info__params {
     color: #fff;
   }
+
   .cinema__film__tags__item {
     border-color: #fff;
   }
 }
+
 .film-info__btn {
   width: 100%;
   max-width: 420px;
 }
+
 .cinema__top-filter__date__item__val--date .cinema__top-filter__date-inp {
   height: 35px;
   padding-bottom: 15px;
@@ -2811,6 +2855,7 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
       display: block;
     }
   }
+
   .choices[data-type*=select-one]:after {
     --color-down-select: #fff;
     right: 0;
@@ -2823,10 +2868,12 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
     .choices__inner {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Capa_1' data-name='Capa 1'%3E%3Cpath fill='%23292929' d='M347.22,301.21l-71.39-53.54V138.61a19.83,19.83,0,1,0-39.66,0v119a19.78,19.78,0,0,0,7.93,15.86l79.32,59.49a19.83,19.83,0,0,0,23.8-31.73Z'/%3E%3Cpath fill='%23292929' d='M256,0C114.83,0,0,114.83,0,256S114.83,512,256,512,512,397.17,512,256,397.17,0,256,0Zm0,472.34C136.73,472.34,39.66,375.27,39.66,256S136.73,39.66,256,39.66,472.34,136.73,472.34,256,375.27,472.34,256,472.34Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
+
     .choices[data-type*=select-one]:after {
       --color-down-select: #292929;
     }
   }
+
   .cinema__session__ps {
     color: #1c1c1c;
   }
@@ -2834,8 +2881,10 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
 
 .cinema__session-schedule {
   padding-bottom: 30px;
+
   &__item {
     padding-bottom: 20px;
+
     &__hall {
       height: 46px;
       display: flex;
@@ -2845,11 +2894,13 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
     }
   }
 }
+
 .cinema__session {
   &__col {
     width: 10%;
     margin-bottom: 10px;
   }
+
   &__ticket {
     display: block;
     position: relative;
@@ -2870,6 +2921,7 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
       top: 50%;
       margin-top: -6px;
     }
+
     &__wrap {
       height: 46px;
       text-align: center;
@@ -2884,24 +2936,42 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
       align-items: center;
       justify-content: center;
     }
+
     &::after {
       left: -6px;
     }
+
     &::before {
       right: -6px;
     }
+
     &__time {
       font-size: 16px;
       font-weight: bold;
       line-height: 1.1;
       padding-bottom: 3px;
     }
+
     &__price {
       font-size: 14px;
       line-height: 1.1;
       font-weight: 500;
     }
+
+    &:hover,
+    &.active {
+      .cinema__session__ticket__wrap {
+        border-color: var(--ticket-border-active);
+        color: var(--ticket-color-active);
+      }
+
+      &::after,
+      &::before {
+        border-color: var(--ticket-border-active);
+      }
+    }
   }
+
   &__ps {
     text-align: center;
     padding-top: 10px;
@@ -2910,4 +2980,36 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
     line-height: 1.1;
     color: #9c9c9c;
   }
+}
+
+.modal-header {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding: 26px 0 20px;
+}
+.cinema-page__header__container--min2 {
+  min-height: 228px;
+}
+.choices__list--dropdown {
+  min-width: 226px;
+}
+.cinema__top-filter__select {
+  .choices__inner {
+    border: none !important;
+    height: 35px;
+    min-height: 35px;
+    padding: 0 15px 10px 15px;
+
+  }
+  .choices__list--dropdown .choices__placeholder {
+    display: none;
+  }
+  .choices__item.choices__placeholder {
+    color: var(--color-text) !important;
+    opacity: 1;
+  }
+  .choices[data-type*=select-one]:not(:hover):after {
+    border-color: var(--color-text) transparent transparent;
+  }
+
 }

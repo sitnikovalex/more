@@ -254,10 +254,10 @@
                             <div class="film-info__btn">
                                 <div class="row">
                                     <div class="col-6">
-                                        <a href="" class="button-border"><span>О фильме</span></a>
+                                        <a href="" class="button-border h-40"><span>О фильме</span></a>
                                     </div>
                                     <div class="col-6">
-                                        <a href="" class="button-border">
+                                        <a href="" class="button-border h-40" data-bs-toggle="modal" data-bs-target="#filmTrailer">
                                             <span class="d-inline-flex align-items-center">
                                                 <svg width="16" height="16" class="me-2">
                                                     <use xlink:href="#svg-play"></use>
@@ -555,6 +555,30 @@
 
     </div>
 </div>
+
+<div class="modal fade" id="filmTrailer" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Трейлер к фильму Вызов</div>
+                <button class="btn-close2" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body pt-0">
+                <a href="" class="cinema__video">
+                    <picture>
+                        <source data-srcset="images/dist/video.jpg 1x, images/dist/video@2.jpg 2x" srcset="images/dist/video.jpg 1x, images/dist/video@2.jpg 2x">
+                        <img alt="" class="lazy entered loaded" data-src="images/dist/video.jpg" src="images/dist/video.jpg" width="1170" height="490" data-ll-status="loaded">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer class="cinema__footer">
     <div class="container fpad80">
         <div class="row">
@@ -1191,8 +1215,8 @@
                                            placeholder="_ _ _ _ _ _"
                                     >
                                     <div class="cinema__form__input-ico__box">
-                                        <svg width="14" height="18">
-                                            <use xlink:href="#svg-user"></use>
+                                        <svg width="18" height="14">
+                                            <use xlink:href="#svg-card"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -1356,10 +1380,17 @@
                   d="M214.38,299.36a85,85,0,1,1,85-85A85,85,0,0,1,214.38,299.36Zm0-127.47a42.49,42.49,0,1,0,42.49,42.49A42.49,42.49,0,0,0,214.38,171.89Z"/>
         </symbol>
 
-
         <symbol id="svg-play" viewBox="0 0 30.05 30.05">
-            <path fill="currentColor" d="M20,14.44,13.74,9.9a.75.75,0,0,0-1.19.61v9.07a.74.74,0,0,0,.41.67.81.81,0,0,0,.34.08.73.73,0,0,0,.44-.15L20,15.65a.75.75,0,0,0,.31-.61A.7.7,0,0,0,20,14.44Z"/>
-            <path fill="currentColor" d="M15,0a15,15,0,1,0,15,15A15,15,0,0,0,15,0Zm0,27.54A12.52,12.52,0,1,1,27.54,15,12.51,12.51,0,0,1,15,27.54Z"/>
+            <path fill="currentColor"
+                  d="M20,14.44,13.74,9.9a.75.75,0,0,0-1.19.61v9.07a.74.74,0,0,0,.41.67.81.81,0,0,0,.34.08.73.73,0,0,0,.44-.15L20,15.65a.75.75,0,0,0,.31-.61A.7.7,0,0,0,20,14.44Z"/>
+            <path fill="currentColor"
+                  d="M15,0a15,15,0,1,0,15,15A15,15,0,0,0,15,0Zm0,27.54A12.52,12.52,0,1,1,27.54,15,12.51,12.51,0,0,1,15,27.54Z"/>
+        </symbol>
+
+
+        <symbol id="svg-card" viewBox="0 0 512 384">
+            <path fill="currentColor" d="M405.33,0H106.67A106.8,106.8,0,0,0,0,106.67V277.33A106.8,106.8,0,0,0,106.67,384H405.33A106.8,106.8,0,0,0,512,277.33V106.67A106.8,106.8,0,0,0,405.33,0Zm64,277.33a64,64,0,0,1-64,64H106.67a64,64,0,0,1-64-64V106.67a64,64,0,0,1,64-64H405.33a64,64,0,0,1,64,64h-.27Z"/>
+            <rect fill="currentColor" x="256" y="234.67" width="170.67" height="64" rx="32"/>
         </symbol>
 
     </svg>

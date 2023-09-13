@@ -32,7 +32,7 @@
   --color-down-select: #f5a735;
   --bg-form-wrap: #393939;
   --color-border-form-header: #1c1c1c;
-  --bg-select-options: #1c1c1c;
+  --bg-select-options: #141414;
   --color-border-select-options: #393939;
   --color-select-options: #cccccc;
   --color-select-options-active: #fff;
@@ -49,6 +49,8 @@
   --cookies-bg: #393939;
   --ticket-color: #ccc;
   --ticket-border: #ccc;
+  --ticket-border-active: #fccb36;
+  --ticket-color-active: #fff;
 }
 
 body.cinema-white {
@@ -76,4 +78,5 @@ body.cinema-white {
   --cookies-bg: #fff;
   --ticket-color: #1c1c1c;
   --ticket-border: #8d8d8d;
+  --ticket-color-active: #1c1c1c;
 }
