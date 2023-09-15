@@ -3001,6 +3001,9 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
     padding: 0 15px 10px 15px;
 
   }
+  .choices__list.choices__list--single .choices__item {
+    font-weight: 400 !important;
+  }
   .choices__list--dropdown .choices__placeholder {
     display: none;
   }
@@ -3011,5 +3014,121 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
   .choices[data-type*=select-one]:not(:hover):after {
     border-color: var(--color-text) transparent transparent;
   }
+}
 
+.cinema__session-schedule__group {
+  padding-bottom: 5px;
+  .cinema__session-schedule__item__hall {
+    height: 18px;
+    margin-bottom: 12px;
+  }
+
+}
+
+.cinema__session-schedule__item--list {
+  margin-bottom: 30px;
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--bs-border-color);
+
+  }
+  .film-info__params {
+    margin-bottom: 12px;
+  }
+
+  .cinema__film__tags li {
+    padding: 0 2px 4px;
+  }
+}
+
+.fpad15 {
+  padding-bottom: 15px;
+}
+.fpad10 {
+  padding-bottom: 10px;
+}
+
+.cinema__session-schedule__mob__img {
+  display: none;
+}
+
+.cinema__cabinet {
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+}
+
+.cinema__cabinet__sidebar {
+  &__area {
+    padding: 20px 15px;
+    border-radius: 6px;
+    border: 1px solid var(--bs-border-color);
+    margin-bottom: 30px;
+    &__footer {
+      padding-top: 20px;
+      a {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+        color: var(--color-link);
+        text-decoration: none;
+      }
+    }
+  }
+  &__nav {
+    display: block !important;
+    li:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &__ico {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      color: #f5a735;
+      min-width: 25px;
+      margin-right: 10px;
+    }
+    &__caption {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500;
+      flex-grow: 1;
+    }
+  }
+}
+.cinema__cabinet__body__nav {
+  display: block !important;
+  padding: 10px 16px;
+  li {
+    margin-bottom: 15px;
+  }
+  a {
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: var(--color-text);
+    &:hover {
+      .cinema__cabinet__body__nav__ico {
+        color: #f5a735;
+      }
+    }
+  }
+  &__ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    color: var(--color-text);
+    min-width: 25px;
+    margin-right: 10px;
+
+    svg {
+      display: block;
+    }
+  }
 }

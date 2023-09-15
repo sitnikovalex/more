@@ -20,7 +20,8 @@
                     </div>
                 </div>
             </div>
-        </div>`
+        </div>
+        `
         <picture>
             <source
                     media="(max-width: 640px)"
@@ -72,24 +73,28 @@
                         </li>
                     </ul>
                 </div>
-                <div class="cinema__top-filter__row">
-                    <div class="cinema__top-filter__select">
-                        <select class="js-select" >
-                            <option value="">Жанр</option>
-                            <option value="Комедии">Комедии</option>
-                            <option value="Мультфильмы">Мультфильмы</option>
-                            <option value="Ужасы">Ужасы</option>
-                            <option value="Фантастика">Фантастика</option>
-                            <option value="Триллеры">Триллеры</option>
-                            <option value="Боевики">Боевики</option>
-                        </select>
+                <div class="d-flex justify-content-between">
+                    <div class="cinema__top-filter__row cinema__top-filter__row--mob-col2">
+                        <div class="cinema__top-filter__select">
+                            <select class="js-select">
+                                <option value="">Жанр</option>
+                                <option value="Комедии">Комедии</option>
+                                <option value="Мультфильмы">Мультфильмы</option>
+                                <option value="Ужасы">Ужасы</option>
+                                <option value="Фантастика">Фантастика</option>
+                                <option value="Триллеры">Триллеры</option>
+                                <option value="Боевики">Боевики</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="cinema__top-filter__select">
-                        <select class="js-select" >
-                            <option value="">Возраст</option>
-                            <option value="16">16</option>
-                            <option value="18">18</option>
-                        </select>
+                    <div class="cinema__top-filter__row cinema__top-filter__row--mob-col2">
+                        <div class="cinema__top-filter__select">
+                            <select class="js-select">
+                                <option value="">Возраст</option>
+                                <option value="16">16</option>
+                                <option value="18">18</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,194 +142,531 @@
             </ul>
 
             <div class="cinema__session-schedule">
-                <div class="row cinema__session-schedule__item">
-                    <div class="col-lg-2 col-sm-4 col-5">
-                        <div class="cinema__film__img  film-single__poster">
-                            <picture>
-                                <source
-                                        data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                                <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                     width="270" height="385"/>
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="col-lg-10 col-sm-8 col-7 cinema__session-schedule__item__timer">
-                        <div class="cinema__session-schedule__group">
-                            <div class="cinema__session-schedule__item__hall">
-                                2D
-                            </div>
-                            <div class="row cinema__session">
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">14:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">16:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">18:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">24:40</div>
-                                            <div class="cinema__session__ticket__price">1500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
+                <div class="cinema__session-schedule__item cinema__session-schedule__item--list">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-5 cinema__session-schedule__poster">
+                            <div class="cinema__film__img  film-single__poster">
+                                <picture>
+                                    <source
+                                            data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
+                                    <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                         width="270" height="385"/>
+                                </picture>
                             </div>
                         </div>
-                        <div class="cinema__session-schedule__group">
-                            <div class="cinema__session-schedule__item__hall">
-                                3D
-                            </div>
-                            <div class="row cinema__session">
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">14:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                    <div class="cinema__session__ps">
-                                        Пушкинская
-                                        карта
+                        <div class="col-lg-10 col-md-8 col-12 cinema__session-schedule__item__timer">
+                            <div class="cinema__session-schedule__mob">
+                                <div class="cinema__session-schedule__mob__img">
+                                    <img alt="" class="lazy" data-src="images/dist/film-mob.jpg"
+                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                         width="80" height="115"/>
+                                </div>
+                                <div class="cinema__session-schedule__mob__desc">
+                                    <ul class="nav cinema__film__tags fpad15">
+                                        <li>
+                                            <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
+                                        </li>
+                                        <li>
+                                            <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                                        </li>
+                                        <li>
+                                            <span class="cinema__film__tags__item">12+</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="cinema__film__title fpad10">Сердце пармы</a>
+                                    <div class="film-info__params">
+                                        2023 | Россия | Драма | 2 часа 43 мин.
                                     </div>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">16:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                    <div class="cinema__session__ps">
-                                        VIP
-                                    </div>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">18:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">24:40</div>
-                                            <div class="cinema__session__ticket__price">1500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cinema__session-schedule__group">
-                            <div class="cinema__session-schedule__item__hall">
-                                Dolby Atmos
-                            </div>
-                            <div class="row cinema__session">
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">14:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">16:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">18:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">24:40</div>
-                                            <div class="cinema__session__ticket__price">1500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">14:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">16:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">18:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">24:40</div>
-                                            <div class="cinema__session__ticket__price">1500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">18:40</div>
-                                            <div class="cinema__session__ticket__price">500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="cinema__session__col">
-                                    <a href="" class="cinema__session__ticket">
-                                        <div class="cinema__session__ticket__wrap">
-                                            <div class="cinema__session__ticket__time">24:40</div>
-                                            <div class="cinema__session__ticket__price">1500 ₽</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
 
+
+                                </div>
+                            </div>
+                            <div class="cinema__session-schedule__group">
+                                <div class="cinema__session-schedule__item__hall">
+                                    2D
+                                </div>
+                                <div class="cinema__session flex-grow-1">
+                                <div class="row">
+                                    <div class="cinema__session__col">
+                                        <a href="" class="cinema__session__ticket">
+                                            <div class="cinema__session__ticket__wrap">
+                                                <div class="cinema__session__ticket__time">14:40</div>
+                                                <div class="cinema__session__ticket__price">500 ₽</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="cinema__session__col">
+                                        <a href="" class="cinema__session__ticket">
+                                            <div class="cinema__session__ticket__wrap">
+                                                <div class="cinema__session__ticket__time">16:40</div>
+                                                <div class="cinema__session__ticket__price">500 ₽</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="cinema__session__col">
+                                        <a href="" class="cinema__session__ticket">
+                                            <div class="cinema__session__ticket__wrap">
+                                                <div class="cinema__session__ticket__time">18:40</div>
+                                                <div class="cinema__session__ticket__price">500 ₽</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="cinema__session__col">
+                                        <a href="" class="cinema__session__ticket">
+                                            <div class="cinema__session__ticket__wrap">
+                                                <div class="cinema__session__ticket__time">24:40</div>
+                                                <div class="cinema__session__ticket__price">1500 ₽</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="cinema__session-schedule__group">
+                                <div class="cinema__session-schedule__item__hall">
+                                    3D
+                                </div>
+                                <div class="cinema__session flex-grow-1">
+                                <div class="row">
+                                    <div class="cinema__session__col">
+                                        <a href="" class="cinema__session__ticket">
+                                            <div class="cinema__session__ticket__wrap">
+                                                <div class="cinema__session__ticket__time">14:40</div>
+                                                <div class="cinema__session__ticket__price">500 ₽</div>
+                                            </div>
+                                        </a>
+                                        <div class="cinema__session__ps">
+                                            Пушкинская
+                                            карта
+                                        </div>
+                                    </div>
+                                    <div class="cinema__session__col">
+                                        <a href="" class="cinema__session__ticket">
+                                            <div class="cinema__session__ticket__wrap">
+                                                <div class="cinema__session__ticket__time">16:40</div>
+                                                <div class="cinema__session__ticket__price">500 ₽</div>
+                                            </div>
+                                        </a>
+                                        <div class="cinema__session__ps">
+                                            VIP
+                                        </div>
+                                    </div>
+                                    <div class="cinema__session__col">
+                                        <a href="" class="cinema__session__ticket">
+                                            <div class="cinema__session__ticket__wrap">
+                                                <div class="cinema__session__ticket__time">18:40</div>
+                                                <div class="cinema__session__ticket__price">500 ₽</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="cinema__session__col">
+                                        <a href="" class="cinema__session__ticket">
+                                            <div class="cinema__session__ticket__wrap">
+                                                <div class="cinema__session__ticket__time">24:40</div>
+                                                <div class="cinema__session__ticket__price">1500 ₽</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="cinema__session-schedule__group">
+                                <div class="cinema__session-schedule__item__hall">
+                                    Dolby Atmos
+                                </div>
+                                <div class="cinema__session flex-grow-1">
+                                    <div class="row ">
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">14:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">16:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">18:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">24:40</div>
+                                                    <div class="cinema__session__ticket__price">1500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">14:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">16:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">18:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">24:40</div>
+                                                    <div class="cinema__session__ticket__price">1500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">18:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">24:40</div>
+                                                    <div class="cinema__session__ticket__price">1500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="cinema__session-schedule__item cinema__session-schedule__item--list">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-12 cinema__session-schedule__poster">
+                            <div class="cinema__film__img  film-single__poster">
+                                <picture>
+                                    <source
+                                            data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
+                                    <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                         width="270" height="385"/>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-8 col-12 cinema__session-schedule__item__timer">
+                            <div class="cinema__session-schedule__mob">
+                                <div class="cinema__session-schedule__mob__img">
+                                    <img alt="" class="lazy" data-src="images/dist/film-mob.jpg"
+                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                         width="80" height="115"/>
+                                </div>
+                                <div class="cinema__session-schedule__mob__desc">
+                                    <ul class="nav cinema__film__tags fpad15">
+                                        <li>
+                                            <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
+                                        </li>
+                                        <li>
+                                            <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                                        </li>
+                                        <li>
+                                            <span class="cinema__film__tags__item">12+</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="cinema__film__title fpad10">Сердце пармы</a>
+                                    <div class="film-info__params">
+                                        2023 | Россия | Драма | 2 часа 43 мин.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cinema__session-schedule__group">
+                                <div class="cinema__session-schedule__item__hall">
+                                    2D
+                                </div>
+                                <div class="cinema__session flex-grow-1">
+                                    <div class="row">
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">14:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">16:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">18:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">24:40</div>
+                                                    <div class="cinema__session__ticket__price">1500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cinema__session-schedule__item cinema__session-schedule__item--list">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-12 cinema__session-schedule__poster">
+                            <div class="cinema__film__img  film-single__poster">
+                                <picture>
+                                    <source
+                                            data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
+                                    <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                         width="270" height="385"/>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-8 col-12 cinema__session-schedule__item__timer">
+                            <div class="cinema__session-schedule__mob">
+                                <div class="cinema__session-schedule__mob__img">
+                                    <img alt="" class="lazy" data-src="images/dist/film-mob.jpg"
+                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                         width="80" height="115"/>
+                                </div>
+                                <div class="cinema__session-schedule__mob__desc">
+                                    <ul class="nav cinema__film__tags fpad15">
+                                        <li>
+                                            <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
+                                        </li>
+                                        <li>
+                                            <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
+                                        </li>
+                                        <li>
+                                            <span class="cinema__film__tags__item">12+</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="cinema__film__title fpad10">Сердце пармы</a>
+                                    <div class="film-info__params">
+                                        2023 | Россия | Драма | 2 часа 43 мин.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cinema__session-schedule__group">
+                                <div class="cinema__session-schedule__item__hall">
+                                    2D
+                                </div>
+                                <div class="cinema__session flex-grow-1">
+                                    <div class="row ">
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">14:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">16:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">18:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">24:40</div>
+                                                    <div class="cinema__session__ticket__price">1500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cinema__session-schedule__group">
+                                <div class="cinema__session-schedule__item__hall">
+                                    3D
+                                </div>
+                                <div class="cinema__session flex-grow-1">
+                                    <div class="row ">
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">14:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                            <div class="cinema__session__ps">
+                                                Пушкинская
+                                                карта
+                                            </div>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">16:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                            <div class="cinema__session__ps">
+                                                VIP
+                                            </div>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">18:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">24:40</div>
+                                                    <div class="cinema__session__ticket__price">1500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cinema__session-schedule__group">
+                                <div class="cinema__session-schedule__item__hall">
+                                    Dolby Atmos
+                                </div>
+                                <div class="cinema__session flex-grow-1">
+                                    <div class="row">
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">14:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">16:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">18:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">24:40</div>
+                                                    <div class="cinema__session__ticket__price">1500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">14:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">16:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">18:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">24:40</div>
+                                                    <div class="cinema__session__ticket__price">1500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">18:40</div>
+                                                    <div class="cinema__session__ticket__price">500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cinema__session__col">
+                                            <a href="" class="cinema__session__ticket">
+                                                <div class="cinema__session__ticket__wrap">
+                                                    <div class="cinema__session__ticket__time">24:40</div>
+                                                    <div class="cinema__session__ticket__price">1500 ₽</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
