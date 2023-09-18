@@ -14908,21 +14908,21 @@ textarea.form-control-lg {
     width: 0;
     border-style: solid;
     border-color: var(--color-down-select) transparent transparent;
-    border-width: 5px;
+    border-width: 4px;
     position: absolute;
-    right: 11.5px;
+    right: 10px;
     top: 50%;
-    margin-top: -2.5px;
+    margin-top: -2px;
     pointer-events: none
 }
 
-.choices[data-type*=select-one].is-open:after {
+/*.choices[data-type*=select-one].is-open:after {
     border-color: transparent transparent var(--color-down-select);
-    margin-top: -7.5px
-}
+    margin-top: -2px
+}*/
 
 .choices[data-type*=select-one][dir=rtl]:after {
-    left: 11.5px;
+    left: 10px;
     right: auto
 }
 

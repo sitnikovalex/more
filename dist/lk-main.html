@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>Новости</title>
+    <title>Личный кабинет</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -304,6 +304,370 @@
 </div>
             </div>
             <div class="col-lg-8">
+                <div class="fs-18 fw-bold">Настройки</div>
+                <div class="cinema__top-filter__row mb-25">
+                    <ul class="nav cinema__top-filter__date">
+                        <li>
+                            <a href="" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
+                                Личные данные
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
+                                Смена пароля
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">
+                                Новостная рассылка
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="tab1" tabindex="0">
+
+                        <div class="cinema__form__row">
+                            <label for="nameReg2" class="cinema__form__label">Имя:</label>
+                            <div class="row position-relative">
+                                <div class="col-md-6">
+                                    <div class="cinema__form__input-ico">
+                                        <input value="Александ" type="text" required="" name="nameReg" id="nameReg2"
+                                               class="cinema__form__input-ico__value is-valid" autocomplete="off"
+                                               placeholder="Ваше имя">
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="14" height="18">
+                                                <use xlink:href="#svg-user"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="nav cinema__form__nav-edit align-items-center">
+                                        <li>
+                                            <button class="btn-yellow">Сохранить</button>
+                                        </li>
+                                        <li>
+                                            <button class="btn-yellow">Отменить</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <label for="lastnameReg2" class="cinema__form__label">Фамилия:</label>
+                            <div class="row position-relative">
+                                <div class="col-md-6">
+                                    <div class="cinema__form__input-ico">
+                                        <input value="Космодемьянский" type="text"
+                                               disabled
+                                               required
+                                               name="lastnameReg"
+                                               id="lastnameReg2"
+                                               class="cinema__form__input-ico__value"
+                                               autocomplete="off"
+                                               placeholder="Ваша фамилия"
+                                        >
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="14" height="18">
+                                                <use xlink:href="#svg-user"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="" class="cinema__form__edit">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-edit"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <div class="cinema__form__label">Пол:</div>
+                            <div class="row position-relative">
+                                <div class="col-md-6">
+                                    <div class="row" id="genderRegInp">
+                                        <div class="col-6">
+                                            <label class="radio-btn">
+                                                <input required="" type="radio" class="radio-btn__input"
+                                                       name="genderReg" value="Мужской" checked disabled>
+                                                <span class="radio-btn__value">
+                                                Мужской
+                                            </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="radio-btn">
+                                                <input required="" type="radio" class="radio-btn__input"
+                                                       name="genderReg" value="Женский" disabled>
+                                                <span class="radio-btn__value">
+                                                    Женский
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="" class="cinema__form__edit">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-edit"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <label for="dateReg" class="cinema__form__label">Дата рождения:</label>
+                            <div class="row  position-relative">
+                                <div class="col-md-6">
+                                    <div class="cinema__form__input-ico">
+                                        <input value="01.01.2000" disabled type="text" required="" readonly="true"
+                                               name="dateReg" id="dateReg"
+                                               class="cinema__form__input-ico__value cinema__form__input-ico__value--date"
+                                               autocomplete="off" placeholder="дд.мм.гггг">
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#svg-datepicker"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="cinema__form__ps">
+                                        Дату рождения можно изменить только 1 раз
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="" class="cinema__form__edit">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-edit"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <label for="phoneReg2" class="cinema__form__label">Номер телефона:</label>
+                            <div class="row position-relative">
+                                <div class="col-md-6">
+                                    <div class="cinema__form__input-ico">
+                                        <input type="tel"
+                                               disabled
+                                               required
+                                               name="phoneReg"
+                                               id="phoneReg2"
+                                               class="cinema__form__input-ico__value js-mask-phone"
+                                               autocomplete="off"
+                                               placeholder="+7 111 123-00-00"
+                                        >
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="12" height="18">
+                                                <use xlink:href="#svg-phone"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="" class="cinema__form__edit">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-edit"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <label for="emailReg2" class="cinema__form__label">Email:</label>
+                            <div class="row position-relative">
+                                <div class="col-md-6">
+
+
+                                    <div class="cinema__form__input-ico">
+                                        <input type="email"
+                                               disabled
+                                               value="nnn@mail.ru"
+                                               required
+                                               name="emailReg"
+                                               id="emailReg2"
+                                               class="cinema__form__input-ico__value "
+                                               autocomplete="off"
+                                               placeholder="Укажите ваш E-mail"
+                                        >
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#svg-email"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="" class="cinema__form__edit">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-edit"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <label for="bonusCardReg2" class="cinema__form__label">Номер бонусной карты:</label>
+                            <div class="row position-relative">
+                                <div class="col-md-6">
+                                    <div class="cinema__form__input-ico">
+                                        <input type="text"
+                                               disabled
+                                               value="1 2 3 4 5 6"
+                                               name="bonusCardReg"
+                                               id="bonusCardReg2"
+                                               class="cinema__form__input-ico__value"
+                                               autocomplete="off"
+                                               placeholder="_ _ _ _ _ _"
+                                        >
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="18" height="14">
+                                                <use xlink:href="#svg-card"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="" class="cinema__form__edit">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-edit"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <label for="cityReg2" class="cinema__form__label">Город:</label>
+                            <div class="row position-relative">
+                                <div class="col-md-6">
+                                    <div class="cinema__form__input-ico">
+                                        <select disabled required name="cityReg" id="cityReg2"
+                                                class="js-select choices__input">
+                                            <option value="">Выберите город</option>
+                                            <option value="Москва">Москва</option>
+                                            <option value="Москва2">Москва2</option>
+                                            <option value="Москва3">Москва3</option>
+                                            <option value="Москва4">Москва4</option>
+                                        </select>
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="15" height="18">
+                                                <use xlink:href="#svg-marker"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="" class="cinema__form__edit">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-edit"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab2" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form action="" id="formEditPass">
+                                    <div class="cinema__form__row">
+                                        <label for="passOld" class="cinema__form__label">Ваш текущий пароль:*</label>
+                                        <div class="cinema__form__input-ico">
+                                            <input value="1111" type="password" required="" name="passReg" id="passOld" placeholder="Ваш текущий пароль"
+                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid" autocomplete="off">
+                                            <div class="cinema__form__input-ico__box">
+                                                <svg width="15" height="18">
+                                                    <use xlink:href="#svg-pass"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="cinema__form__input-ico__pass js-pass" data-target="passOld">
+                                                <svg width="18" height="14">
+                                                    <use xlink:href="#svg-pass-toggle"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="cinema__form__ps">
+                                            Для подтверждения безопастности нужно указать ваш
+                                            текущий пароль
+                                        </div>
+                                    </div>
+
+                                    <div class="cinema__form__row">
+                                        <label for="passEdit" class="cinema__form__label">Пароль:*</label>
+                                        <div class="cinema__form__input-ico">
+                                            <input type="password" required="" name="passReg" id="passEdit" placeholder="Придумайте пароль"
+                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid" autocomplete="off">
+                                            <div class="cinema__form__input-ico__box">
+                                                <svg width="15" height="18">
+                                                    <use xlink:href="#svg-pass"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="cinema__form__input-ico__pass js-pass" data-target="passEdit">
+                                                <svg width="18" height="14">
+                                                    <use xlink:href="#svg-pass-toggle"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cinema__form__row">
+                                        <label for="passEdit2" class="cinema__form__label">Подтверждение пароля:*</label>
+                                        <div class="cinema__form__input-ico">
+                                            <input type="password" required="" name="passReg2" id="passEdit2" placeholder="Пароль еще раз"
+                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid" autocomplete="off">
+                                            <div class="cinema__form__input-ico__box">
+                                                <svg width="15" height="18">
+                                                    <use xlink:href="#svg-pass"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="cinema__form__input-ico__pass js-pass" data-target="passEdit2">
+                                                <svg width="18" height="14">
+                                                    <use xlink:href="#svg-pass-toggle"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button class="btn-yellow w-100" type="submit">Сохранить</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn-yellow w-100" >Отмена</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="tab3" tabindex="0">
+                        <div class="row fpad30 cabinet__send-options">
+                            <div class="col-ld-6 col-md-8">
+                                <div class="cabinet__send-options__info">
+                                    Узнавайте первым о новостях, акциях и
+                                    премьерах фильмов
+                                </div>
+                            </div>
+                            <div class="col-ld-6 col-md-4">
+                                <button class="btn-yellow w-100" type="submit">Подписаться</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
@@ -1137,6 +1501,10 @@
                   d="M487.83,210.75,390,112.92a21.33,21.33,0,1,0-30.69,29.64l.53.52L450.75,234,128,234.67a21.33,21.33,0,0,0,0,42.66h0l324-.66-92.22,92.25a21.33,21.33,0,1,0,29.64,30.69c.18-.17.35-.35.52-.53l97.84-97.83A64,64,0,0,0,487.83,210.75Z"/>
         </symbol>
 
+        <symbol id="svg-edit" viewBox="0 0 415.74 415.75">
+            <path fill="currentColor"
+                  d="M415.74,79.75A80,80,0,0,0,279.42,23.18l-.15.17L29.4,273.22c-.18.18-.34.37-.51.56s-.28.3-.41.46-.39.49-.58.74-.26.34-.38.52-.34.53-.5.79-.22.36-.32.55-.3.57-.44.86-.17.36-.25.55-.25.63-.36,1c-.07.17-.13.34-.19.52-.11.35-.2.7-.28,1.06,0,.13-.08.25-.1.38L.36,396.39a.13.13,0,0,0,0,.06c-.1.46-.17.93-.23,1.41l0,.19c0,.43-.07.86-.08,1.29,0,.11,0,.23,0,.34,0,.35,0,.71,0,1.06,0,.19,0,.38,0,.56s.07.59.12.89.07.47.11.7c0,.07,0,.14,0,.21.06.3.15.59.23.89,0,.11.05.22.08.32a15.93,15.93,0,0,0,2.77,5.33,1.34,1.34,0,0,0,.11.14c.27.33.54.64.83,1l.24.25c.26.26.52.51.8.75l.33.29c.27.22.54.43.82.63l.37.28c.33.22.67.44,1,.64l.22.13c.44.25.89.47,1.34.67l.24.1a12.32,12.32,0,0,0,1.2.45l.32.1c.4.13.8.23,1.2.33l.17,0,.15,0c.46.09.92.16,1.38.22a1.81,1.81,0,0,1,.23,0c.52.05,1,.08,1.58.08h0c.52,0,1,0,1.55-.08l.35-.05c.43-.05.86-.12,1.29-.2l.15,0,114.87-24.64.2,0,.15,0,.19-.05c.44-.1.88-.21,1.32-.35l.27-.1c.41-.14.82-.29,1.21-.46l.32-.14c.37-.17.73-.35,1.09-.55a3.79,3.79,0,0,0,.34-.2c.34-.2.67-.4,1-.62l.35-.26c.3-.22.6-.45.9-.7l.31-.28c.23-.21.46-.4.68-.62l250-250a1.22,1.22,0,0,0,.15-.17A79.31,79.31,0,0,0,415.74,79.75ZM369.93,45.82a47.54,47.54,0,0,1,13.81,33.93,47.56,47.56,0,0,1-13.81,33.94c-.05,0-.09.11-.15.16L336,147.64,268.12,79.75l33.93-33.94a48.6,48.6,0,0,1,67.88,0ZM123.26,360.37,36.83,378.91l18.54-86.42L245.49,102.38l67.89,67.88Z"/>
+        </symbol>
 
     </svg>
 </div>
