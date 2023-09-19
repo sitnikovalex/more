@@ -279,50 +279,67 @@
             <a href="">Оферта программы лояльности</a>
         </div>
     </nav>
-    <ul class="nav cinema__cabinet__body__nav">
-        <li>
-            <a href="" class="d-inline-flex align-items-center">
-                <div class="cinema__cabinet__body__nav__ico">
-                    <svg width="18" height="18">
-                        <use xlink:href="#svg-options"></use>
-                    </svg>
-                </div>
-                <span>Настройки</span>
-            </a>
-        </li>
-        <li>
-            <a href="" class="d-inline-flex align-items-center">
-                <div class="cinema__cabinet__body__nav__ico">
-                    <svg width="18" height="18">
-                        <use xlink:href="#svg-logout"></use>
-                    </svg>
-                </div>
-                <span>Выйти</span>
-            </a>
-        </li>
-    </ul>
+    <div id="mobNavSb" class="cinema__cabinet__sidebar__box-nav swiper w-100">
+        <ul class="nav cinema__cabinet__body__nav swiper-wrapper">
+
+            <li class="cinema__cabinet__body__nav__item">
+                <a href="" class="d-inline-flex align-items-center">
+                    <div class="cinema__cabinet__body__nav__ico">
+                        <svg width="18" height="14">
+                            <use xlink:href="#svg-orders"></use>
+                        </svg>
+                    </div>
+                    <span>Мои заказы</span>
+                </a>
+            </li>
+            <li class="cinema__cabinet__body__nav__item">
+                <a href="" class="d-inline-flex align-items-center active">
+                    <div class="cinema__cabinet__body__nav__ico">
+                        <svg width="18" height="18">
+                            <use xlink:href="#svg-options"></use>
+                        </svg>
+                    </div>
+                    <span>Настройки</span>
+                </a>
+            </li>
+            <li class="cinema__cabinet__body__nav__item">
+                <a href="" class="d-inline-flex align-items-center">
+                    <div class="cinema__cabinet__body__nav__ico">
+                        <svg width="18" height="18">
+                            <use xlink:href="#svg-logout"></use>
+                        </svg>
+                    </div>
+                    <span>Выйти</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
 </div>
             </div>
             <div class="col-lg-8">
                 <div class="fs-18 fw-bold">Настройки</div>
                 <div class="cinema__top-filter__row mb-25">
-                    <ul class="nav cinema__top-filter__date">
-                        <li>
-                            <a href="" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
-                                Личные данные
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
-                                Смена пароля
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">
-                                Новостная рассылка
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="swiper w-100" id="mobTabs">
+                        <div class="nav cinema__top-filter__date nav-tabs__list swiper-wrapper">
+                            <div class="nav-tabs__list__item">
+                                <a href="" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
+                                    Личные данные
+                                </a>
+                            </div>
+                            <div class="nav-tabs__list__item">
+                                <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
+                                    Смена пароля
+                                </a>
+                            </div>
+                            <div class="nav-tabs__list__item">
+                                <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">
+                                    Новостная рассылка
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="tab1" tabindex="0">
@@ -585,8 +602,10 @@
                                     <div class="cinema__form__row">
                                         <label for="passOld" class="cinema__form__label">Ваш текущий пароль:*</label>
                                         <div class="cinema__form__input-ico">
-                                            <input value="1111" type="password" required="" name="passReg" id="passOld" placeholder="Ваш текущий пароль"
-                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid" autocomplete="off">
+                                            <input value="1111" type="password" required="" name="passReg" id="passOld"
+                                                   placeholder="Ваш текущий пароль"
+                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid"
+                                                   autocomplete="off">
                                             <div class="cinema__form__input-ico__box">
                                                 <svg width="15" height="18">
                                                     <use xlink:href="#svg-pass"></use>
@@ -607,8 +626,10 @@
                                     <div class="cinema__form__row">
                                         <label for="passEdit" class="cinema__form__label">Пароль:*</label>
                                         <div class="cinema__form__input-ico">
-                                            <input type="password" required="" name="passReg" id="passEdit" placeholder="Придумайте пароль"
-                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid" autocomplete="off">
+                                            <input type="password" required="" name="passReg" id="passEdit"
+                                                   placeholder="Придумайте пароль"
+                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid"
+                                                   autocomplete="off">
                                             <div class="cinema__form__input-ico__box">
                                                 <svg width="15" height="18">
                                                     <use xlink:href="#svg-pass"></use>
@@ -623,10 +644,13 @@
                                     </div>
 
                                     <div class="cinema__form__row">
-                                        <label for="passEdit2" class="cinema__form__label">Подтверждение пароля:*</label>
+                                        <label for="passEdit2" class="cinema__form__label">Подтверждение
+                                            пароля:*</label>
                                         <div class="cinema__form__input-ico">
-                                            <input type="password" required="" name="passReg2" id="passEdit2" placeholder="Пароль еще раз"
-                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid" autocomplete="off">
+                                            <input type="password" required="" name="passReg2" id="passEdit2"
+                                                   placeholder="Пароль еще раз"
+                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid"
+                                                   autocomplete="off">
                                             <div class="cinema__form__input-ico__box">
                                                 <svg width="15" height="18">
                                                     <use xlink:href="#svg-pass"></use>
@@ -645,7 +669,7 @@
                                             <button class="btn-yellow w-100" type="submit">Сохранить</button>
                                         </div>
                                         <div class="col-6">
-                                            <button class="btn-yellow w-100" >Отмена</button>
+                                            <button class="btn-yellow w-100">Отмена</button>
                                         </div>
                                     </div>
                                 </form>
@@ -655,14 +679,34 @@
                     </div>
                     <div class="tab-pane fade" id="tab3" tabindex="0">
                         <div class="row fpad30 cabinet__send-options">
-                            <div class="col-ld-6 col-md-8">
+                            <div class="col-lg-6 col-md-8">
                                 <div class="cabinet__send-options__info">
-                                    Узнавайте первым о новостях, акциях и
-                                    премьерах фильмов
+                                    <div class="cabinet__send-options__info__ico">
+                                        <svg width="24" height="22">
+                                            <use xlink:href="#svg-send"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Узнавайте первым о новостях, акциях и
+                                    премьерах фильмов</span>
                                 </div>
                             </div>
-                            <div class="col-ld-6 col-md-4">
+                            <div class="col-lg-6 col-md-4 col-xl-3">
                                 <button class="btn-yellow w-100" type="submit">Подписаться</button>
+                            </div>
+                        </div>
+                        <div class="row fpad30 cabinet__send-options">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="cabinet__send-options__info">
+                                    <div class="cabinet__send-options__info__ico">
+                                        <svg width="24" height="22">
+                                            <use xlink:href="#svg-send"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Вы подписаны на почтовую рассылку</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xl-3">
+                                <button class="btn-yellow w-100" type="submit">Отписаться</button>
                             </div>
                         </div>
                     </div>
@@ -1504,6 +1548,16 @@
         <symbol id="svg-edit" viewBox="0 0 415.74 415.75">
             <path fill="currentColor"
                   d="M415.74,79.75A80,80,0,0,0,279.42,23.18l-.15.17L29.4,273.22c-.18.18-.34.37-.51.56s-.28.3-.41.46-.39.49-.58.74-.26.34-.38.52-.34.53-.5.79-.22.36-.32.55-.3.57-.44.86-.17.36-.25.55-.25.63-.36,1c-.07.17-.13.34-.19.52-.11.35-.2.7-.28,1.06,0,.13-.08.25-.1.38L.36,396.39a.13.13,0,0,0,0,.06c-.1.46-.17.93-.23,1.41l0,.19c0,.43-.07.86-.08,1.29,0,.11,0,.23,0,.34,0,.35,0,.71,0,1.06,0,.19,0,.38,0,.56s.07.59.12.89.07.47.11.7c0,.07,0,.14,0,.21.06.3.15.59.23.89,0,.11.05.22.08.32a15.93,15.93,0,0,0,2.77,5.33,1.34,1.34,0,0,0,.11.14c.27.33.54.64.83,1l.24.25c.26.26.52.51.8.75l.33.29c.27.22.54.43.82.63l.37.28c.33.22.67.44,1,.64l.22.13c.44.25.89.47,1.34.67l.24.1a12.32,12.32,0,0,0,1.2.45l.32.1c.4.13.8.23,1.2.33l.17,0,.15,0c.46.09.92.16,1.38.22a1.81,1.81,0,0,1,.23,0c.52.05,1,.08,1.58.08h0c.52,0,1,0,1.55-.08l.35-.05c.43-.05.86-.12,1.29-.2l.15,0,114.87-24.64.2,0,.15,0,.19-.05c.44-.1.88-.21,1.32-.35l.27-.1c.41-.14.82-.29,1.21-.46l.32-.14c.37-.17.73-.35,1.09-.55a3.79,3.79,0,0,0,.34-.2c.34-.2.67-.4,1-.62l.35-.26c.3-.22.6-.45.9-.7l.31-.28c.23-.21.46-.4.68-.62l250-250a1.22,1.22,0,0,0,.15-.17A79.31,79.31,0,0,0,415.74,79.75ZM369.93,45.82a47.54,47.54,0,0,1,13.81,33.93,47.56,47.56,0,0,1-13.81,33.94c-.05,0-.09.11-.15.16L336,147.64,268.12,79.75l33.93-33.94a48.6,48.6,0,0,1,67.88,0ZM123.26,360.37,36.83,378.91l18.54-86.42L245.49,102.38l67.89,67.88Z"/>
+        </symbol>
+
+        <symbol id="svg-send" viewBox="0 0 512 469.33">
+            <path fill="currentColor"
+                  d="M405.33,0H106.67A106.8,106.8,0,0,0,0,106.67v256A106.79,106.79,0,0,0,106.67,469.33H405.33A106.79,106.79,0,0,0,512,362.67v-256A106.8,106.8,0,0,0,405.33,0ZM106.67,42.67H405.33a64,64,0,0,1,59.31,40.25L301.27,246.31a64.13,64.13,0,0,1-90.54,0L47.36,82.92A64,64,0,0,1,106.67,42.67Zm298.66,384H106.67a64,64,0,0,1-64-64v-224l137.9,137.81a106.8,106.8,0,0,0,150.86,0l137.9-137.81v224A64,64,0,0,1,405.33,426.67Z"/>
+        </symbol>
+
+        <symbol id="svg-orders" viewBox="0 0 512 384">
+            <path fill="currentColor" d="M0,106.67v2.77a43.11,43.11,0,0,0,32.68,41.41,42.66,42.66,0,0,1,0,82.3A43.11,43.11,0,0,0,0,274.56v2.77A106.8,106.8,0,0,0,106.67,384H448a64,64,0,0,0,64-64V274.56a43.11,43.11,0,0,0-32.68-41.41,42.66,42.66,0,0,1,0-82.3A43.11,43.11,0,0,0,512,109.44V64A64,64,0,0,0,448,0H106.67A106.8,106.8,0,0,0,0,106.67ZM469.33,64,468,109.72a85.33,85.33,0,0,0,1.34,164.84V320A21.33,21.33,0,0,1,448,341.33H362.67V298.67a21.34,21.34,0,1,0-42.67,0v42.66H106.67a64,64,0,0,1-64-64L44,274.28A85.55,85.55,0,0,0,106.67,192a86.85,86.85,0,0,0-64-83v-2.28a64,64,0,0,1,64-64H320V85.33a21.34,21.34,0,1,0,42.67,0V42.67H448A21.33,21.33,0,0,1,469.33,64Z"/>
+            <path fill="currentColor" d="M363.33,213.33V170.67a21.33,21.33,0,1,0-42.66,0v42.66a21.33,21.33,0,1,0,42.66,0Z"/>
         </symbol>
 
     </svg>

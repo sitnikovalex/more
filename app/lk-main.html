@@ -14,23 +14,25 @@
             <div class="col-lg-8">
                 <div class="fs-18 fw-bold">Настройки</div>
                 <div class="cinema__top-filter__row mb-25">
-                    <ul class="nav cinema__top-filter__date">
-                        <li>
-                            <a href="" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
-                                Личные данные
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
-                                Смена пароля
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">
-                                Новостная рассылка
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="swiper w-100" id="mobTabs">
+                        <div class="nav cinema__top-filter__date nav-tabs__list swiper-wrapper">
+                            <div class="nav-tabs__list__item">
+                                <a href="" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
+                                    Личные данные
+                                </a>
+                            </div>
+                            <div class="nav-tabs__list__item">
+                                <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
+                                    Смена пароля
+                                </a>
+                            </div>
+                            <div class="nav-tabs__list__item">
+                                <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">
+                                    Новостная рассылка
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="tab1" tabindex="0">
@@ -293,8 +295,10 @@
                                     <div class="cinema__form__row">
                                         <label for="passOld" class="cinema__form__label">Ваш текущий пароль:*</label>
                                         <div class="cinema__form__input-ico">
-                                            <input value="1111" type="password" required="" name="passReg" id="passOld" placeholder="Ваш текущий пароль"
-                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid" autocomplete="off">
+                                            <input value="1111" type="password" required="" name="passReg" id="passOld"
+                                                   placeholder="Ваш текущий пароль"
+                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid"
+                                                   autocomplete="off">
                                             <div class="cinema__form__input-ico__box">
                                                 <svg width="15" height="18">
                                                     <use xlink:href="#svg-pass"></use>
@@ -315,8 +319,10 @@
                                     <div class="cinema__form__row">
                                         <label for="passEdit" class="cinema__form__label">Пароль:*</label>
                                         <div class="cinema__form__input-ico">
-                                            <input type="password" required="" name="passReg" id="passEdit" placeholder="Придумайте пароль"
-                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid" autocomplete="off">
+                                            <input type="password" required="" name="passReg" id="passEdit"
+                                                   placeholder="Придумайте пароль"
+                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid"
+                                                   autocomplete="off">
                                             <div class="cinema__form__input-ico__box">
                                                 <svg width="15" height="18">
                                                     <use xlink:href="#svg-pass"></use>
@@ -331,10 +337,13 @@
                                     </div>
 
                                     <div class="cinema__form__row">
-                                        <label for="passEdit2" class="cinema__form__label">Подтверждение пароля:*</label>
+                                        <label for="passEdit2" class="cinema__form__label">Подтверждение
+                                            пароля:*</label>
                                         <div class="cinema__form__input-ico">
-                                            <input type="password" required="" name="passReg2" id="passEdit2" placeholder="Пароль еще раз"
-                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid" autocomplete="off">
+                                            <input type="password" required="" name="passReg2" id="passEdit2"
+                                                   placeholder="Пароль еще раз"
+                                                   class="cinema__form__input-ico__value cinema__form__input-ico__value--pass is-valid"
+                                                   autocomplete="off">
                                             <div class="cinema__form__input-ico__box">
                                                 <svg width="15" height="18">
                                                     <use xlink:href="#svg-pass"></use>
@@ -353,7 +362,7 @@
                                             <button class="btn-yellow w-100" type="submit">Сохранить</button>
                                         </div>
                                         <div class="col-6">
-                                            <button class="btn-yellow w-100" >Отмена</button>
+                                            <button class="btn-yellow w-100">Отмена</button>
                                         </div>
                                     </div>
                                 </form>
@@ -363,14 +372,34 @@
                     </div>
                     <div class="tab-pane fade" id="tab3" tabindex="0">
                         <div class="row fpad30 cabinet__send-options">
-                            <div class="col-ld-6 col-md-8">
+                            <div class="col-lg-6 col-md-8">
                                 <div class="cabinet__send-options__info">
-                                    Узнавайте первым о новостях, акциях и
-                                    премьерах фильмов
+                                    <div class="cabinet__send-options__info__ico">
+                                        <svg width="24" height="22">
+                                            <use xlink:href="#svg-send"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Узнавайте первым о новостях, акциях и
+                                    премьерах фильмов</span>
                                 </div>
                             </div>
-                            <div class="col-ld-6 col-md-4">
+                            <div class="col-lg-6 col-md-4 col-xl-3">
                                 <button class="btn-yellow w-100" type="submit">Подписаться</button>
+                            </div>
+                        </div>
+                        <div class="row fpad30 cabinet__send-options">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="cabinet__send-options__info">
+                                    <div class="cabinet__send-options__info__ico">
+                                        <svg width="24" height="22">
+                                            <use xlink:href="#svg-send"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Вы подписаны на почтовую рассылку</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xl-3">
+                                <button class="btn-yellow w-100" type="submit">Отписаться</button>
                             </div>
                         </div>
                     </div>

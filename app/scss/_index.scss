@@ -3100,7 +3100,7 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
   }
 }
 .cinema__cabinet__body__nav {
-  display: block !important;
+  flex-direction: column;
   padding: 10px 16px;
   li {
     margin-bottom: 15px;
@@ -3210,4 +3210,30 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
   line-height: 18px;
   font-weight: 500;
   padding-top: 3px;
+}
+
+.cabinet__send-options__info {
+  display: flex;
+  align-items: center;
+  &__ico {
+    min-width: 40px;
+    color: #f5a735;
+  }
+  span {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+}
+.cabinet__send-options {
+  align-items: center;
+}
+.nav-tabs__list {
+  width: 100%;
+  .nav-tabs__list__item {
+    padding-right: 40px;
+  }
+}
+.cinema__cabinet__body__nav a.active .cinema__cabinet__body__nav__ico {
+  color: #f5a735;
 }
