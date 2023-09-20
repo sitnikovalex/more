@@ -3237,3 +3237,97 @@ body:not(.cinema-white) .cinema__film__tags.cinema__film__tags--v2 {
 .cinema__cabinet__body__nav a.active .cinema__cabinet__body__nav__ico {
   color: #f5a735;
 }
+
+.cinema__orders {
+  &__item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--bg-form-wrap);
+    &__header {
+      user-select: none;
+      padding: 15px 50px 15px 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      color: var(--color-text);
+      &__info {
+        flex-grow: 1;
+        padding-right: 15px;
+      }
+      &__status {
+        width: 215px;
+        min-width: 215px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      &__ico {
+        width: 24px;
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        right: 25px;
+        margin-top: -12px;
+        height: 24px;
+        color: var(--ticket-color);
+        svg {
+          display: block;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+      &:not(.collapsed) {
+        .cinema__orders__item__header__ico svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &__date {
+      font-size: 12px;
+      line-height: 1.3;
+    }
+    &__number {
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: bold;
+    }
+    &__body {
+      padding: 0 25px;
+      &__wrap {
+        border-top: 1px solid var(--border-colapse);
+      }
+      &__section {
+        padding: 15px 0;
+        border-bottom: 1px solid var(--border-colapse);
+      }
+      h3 {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.2;
+        padding-bottom: 15px;
+        margin: 0;
+      }
+    }
+    &__film-data {
+      min-height: 200px;
+      &__title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.2;
+        padding-bottom: 15px;
+        margin: 0;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.2;
+      }
+      &__adr {
+        margin-bottom: 15px;
+      }
+      &__value {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

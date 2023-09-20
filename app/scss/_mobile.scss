@@ -229,7 +229,7 @@
     padding-top: 17px;
   }
   .cinema__top-filter__date li:not(:last-child) {
-    padding-right: 20px;
+    padding-right: 15px;
   }
   .cinema__top-filter__date li:last-child {
     margin-left: auto;
@@ -269,17 +269,33 @@
     width: 116px;
     height: 24px;
   }
-  .cinema__top-filter__date-inp {
-    width: 20px;
-    overflow: hidden;
-    padding-left: 20px;
+  .cinema__top-filter__date__item__val--date {
+    padding-top: 0 !important;
+    .cinema__top-filter__date-inp {
+      width: 65px;
+      overflow: hidden;
+      padding: 0 20px 5px 0;
+      height: 30px;
+      white-space: nowrap;
+      font-size: 12px;
+      &::placeholder {
+        color: transparent;
+        font-size: 0;
+      }
+    }
+
+  }
+  .cinema__top-filter__date__item__val {
+    padding-top: 6px;
   }
   .cinema__top-filter__date__ico {
-    padding-left: 2px;
-
+    padding: 0;
+    top: 3px;
+    left: auto;
+    right: 0;
     svg {
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
     }
   }
   .cinema__top-filter__date__item__val,
@@ -640,6 +656,7 @@
       }
     }
   }
+
 
 }
 

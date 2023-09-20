@@ -1,0 +1,90 @@
+<!--#set var="title" value="Личный кабинет" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="cinema__wrapper cinema-page">
+    <div class="cinema-page__body container">
+
+        <div class="cinema__cabinet">
+            <h1>Личный кабинет</h1>
+        </div>
+        <div class="row cinema__cabinet__body">
+            <div class="col-lg-4">
+                <!--#include virtual="/parts/cabinet-sidebar.html" -->
+            </div>
+            <div class="col-lg-8">
+                <div class="fs-18 fw-bold">Мои заказы</div>
+                <div class="cinema__top-filter__row mb-25">
+                    <div class="swiper w-100" id="mobTabs">
+                        <div class="nav cinema__top-filter__date nav-tabs__list swiper-wrapper">
+                            <div class="nav-tabs__list__item">
+                                <a href="" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
+                                    Активные заказы
+                                </a>
+                            </div>
+                            <div class="nav-tabs__list__item">
+                                <a href="" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
+                                    История заказов
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="tab1" tabindex="0">
+                        <div class="cinema__orders">
+                            <div class="cinema__orders__item">
+                                <div class="cinema__orders__item__header collapsed" data-bs-toggle="collapse" data-bs-target="#order_1">
+                                     <div class="cinema__orders__item__header__info">
+                                         <div class="cinema__orders__item__date">
+                                             21.04.2023&emsp;|&emsp;14:00
+                                         </div>
+                                         <div class="cinema__orders__item__number">
+                                             Заказ № 222-333-444-555
+                                         </div>
+                                     </div>
+                                    <div class="cinema__orders__item__header__status">
+                                        Оплачен
+                                    </div>
+                                    <div class="cinema__orders__item__header__ico">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-accordion"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="cinema__orders__item__body accordion-collapse collapse" id="order_1">
+                                    <div class="cinema__orders__item__body__wrap">
+                                        <div class="cinema__orders__item__body__section">
+                                            <div class="row align-items-center cinema__orders__item__film-data">
+                                                <div class="col-lg-8">
+                                                    <div class="cinema__orders__item__film-data__title">
+                                                        Вызов
+                                                    </div>
+                                                    <p class="cinema__orders__item__film-data__adr">Санкт-Петербург, Индустриальный просп., д. 24, литера А, <br>ТРЦ «ИЮНЬ»</p>
+                                                    <p class="cinema__orders__item__film-data__value">3D&emsp;|&emsp;Пятница, 21 апреля 2023&emsp;|&emsp;23:00&emsp;|&emsp;Зал №6</p>
+                                                </div>
+                                                <div class="col-lg-4">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cinema__orders__item__body__section">
+                                            <h3>Билеты</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab2" tabindex="0">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
