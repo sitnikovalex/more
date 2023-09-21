@@ -231,9 +231,7 @@
   .cinema__top-filter__date li:not(:last-child) {
     padding-right: 15px;
   }
-  .cinema__top-filter__date li:last-child {
-    margin-left: auto;
-  }
+
   .cinema__top-filter__row .cinema__header__city {
     display: none;
   }
@@ -274,7 +272,7 @@
     .cinema__top-filter__date-inp {
       width: 65px;
       overflow: hidden;
-      padding: 0 20px 5px 0;
+      padding: 0 0 5px 20px;
       height: 30px;
       white-space: nowrap;
       font-size: 12px;
@@ -291,8 +289,7 @@
   .cinema__top-filter__date__ico {
     padding: 0;
     top: 3px;
-    left: auto;
-    right: 0;
+    left: 0;
     svg {
       width: 16px;
       height: 16px;
@@ -656,8 +653,39 @@
       }
     }
   }
-
-
+  .cinema__orders__item__header {
+    display: block;
+    padding-left: 20px;
+    &__status {
+      padding-top: 5px;
+    }
+    &__ico {
+      top: 20px;
+      margin-top: 0;
+      right: 20px;
+    }
+  }
+  .cinema__orders__item__film-data {
+    min-height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .cinema__orders__item__body {
+    padding: 0 20px;
+  }
+  .cinema__orders__item__qr-code {
+    margin-top: 20px;
+  }
+  .cinema__orders__item__body__footer-btn {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .button-border {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
 }
 
 @media screen and (max-width: 574px) {
@@ -671,16 +699,30 @@
     margin-left: 0;
     margin-right: 0;
   }
-
+  .cinema__orders__item__body__footer-btn .button-border {
+    width: 100%;
+  }
   .fpad30 {
     padding-bottom: 15px;
   }
-
-
+  .cinema__orders__item__number {
+    font-size: 14px;
+  }
+  .cinema__orders__item__header__status {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+  .cinema__orders__item__body__alert__text {
+    font-size: 12px;
+  }
 
   .film-info .cinema__film__tags,
   .film-info__params {
     margin-bottom: 15px;
+  }
+
+  .cinema__orders__item__film-data__title {
+    font-size: 16px;
   }
 
   .film-info__title {
@@ -887,7 +929,9 @@
     }
   }
   .film-info__metadate__item__label,
-  .film-info__metadate__item__value {
+  .film-info__metadate__item__value,
+  .cinema__orders__item__film-data p,
+  .cinema__orders__item__tickets li {
     font-size: 12px;
   }
   .fpad25 {
@@ -895,6 +939,24 @@
   }
   .cinema__video:after {
     background-size: 48px 48px;
+  }
+  .cinema__orders__item__tickets li {
+    line-height: 18px;
+  }
+  .cinema__orders__item__body h3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .cinema__orders__bonus, .cinema__orders__sale {
+    padding-left: 25px;
+  }
+
+  .cinema__orders__item__body__result {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    span {
+      font-size: 16px;
+    }
   }
 }
 
