@@ -1005,7 +1005,7 @@ body {
 
   .modal-footer {
     padding: 25px 0;
-    --bs-modal-footer-border-color: var(--color-border);
+    border-top: 1px solid var(--color-border) !important;
     background: transparent;
     border-radius: 0;
     justify-content: flex-start;
@@ -3417,5 +3417,16 @@ body.cinema-white .button-border.button-border--black {
   }
   &:hover span {
     color: #fff;
+  }
+}
+
+.border-top {
+  border-top: 1px solid var(--border-colapse);
+  padding-top: 25px;
+}
+.cinema__orders-not {
+  padding: 50px 0;
+  .btn-yellow {
+    max-width: 270px;
   }
 }
