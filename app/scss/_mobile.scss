@@ -148,6 +148,40 @@
   .modal-dialog.modal-xl {
     --bs-modal-width: 520px;
   }
+  .cinema__shop-top__title {
+    min-height: 60px;
+    padding-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    &__ico {
+      position: relative;
+      top: auto;
+      left: auto;
+      margin-top: 0;
+      width: 40px;
+      height: 40px;
+
+      margin-right: 20px;
+      img {
+        width: 18px;
+        height: 24px;
+      }
+    }
+    h1 {
+      font-size: 24px;
+      line-height: 40px;
+      margin-bottom: 0;
+    }
+    p {
+      padding-top: 15px;
+      width: 100%;
+    }
+  }
+  .cinema__shop-top {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
   .cinema-page__bonus-item__text {
     font-size: 14px;
   }
@@ -183,6 +217,9 @@
     padding-top: 10px;
     width: 100%;
     padding-right: 5px;
+  }
+  #filterSlider {
+    overflow: visible;
   }
   .cinema__header {
     .cinema__header__city {
@@ -686,11 +723,51 @@
       margin-right: auto !important;
     }
   }
+  .cinema__count {
+    width: 110px;
+    min-width: 110px;
+  }
+  .cinema__shop{
+    padding-bottom: 15px;
+  }
+  .cinema__shop-order__caption {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .cinema__shop-order__item {
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px;
+    .cinema__shop-order__item__name {
+      width: 100%;
+      padding-right: 40px;
+      padding-bottom: 10px;
+    }
+    .cinema__shop-order__item__remove {
+      position: absolute;
+      z-index: 1;
+      top: 25px;
+      right: 20px;
+    }
+    .cinema__shop-order__item__price {
+      width: auto;
+      margin-left: auto;
+      span {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 574px) {
   .modal-dialog.modal-xl {
     --bs-modal-width: 100%;
+  }
+  .cinema__shop__item .card-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 120px;
   }
   .cinema__session__col {
     width: 50%;
@@ -705,6 +782,19 @@
   .fpad30 {
     padding-bottom: 15px;
   }
+  .cinema__shop-order__footer .btn-yellow {
+    width: 100%;
+  }
+  .cinema__shop__item__price {
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: center;
+    span {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
   .cinema__orders__item__number {
     font-size: 14px;
   }

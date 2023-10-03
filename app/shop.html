@@ -1,0 +1,230 @@
+<!--#set var="title" value="Онлайн меню" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="cinema__wrapper cinema-page ">
+    <div class="cinema-page__body pb-0 pt-0">
+
+        <div class="cinema__shop-top">
+            <div class="container">
+                <div class="cinema__shop-top__title">
+                    <div class="cinema__shop-top__title__ico">
+                        <img src="images/dist/popcorn.svg" width="35" height="48" alt="">
+                    </div>
+                    <h1>Онлайн меню</h1>
+                    <p>Выберите и оплатите напитки и еду на сайте. Просто сообщите номер заказа в баре.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container fpad80">
+            <div id="filterSlider" class="swiper cinema__top-filter__params cinema__top-filter__params--slider">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide w-auto">
+                        <label class="custom-chekbox">
+                            <input type="radio" name="fiter" value="Комбо наборы" class="d-none" checked>
+                            <span class="custom-chekbox__value">Комбо наборы</span>
+                        </label>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <label class="custom-chekbox">
+                            <input type="radio" name="fiter" value="Попкорн" class="d-none">
+                            <span class="custom-chekbox__value">Попкорн</span>
+                        </label>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <label class="custom-chekbox">
+                            <input type="radio" name="fiter" value="Снэки" class="d-none">
+                            <span class="custom-chekbox__value">Снэки</span>
+                        </label>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <label class="custom-chekbox">
+                            <input type="radio" name="fiter" value="Напитки" class="d-none">
+                            <span class="custom-chekbox__value">Напитки</span>
+                        </label>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <label class="custom-chekbox">
+                            <input type="radio" name="fiter" value="Алгоголь" class="d-none">
+                            <span class="custom-chekbox__value">Алгоголь</span>
+                        </label>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <label class="custom-chekbox">
+                            <input type="radio" name="fiter" value="Без сахара" class="d-none">
+                            <span class="custom-chekbox__value">Без сахара</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row cinema__shop">
+                <div class="col-lg-4 col-md-6 fpad30">
+                    <div class="cinema__shop__item card">
+                        <picture>
+                            <source media="(min-width: 641px)" srcset="images/dist/shop.jpg 1x, images/dist/shop@2.jpg 2x">
+                            <source media="(max-width: 640px)" srcset="images/dist/shop_mob.jpg">
+                            <img class="card-img-top" src="images/dist/shop.jpg" alt="" width="370" height="370">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="cinema__shop__item__title">Комбо BIG с соленым попкорном</h3>
+                            <p>Попкорн М и 1 газированный напиток 0,8л.: Добрый Кола, Добрый Апельсин, Добрый Лимон. Собери свой комбо!</p>
+                            <div class="cinema__shop__item__footer d-flex">
+                                <div class="cinema__shop__item__price d-flex align-items-center">
+                                    <span class="cinema__shop__item__price__old">
+                                        599 ₽
+                                    </span>
+                                    <span>499 ₽</span>
+                                </div>
+                                <div class="cinema__shop__item__count cinema__count">
+                                    <button class="cinema__count__btn btn-yellow">
+                                        <svg width="12" height="1">
+                                            <use xlink:href="#svg-minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="cinema__count__value" readonly value="1" type="text">
+                                    <button class="cinema__count__btn btn-yellow">
+                                        <svg width="12" height="12">
+                                            <use xlink:href="#svg-plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fpad30">
+                    <div class="cinema__shop__item card">
+                        <picture>
+                            <source media="(min-width: 641px)" srcset="images/dist/shop.jpg 1x, images/dist/shop@2.jpg 2x">
+                            <source media="(max-width: 640px)" srcset="images/dist/shop_mob.jpg">
+                            <img class="card-img-top" src="images/dist/shop.jpg" alt="" width="370" height="370">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="cinema__shop__item__title">Комбо BIG с соленым попкорном</h3>
+                            <p>Попкорн М и 1 газированный напиток 0,8л.: газированный напиток 0,8л.:газированный напиток 0,8л.:Добрый Кола, Добрый Апельсин, Добрый Лимон. Собери свой комбо!</p>
+                            <div class="cinema__shop__item__footer d-flex">
+                                <div class="cinema__shop__item__price d-flex align-items-center">
+                                    <span class="cinema__shop__item__price__old">
+                                        599 ₽
+                                    </span>
+                                    <span>499 ₽</span>
+                                </div>
+                                <div class="cinema__shop__item__count cinema__count">
+                                    <button class="cinema__count__btn btn-yellow">
+                                        <svg width="12" height="1">
+                                            <use xlink:href="#svg-minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="cinema__count__value" readonly value="1" type="text">
+                                    <button class="cinema__count__btn btn-yellow">
+                                        <svg width="12" height="12">
+                                            <use xlink:href="#svg-plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fpad30">
+                    <div class="cinema__shop__item card">
+                        <div class="cinema__shop__item__badge">БЕЗ САХАРА</div>
+                        <picture>
+                            <source media="(min-width: 641px)" srcset="images/dist/shop.jpg 1x, images/dist/shop@2.jpg 2x">
+                            <source media="(max-width: 640px)" srcset="images/dist/shop_mob.jpg">
+                            <img class="card-img-top" src="images/dist/shop.jpg" alt="" width="370" height="370">
+                        </picture>
+                        <div class="card-body">
+                            <h3 class="cinema__shop__item__title">Комбо BIG с соленым попкорном</h3>
+                            <p>Попкорн М и 1 газированный напиток 0,8л.: Добрый Кола, Добрый Апельсин, Добрый Лимон. Собери свой комбо!</p>
+                            <div class="cinema__shop__item__footer d-flex">
+                                <div class="cinema__shop__item__price d-flex align-items-center">
+
+                                    <span>499 ₽</span>
+                                </div>
+                                <div class="cinema__shop__item__count cinema__count">
+                                    <button class="cinema__count__btn btn-yellow">
+                                        <svg width="12" height="1">
+                                            <use xlink:href="#svg-minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="cinema__count__value" readonly value="1" type="text">
+                                    <button class="cinema__count__btn btn-yellow">
+                                        <svg width="12" height="12">
+                                            <use xlink:href="#svg-plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cinema__shop-order">
+                <div class="cinema__shop-order__caption">Ваш выбор</div>
+                <div class="cinema__shop-order__item d-flex align-items-center">
+                    <div class="cinema__shop-order__item__name">
+                        Комбо BIG с соленым попкорном
+                    </div>
+                    <div class="cinema__shop-order__item__count cinema__count">
+                        <button class="cinema__count__btn btn-yellow">
+                            <svg width="12" height="1">
+                                <use xlink:href="#svg-minus"></use>
+                            </svg>
+                        </button>
+                        <input class="cinema__count__value" readonly value="1" type="text">
+                        <button class="cinema__count__btn btn-yellow">
+                            <svg width="12" height="12">
+                                <use xlink:href="#svg-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="cinema__shop-order__item__price">
+                        <span>499 ₽</span>
+                    </div>
+                    <a href="" class="cinema__shop-order__item__remove">
+                        <svg width="12" height="12">
+                            <use xlink:href="#svg-close"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="cinema__shop-order__item d-flex align-items-center">
+                    <div class="cinema__shop-order__item__name">
+                        Комбо BIG с соленым попкорном
+                    </div>
+                    <div class="cinema__shop-order__item__count cinema__count">
+                        <button class="cinema__count__btn btn-yellow">
+                            <svg width="12" height="1">
+                                <use xlink:href="#svg-minus"></use>
+                            </svg>
+                        </button>
+                        <input class="cinema__count__value" readonly value="1" type="text">
+                        <button class="cinema__count__btn btn-yellow">
+                            <svg width="12" height="12">
+                                <use xlink:href="#svg-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="cinema__shop-order__item__price">
+                        <span>499 ₽</span>
+                    </div>
+                    <a href="" class="cinema__shop-order__item__remove">
+                        <svg width="12" height="12">
+                            <use xlink:href="#svg-close"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="cinema__shop-order__footer d-flex justify-content-end">
+                    <button class="btn-yellow">
+                        <b>ПРОДОЛЖИТЬ: 699 ₽</b>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
