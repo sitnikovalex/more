@@ -142,6 +142,22 @@
   .cinema__price-table--only-mob {
     display: block;
   }
+  .card-body.cinema__shop__item__row {
+    flex-direction: column;
+    padding: 0 !important;
+    .cinema__shop__item__img {
+      width: 100%;
+      min-width: 100%;
+      img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+      }
+    }
+    .cinema__shop__item__desc {
+      width: 100%;
+      padding: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

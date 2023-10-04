@@ -3731,3 +3731,20 @@ body.cinema-white .button-border.button-border--black {
     border-radius: 0 5px 5px 0;
   }
 }
+
+.card-body.cinema__shop__item__row {
+  flex-direction: row;
+  min-height: auto !important;
+  padding: 30px;
+  .cinema__shop__item__img {
+    width: 170px;
+    min-width: 170px;
+  }
+  .cinema__shop__item__desc {
+    width: 100px;
+    flex-grow: 1;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}

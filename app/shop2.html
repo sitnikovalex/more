@@ -1,0 +1,105 @@
+<!--#set var="title" value="Онлайн меню" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="cinema__wrapper cinema-page ">
+    <div class="cinema-page__body pb-0 pt-0">
+
+        <div class="cinema__shop-top">
+            <div class="container">
+                <div class="cinema__shop-top__title">
+                    <div class="cinema__shop-top__title__ico">
+                        <img src="images/dist/glasses.svg" width="48" height="30" alt="">
+                    </div>
+                    <h1>3D - очки</h1>
+                    <p>Для просмотра фильмов в формате 3D необходимо дополнительно приобрести индивидуальные 3D-очки,
+                        которые позволяют зрителю, увидеть объемное изображение на плоском экране (очки – становятся
+                        собственностью зрителя, после приобретения) или воспользоваться своими 3D-очками (зритель
+                        приходит со своими очками, приобретенными ранее).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container fpad80">
+
+            <div class="row cinema__shop tpad60">
+                <div class="col-sm-6 fpad30">
+                    <div class="cinema__shop__item card">
+                        <div class="card-body cinema__shop__item__row">
+                            <div class="cinema__shop__item__img">
+                                <picture>
+                                    <source media="(min-width: 992px)"
+                                            srcset="images/dist/shop2.jpg 1x, images/dist/shop2@2.jpg 2x">
+                                    <source media="(max-width: 991px)" srcset="images/dist/shop2_mob.jpg">
+                                    <img src="images/dist/shop2.jpg" alt="" width="170" height="170">
+                                </picture>
+                            </div>
+                            <div class="cinema__shop__item__desc">
+                                <h3 class="cinema__shop__item__title">Очки 3D</h3>
+                                <p>Для просмотра фильмов в формате 3D
+                                    нужны специальные очки – они не входят
+                                    в стоимость билета</p>
+                                <div class="cinema__shop__item__footer d-flex">
+                                    <div class="cinema__shop__item__price d-flex align-items-center">
+                                        <span>499 ₽</span>
+                                    </div>
+                                    <div class="cinema__shop__item__count cinema__count">
+                                        <button class="cinema__count__btn btn-yellow">
+                                            <svg width="12" height="1">
+                                                <use xlink:href="#svg-minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input class="cinema__count__value" readonly value="1" type="text">
+                                        <button class="cinema__count__btn btn-yellow">
+                                            <svg width="12" height="12">
+                                                <use xlink:href="#svg-plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cinema__shop-order">
+                <div class="cinema__shop-order__caption">Ваш выбор</div>
+                <div class="cinema__shop-order__item d-flex align-items-center">
+                    <div class="cinema__shop-order__item__name">
+                        Очки 3D
+                    </div>
+                    <div class="cinema__shop-order__item__count cinema__count">
+                        <button class="cinema__count__btn btn-yellow">
+                            <svg width="12" height="1">
+                                <use xlink:href="#svg-minus"></use>
+                            </svg>
+                        </button>
+                        <input class="cinema__count__value" readonly value="1" type="text">
+                        <button class="cinema__count__btn btn-yellow">
+                            <svg width="12" height="12">
+                                <use xlink:href="#svg-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="cinema__shop-order__item__price">
+                        <span>499 ₽</span>
+                    </div>
+                    <a href="" class="cinema__shop-order__item__remove">
+                        <svg width="12" height="12">
+                            <use xlink:href="#svg-close"></use>
+                        </svg>
+                    </a>
+                </div>
+
+
+                <div class="cinema__shop-order__footer d-flex justify-content-end">
+                    <button class="btn-yellow">
+                        <b>ПРОДОЛЖИТЬ: 699 ₽</b>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
