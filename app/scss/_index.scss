@@ -3748,3 +3748,111 @@ body.cinema-white .button-border.button-border--black {
     flex-direction: column;
   }
 }
+.cinema-order__film-top {
+  padding: 30px 0;
+  display: flex;
+  &__poster {
+    width: 100px;
+    min-width: 100px;
+  }
+  &__info {
+    flex-grow: 1;
+    padding-left: 25px;
+    .film-info__title {
+      padding-top: 10px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .film-info__params {
+      margin-bottom: 10px;
+      color: #fff;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .cinema__film__tags__item {
+    border-color: #fff;
+    color: #fff;
+  }
+}
+.cinema-order{
+  &__bg {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;
+  }
+}
+.cinema__form__row {
+  .btn-group {
+    width: 100%;
+    .cinema__form__input-ico__value {
+      flex-grow: 1;
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+    }
+    .btn-yellow {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+.w-17 {
+  width: 170px;
+  min-width: 170px;
+}
+.btn-yellow[disabled],
+.btn-yellow:disabled {
+  background: #979797 !important;
+  color: #141414;
+}
+
+.cinema__form.cinema__form--ticket {
+  position: relative;
+  border-radius: 0;
+  padding-bottom: 40px;
+  .cinema__orders__item__body {
+    padding: 0;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    height: 5px;
+    background-size: auto 5px;
+    background-image: url("../images/dist/ticket-bg.png");
+  }
+}
+.cinema__shop-top__title h1 {
+  white-space: nowrap;
+}
+.cinema-white .cinema__form.cinema__form--ticket:after {
+  background-image: url("../images/dist/ticket-bg-white.png");
+}
+.cinema__count__value:hover,
+.cinema__count__value:active,
+.cinema__count__value:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.cinema__form__auth-complited {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  svg {
+    margin-right: 15px;
+    color: #2dcc70;
+  }
+}

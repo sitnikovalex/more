@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>Фильм</title>
+    <title>Оформление заказа</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -194,79 +194,43 @@
         </div>
     </div>
 
-<div class="cinema__wrapper cinema-page ">
-    <div class="cinema-page__body pb-0 pt-0">
+<div class="cinema__wrapper cinema-page cinema-order">
+    <div class="cinema-page__body  pt-0">
 
-        <div class="cinema__film-bg lazy"
+        <div class="cinema-order__bg lazy"
              data-bg="./images/dist/bg-film.jpg"
              data-bg-hidpi="./images/dist/bg-film@2.jpg"
         >
             <div class="container">
                 <article class="cinema__news-detail">
-                    <div class="cinema__news-detail__top">
-                        <a href="" class="cinema__news-detail__back">
-                            <i class="cinema__news-detail__back__ico">
-                                <svg width="4" height="7">
-                                    <use xlink:href="#svg-prev"></use>
-                                </svg>
-                            </i>
-                            Расписание
-                        </a>
-                    </div>
-                    <div class="row film-single">
-                        <div class="col-lg-2 col-md-4 fpad30 d-none d-md-block ">
-                            <div class="cinema__film__img  film-single__poster">
-                                <picture>
-                                    <source
-                                            data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                                    <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                         width="270" height="385"/>
-                                </picture>
-                            </div>
+                    <div class="cinema-order__film-top">
+
+                        <div class="cinema__film__img  cinema-order__film-top__poster">
+                            <picture>
+                                <source
+                                        data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
+                                <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                     width="270" height="385"/>
+                            </picture>
                         </div>
-                        <div class="col-lg-10 col-md-8 film-info">
+
+                        <div class="cinema-order__film-top__info">
                             <ul class="nav cinema__film__tags cinema__film__tags--v2">
-                                <li>
-                                    <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
-                                </li>
-                                <li>
-                                    <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
-                                </li>
                                 <li>
                                     <span class="cinema__film__tags__item">12+</span>
                                 </li>
                                 <li>
                                     <span class="cinema__film__badge">2D</span>
                                 </li>
-                                <li>
-                                    <span class="cinema__film__badge">3D</span>
-                                </li>
-                                <li>
-                                    <span class="cinema__film__badge">Dolby Atmos</span>
-                                </li>
                             </ul>
 
-                            <h1 class="film-info__title">Вызов</h1>
+                            <div class="film-info__title">Вызов</div>
+                            <div class="film-info__params">
+                                Санкт-Петербург, Индустриальный просп., д. 24, литера А, ТРЦ «ИЮНЬ»
+                            </div>
                             <div class="film-info__params">
                                 2023 | Россия | Драма | 2 часа 43 мин.
-                            </div>
-                            <div class="film-info__btn">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="" class="button-border h-40"><span>О фильме</span></a>
-                                    </div>
-                                    <div class="col-6">
-                                        <a href="" class="button-border h-40" data-bs-toggle="modal" data-bs-target="#filmTrailer">
-                                            <span class="d-inline-flex align-items-center">
-                                                <svg width="16" height="16" class="me-2">
-                                                    <use xlink:href="#svg-play"></use>
-                                                </svg>
-                                                Трейлер
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -277,305 +241,187 @@
         </div>
 
         <div class="container">
-            <div class="cinema__top-filter cinema__top-filter--mob d-flex">
-                <div class="cinema__top-filter__row flex-grow-1">
-                    <ul class="nav cinema__top-filter__date flex-grow-1">
-                        <li>
-                            <label class="cinema__top-filter__date__item">
-                                <input class="d-none" type="radio" name="date" value="today" checked>
-                                <div class="cinema__top-filter__date__item__val">
-                                    Сегодня
-                                </div>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="cinema__top-filter__date__item">
-                                <input class="d-none" type="radio" name="date" value="tomorrow">
-                                <div class="cinema__top-filter__date__item__val">
-                                    Завтра
-                                </div>
-                            </label>
-                        </li>
-                        <li>
-                            <div class="cinema__top-filter__date__item">
-                                <input id="dateCustom" class="d-none" type="radio" name="date" value="custom">
-                                <div class="cinema__top-filter__date__item__val cinema__top-filter__date__item__val--date">
-                                    <div class="cinema__top-filter__date__ico">
-                                        <svg width="12" height="12">
-                                            <use xlink:href="#svg-date"></use>
-                                        </svg>
-                                    </div>
-                                    <input class="cinema__top-filter__date-inp" id="datepicker" type="text" readonly
-                                           placeholder="ВЫБРАТЬ ДАТУ">
+            <form action="">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5 col-lg-6 fpad30">
+                        <div class="cinema__form__row">
+                            <label for="emailOrder" class="cinema__form__label">Email для получения кода
+                                бронирования:</label>
+                            <div class="cinema__form__input-ico">
+                                <input type="email" required="" name="emailOrder" id="emailOrder"
+                                       placeholder="Укажите ваш E-mail"
+                                       class="cinema__form__input-ico__value " autocomplete="off">
+                                <div class="cinema__form__input-ico__box">
+                                    <svg width="12" height="18">
+                                        <use xlink:href="#svg-phone"></use>
+                                    </svg>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="cinema__top-filter__row">
-                    <div class="cinema__top-filter__time">
-                        <select id="timeSelect" required>
-                            <option selected value="12">Весь день</option>
-                            <option value="6">Пол дня</option>
-                            <option value="48">Неделю</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <ul class="nav cinema__top-filter__params">
-                <li>
-                    <label class="custom-chekbox">
-                        <input type="radio" name="fiter" value="all" class="d-none" checked>
-                        <span class="custom-chekbox__value">Все</span>
-                    </label>
-                </li>
-                <li>
-                    <label class="custom-chekbox">
-                        <input type="radio" name="fiter" value="Пушкинская карта" class="d-none">
-                        <span class="custom-chekbox__value">Пушкинская карта</span>
-                    </label>
-                </li>
-                <li>
-                    <label class="custom-chekbox">
-                        <input type="radio" name="fiter" value="2D" class="d-none">
-                        <span class="custom-chekbox__value">2D</span>
-                    </label>
-                </li>
-                <li>
-                    <label class="custom-chekbox">
-                        <input type="radio" name="fiter" value="3D" class="d-none">
-                        <span class="custom-chekbox__value">3D</span>
-                    </label>
-                </li>
-                <li>
-                    <label class="custom-chekbox">
-                        <input type="radio" name="fiter" value="Dolby Atmos" class="d-none">
-                        <span class="custom-chekbox__value">Dolby Atmos</span>
-                    </label>
-                </li>
-                <li>
-                    <label class="custom-chekbox">
-                        <input type="radio" name="fiter" value="1" class="d-none">
-                        <span class="custom-chekbox__value">
-                        <svg width="16" height="18">
-                            <use xlink:href="#svg-invalid"></use>
-                        </svg>
-                    </span>
-                    </label>
-                </li>
-            </ul>
+                        </div>
 
-            <div class="cinema__session-schedule">
-                <div class="row cinema__session-schedule__item">
-                    <div class="col-lg-2 col-sm-4 col-5">
-                        <div class="cinema__session-schedule__item__hall">
-                            2D
-                        </div>
-                    </div>
-                    <div class="col-lg-10 col-sm-8 col-7 cinema__session-schedule__item__timer">
-                        <div class="row cinema__session">
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">14:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
+                        <div class="cinema__form__row">
+                            <label for="phoneOrder" class="cinema__form__label">Номер телефона:</label>
+                            <div class="cinema__form__input-ico">
+                                <div class="btn-group">
+                                    <div class="position-relative flex-grow-1">
+                                        <input type="tel" required="" name="phoneOrder" id="phoneOrder"
+                                               class="cinema__form__input-ico__value js-mask-phone" autocomplete="off"
+                                               placeholder="+7 ___ ___-__-__">
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="12" height="18">
+                                                <use xlink:href="#svg-phone"></use>
+                                            </svg>
+                                        </div>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">16:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">18:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">24:40</div>
-                                        <div class="cinema__session__ticket__price">1500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row cinema__session-schedule__item">
-                    <div class="col-lg-2 col-sm-4 col-5">
-                        <div class="cinema__session-schedule__item__hall">
-                            3D
-                        </div>
-                    </div>
-                    <div class="col-lg-10 col-sm-8 col-7 cinema__session-schedule__item__timer">
-                        <div class="row cinema__session">
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">14:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                                <div class="cinema__session__ps">
-                                    Пушкинская
-                                    карта
+                                    <button class="btn-yellow w-17">Подтвердить номер</button>
                                 </div>
                             </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">16:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <label for="phoneOrder" class="cinema__form__label">Последние 4 цифры входящего звонка:</label>
+                            <div class="cinema__form__input-ico">
+                                <div class="btn-group">
+                                    <div class="position-relative flex-grow-1">
+                                        <input type="text" required="" name="phoneNumber" id="phoneNumber"
+                                               class="cinema__form__input-ico__value" autocomplete="off"
+                                               placeholder="_ _ _ _">
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#svg-code-phone"></use>
+                                            </svg>
+                                        </div>
                                     </div>
-                                </a>
-                                <div class="cinema__session__ps">
-                                    VIP
+                                    <button class="btn-yellow w-17">Применить</button>
                                 </div>
                             </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">18:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
+                        </div>
+
+                        <div class="cinema__form__auth-complited">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-complited"></use>
+                            </svg>
+                            Авторизация пройдена!
+                        </div>
+
+                        <div class="cinema__form__footer">
+                            <label class="cinema__form__chekbox cinema__form__chekbox--politika mb-3">
+                                <input id="orderPromo" name="orderPromo" type="checkbox" class="d-none">
+                                <span class="cinema__form__chekbox__value">У меня есть промокод</span>
+                            </label>
+                            <label class="cinema__form__chekbox cinema__form__chekbox--politika mb-3">
+                                <input id="orderSert" name="orderSert" type="checkbox" class="d-none">
+                                <span class="cinema__form__chekbox__value">У меня есть сертификат</span>
+                            </label>
+                            <label class="cinema__form__chekbox cinema__form__chekbox--politika mb-3">
+                                <input id="orderDogovor" name="orderDogovor" type="checkbox" class="d-none">
+                                <span class="cinema__form__chekbox__value">Я согласен(а) с условиями <a href="">договора оферты</a></span>
+                            </label>
+                            <label class="cinema__form__chekbox cinema__form__chekbox--politika">
+                                <input id="orderSend" name="orderSend" type="checkbox" class="d-none">
+                                <span class="cinema__form__chekbox__value">Подписаться на рекламно-информационную рассылку <br>MORI CINEMA и его партнеров</span>
+                            </label>
+                        </div>
+                        <div class="cinema__text">
+                            <p class="fs-12">На указанный E-mail Вы получите сообщение с кодом бронирования.</p>
+                            <p class="fs-12">Не забудьте авторизоваться в личном кабинете до совершения оплаты для
+                                начисления баллов
+                                программы лояльности и отображения данной покупки в личном кабинете. Скидка учащимся
+                                предоставляется только при предъявлении на входе в зал документа, подтверждающего статус
+                                школьника или студента очного отделения.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 fpad30">
+                        <div class="cinema__form cinema__form--ticket">
+                            <div class="cinema__form__header">
+                                <h3 class="cinema__form__title">Ваш заказ</h3>
                             </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">24:40</div>
-                                        <div class="cinema__session__ticket__price">1500 ₽</div>
-                                    </div>
-                                </a>
+                            <div class="cinema__orders__item__body">
+                                <div class="cinema__orders__item__body__section">
+                                    <h3>Билеты</h3>
+                                    <ul class="nav d-block cinema__orders__item__tickets">
+                                        <li class="cinema__orders__item__tickets__item">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-9 col-7">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-6">
+                                                            Ряд 10, Место 9
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            Взрослый
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-5 cinema__orders__item__tickets__cost">
+                                                    120 ₽
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cinema__orders__item__tickets__item">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-9 col-7">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-6">
+                                                            Ряд 10, Место 19
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            Взрослый
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-5 cinema__orders__item__tickets__cost">
+                                                    120 ₽
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="cinema__orders__item__body__section">
+                                    <h3>3D - очки</h3>
+                                    <ul class="nav d-block cinema__orders__item__tickets">
+                                        <li class="cinema__orders__item__tickets__item">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-9 col-7">
+                                                    Очки 3D
+                                                </div>
+                                                <div class="col-lg-3 col-5 cinema__orders__item__tickets__cost">
+                                                    3 х 100 ₽
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="cinema__orders__item__body__section">
+                                    <h3>Онлайн меню</h3>
+                                    <ul class="nav d-block cinema__orders__item__tickets">
+                                        <li class="cinema__orders__item__tickets__item">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-9 col-7">
+                                                    Комбо BIG с соленым попкорном
+                                                </div>
+                                                <div class="col-lg-3 col-5 cinema__orders__item__tickets__cost">
+                                                    300 ₽
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="cinema__orders__item__body__result">
+                                    <span>Итого:</span>
+                                    <span>792 ₽</span>
+                                </div>
+                                <button class="btn-yellow w-100"><b>ОПЛАТИТЬ</b></button>
                             </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="row cinema__session-schedule__item">
-                    <div class="col-lg-2 col-sm-4 col-5">
-                        <div class="cinema__session-schedule__item__hall">
-                            Dolby Atmos
-                        </div>
-                    </div>
-                    <div class="col-lg-10 col-sm-8 col-7 cinema__session-schedule__item__timer">
-                        <div class="row cinema__session">
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">14:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">16:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">18:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">24:40</div>
-                                        <div class="cinema__session__ticket__price">1500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">14:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">16:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">18:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">24:40</div>
-                                        <div class="cinema__session__ticket__price">1500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">18:40</div>
-                                        <div class="cinema__session__ticket__price">500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="cinema__session__col">
-                                <a href="" class="cinema__session__ticket">
-                                    <div class="cinema__session__ticket__wrap">
-                                        <div class="cinema__session__ticket__time">24:40</div>
-                                        <div class="cinema__session__ticket__price">1500 ₽</div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
 
-    </div>
-</div>
-
-<div class="modal fade" id="filmTrailer" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title">Трейлер к фильму Вызов</div>
-                <button class="btn-close2" data-bs-dismiss="modal" aria-label="Close">
-                    <svg width="18" height="18">
-                        <use xlink:href="#svg-close"></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body pt-0">
-                <a href="" class="cinema__video">
-                    <picture>
-                        <source data-srcset="images/dist/video.jpg 1x, images/dist/video@2.jpg 2x" srcset="images/dist/video.jpg 1x, images/dist/video@2.jpg 2x">
-                        <img alt="" class="lazy entered loaded" data-src="images/dist/video.jpg" src="images/dist/video.jpg" width="1170" height="490" data-ll-status="loaded">
-                    </picture>
-                </a>
-            </div>
-        </div>
     </div>
 </div>
 

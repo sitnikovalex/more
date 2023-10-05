@@ -1064,6 +1064,37 @@
       font-size: 16px;
     }
   }
+  .cinema-order__film-top__poster {
+    display: none;
+  }
+  .cinema-order__film-top__info {
+    padding-left: 0;
+    .film-info__title {
+      padding-top: 0;
+    }
+  }
+  .cinema-order__film-top {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .cinema-order__bg {
+    margin-bottom: 25px;
+  }
+  .cinema__form__row .btn-group {
+    flex-direction: column;
+    .cinema__form__input-ico__value {
+      border-radius: 5px;
+      border: 1px solid var(--color-border-not-active);
+    }
+    .btn-yellow {
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  }
+  .w-17 {
+    width: 100%;
+    min-width: 100%;
+  }
 }
 
 @media screen and (max-width: 440px) {
