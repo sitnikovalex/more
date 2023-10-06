@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>Новости</title>
+    <title>Оформление заказа</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -194,195 +194,197 @@
         </div>
     </div>
 
+<div class="cinema__wrapper cinema-page cinema-order">
+    <div class="cinema-page__body  pt-0">
 
-<div class="cinema__wrapper cinema-page">
-    <div class="cinema-page__body container">
+        <div class="cinema-order__bg lazy"
+             data-bg="./images/dist/bg-film.jpg"
+             data-bg-hidpi="./images/dist/bg-film@2.jpg"
+        >
+            <div class="container">
+                <article class="cinema__news-detail">
+                    <div class="cinema-order__film-top">
 
-        <div class="cinema__action-slider__caption cinema__action-slider__caption--h1">
-            <h1>Новости и акции</h1>
-            <div class="dropdown cinema__action-slider__caption__dropdown">
-                <a class="dropdown__caption" data-bs-toggle="dropdown">
-                    <span>Санкт-Петербурге</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="">во всех городах</a>
-                    </li>
-                    <li class="active"><a href="">Санкт-Петербурге</a></li>
-                    <li><a href="">Красноярске</a></li>
-                    <li><a href="">Череповце</a></li>
-                    <li><a href="">Красногорске</a></li>
-                    <li><a href="">Мытищах</a></li>
-                    <li><a href="">Волгограде</a></li>
-                    <li><a href="">Тольятти</a></li>
-                    <li><a href="">Кунцево</a></li>
-                    <li><a href="">Пушкино</a></li>
-                </ul>
+                        <div class="cinema__film__img  cinema-order__film-top__poster">
+                            <picture>
+                                <source
+                                        data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
+                                <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                     width="270" height="385"/>
+                            </picture>
+                        </div>
+
+                        <div class="cinema-order__film-top__info">
+                            <ul class="nav cinema__film__tags cinema__film__tags--v2">
+                                <li>
+                                    <span class="cinema__film__tags__item">12+</span>
+                                </li>
+                                <li>
+                                    <span class="cinema__film__badge">2D</span>
+                                </li>
+                            </ul>
+
+                            <div class="film-info__title">Вызов</div>
+                            <div class="film-info__params">
+                                Санкт-Петербург, Индустриальный просп., д. 24, литера А, ТРЦ «ИЮНЬ»
+                            </div>
+                            <div class="film-info__params">
+                                2023 | Россия | Драма | 2 часа 43 мин.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </article>
             </div>
         </div>
 
+        <div class="container">
+            <form action="">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5 col-lg-6 fpad30">
+                        <div class="cinema__form__row">
+                            <label for="emailOrder" class="cinema__form__label">Email для получения кода
+                                бронирования:</label>
+                            <div class="cinema__form__input-ico">
+                                <input type="email" required="" name="emailOrder" id="emailOrder"
+                                       placeholder="Укажите ваш E-mail"
+                                       class="cinema__form__input-ico__value " autocomplete="off">
+                                <div class="cinema__form__input-ico__box">
+                                    <svg width="18" height="18">
+                                        <use xlink:href="#svg-email"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
 
-        <ul class="nav cinema__top-link">
-            <li>
-                <a href="" class="cinema__top-link__item active">
-                    Новости
-                </a>
-            </li>
-            <li>
-                <a href="" class="cinema__top-link__item">
-                    Акции
-                </a>
-            </li>
-            <li>
-                <a href="" class="cinema__top-link__item">
-                    АФИША
-                </a>
-            </li>
-        </ul>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 fpad60">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
+                        <div class="cinema__form__row">
+                            <label for="phoneOrder" class="cinema__form__label">Номер телефона:</label>
+                            <div class="cinema__form__input-ico">
+                                <div class="btn-group">
+                                    <div class="position-relative flex-grow-1">
+                                        <input type="tel" required="" name="phoneOrder" id="phoneOrder"
+                                               class="cinema__form__input-ico__value js-mask-phone" autocomplete="off"
+                                               placeholder="+7 ___ ___-__-__">
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="12" height="18">
+                                                <use xlink:href="#svg-phone"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <button class="btn-yellow w-17">Подтвердить номер</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <label for="phoneOrder" class="cinema__form__label">Последние 4 цифры входящего звонка:</label>
+                            <div class="cinema__form__input-ico">
+                                <div class="btn-group">
+                                    <div class="position-relative flex-grow-1">
+                                        <input type="text" required="" name="phoneNumber" id="phoneNumber"
+                                               class="cinema__form__input-ico__value" autocomplete="off"
+                                               placeholder="_ _ _ _">
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#svg-code-phone"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <button class="btn-yellow w-17">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__auth-complited">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-complited"></use>
+                            </svg>
+                            Авторизация пройдена!
+                        </div>
+
+                        <div class="cinema__form__footer">
+
+                            <label class="cinema__form__chekbox cinema__form__chekbox--politika mb-3">
+                                <input id="orderDogovor" name="orderDogovor" type="checkbox" class="d-none">
+                                <span class="cinema__form__chekbox__value">Я согласен(а) с условиями <a href="">договора оферты</a></span>
+                            </label>
+                            <label class="cinema__form__chekbox cinema__form__chekbox--politika">
+                                <input id="orderSend" name="orderSend" type="checkbox" class="d-none">
+                                <span class="cinema__form__chekbox__value">Подписаться на рекламно-информационную рассылку <br>MORI CINEMA и его партнеров</span>
+                            </label>
+                        </div>
+                        <div class="cinema__text">
+                            <p class="fs-12">На указанный E-mail Вы получите сообщение с кодом бронирования.</p>
+                            <p class="fs-12">Не забудьте авторизоваться в личном кабинете до совершения оплаты для
+                                начисления баллов
+                                программы лояльности и отображения данной покупки в личном кабинете. Скидка учащимся
+                                предоставляется только при предъявлении на входе в зал документа, подтверждающего статус
+                                школьника или студента очного отделения.</p>
+                        </div>
                     </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
+                    <div class="col-xl-6 col-lg-6 fpad30">
+                        <div class="cinema__form cinema__form--ticket">
+                            <div class="cinema__form__header">
+                                <h3 class="cinema__form__title">Ваш заказ</h3>
+                            </div>
+                            <div class="cinema__orders__item__body">
+                                <div class="cinema__orders__item__body__section">
+                                    <h3>Билеты</h3>
+                                    <ul class="nav d-block cinema__orders__item__tickets">
+                                        <li class="cinema__orders__item__tickets__item">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-9 col-7">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-6">
+                                                            Ряд 10, Место 9
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            Пушкинская карта
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-5 cinema__orders__item__tickets__cost">
+                                                    120 ₽
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cinema__orders__item__tickets__item">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-9 col-7">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-6">
+                                                            Ряд 10, Место 19
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            Пушкинская карта
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-5 cinema__orders__item__tickets__cost">
+                                                    120 ₽
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                                <div class="cinema__orders__item__body__result">
+                                    <span>Итого:</span>
+                                    <span>792 ₽</span>
+                                </div>
+                                <button class="btn-yellow w-100"><b>ОПЛАТИТЬ ПУШКИНСКОЙ КАРТОЙ</b></button>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="cinema__action-item__desc">Но, если вы не торопитесь, то можете испытать удачу и
-                        выиграть билет в кино на этот фильм!
-                    </div>
-                    <div class="cinema__action-item__date">
-                        19 Октября
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 fpad60">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="cinema__action-item__desc">Но, если вы не торопитесь, то можете испытать удачу и
-                        выиграть билет в кино на этот фильм!
-                    </div>
-                    <div class="cinema__action-item__date">
-                        19 Октября
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 fpad60">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Смотрите на наших экранах 8 и 9 мая лучшие фильмы, посвящённые Второй мировой войне по
-                        специальной цене!
-                    </div>
-                    <div class="cinema__action-item__date">
-                        19 Октября
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 fpad60">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="cinema__action-item__desc">Но, если вы не торопитесь, то можете испытать удачу и
-                        выиграть билет в кино на этот фильм!
-                    </div>
-                    <div class="cinema__action-item__date">
-                        19 Октября
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 fpad60">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="cinema__action-item__desc">Но, если вы не торопитесь, то можете испытать удачу и
-                        выиграть билет в кино на этот фильм!
-                    </div>
-                    <div class="cinema__action-item__date">
-                        19 Октября
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6 fpad60">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Смотрите на наших экранах 8 и 9 мая лучшие фильмы, посвящённые Второй мировой войне по
-                        специальной цене!
-                    </div>
-                    <div class="cinema__action-item__date">
-                        19 Октября
-                    </div>
-                </a>
-            </div>
+                </div>
+            </form>
         </div>
 
-        <ul class="nav cinema__pagination">
-    <li class="cinema__pagination__btn cinema__pagination__btn--prev">
-        <a href="" class="cinema__pagination__btn__nav">
-            <svg width="9" height="16">
-            <use xlink:href="#svg-prev"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="cinema__pagination__item">
-        <a href="" class="cinema__pagination__item__link">1</a>
-    </li>
-    <li class="cinema__pagination__item">
-        <a href="" class="cinema__pagination__item__link active">2</a>
-    </li>
-    <li class="cinema__pagination__item">
-        <a href="" class="cinema__pagination__item__link">3</a>
-    </li>
-    <li class="cinema__pagination__item">
-        <a href="" class="cinema__pagination__item__dotts">...</a>
-    </li>
-    <li class="cinema__pagination__item">
-        <a href="" class="cinema__pagination__item__link">25</a>
-    </li>
-    <li class="cinema__pagination__btn cinema__pagination__btn--next">
-        <a href="" class="cinema__pagination__btn__nav">
-            <svg width="9" height="16">
-                <use xlink:href="#svg-next"></use>
-            </svg>
-        </a>
-    </li>
-</ul>
     </div>
 </div>
 

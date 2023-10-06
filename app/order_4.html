@@ -79,57 +79,39 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <button class="btn-yellow w-17" disabled>Подтвердить номер</button>
+                                    <button class="btn-yellow w-17">Подтвердить номер</button>
                                 </div>
-
                             </div>
                         </div>
 
+                        <div class="cinema__form__row">
+                            <label for="phoneOrder" class="cinema__form__label">Последние 4 цифры входящего звонка:</label>
+                            <div class="cinema__form__input-ico">
+                                <div class="btn-group">
+                                    <div class="position-relative flex-grow-1">
+                                        <input type="text" required="" name="phoneNumber" id="phoneNumber"
+                                               class="cinema__form__input-ico__value" autocomplete="off"
+                                               placeholder="_ _ _ _">
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#svg-code-phone"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <button class="btn-yellow w-17">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__auth-complited">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-complited"></use>
+                            </svg>
+                            Авторизация пройдена!
+                        </div>
+
                         <div class="cinema__form__footer">
-                            <label class="cinema__form__chekbox cinema__form__chekbox--politika mb-3">
-                                <input id="orderPromo" name="orderPromo" type="checkbox" class="d-none">
-                                <span class="cinema__form__chekbox__value">У меня есть промокод</span>
-                            </label>
-                            <div class="cinema__form__row d-none" id="promoCardBox">
-                                <label for="promoCodOrder" class="cinema__form__label">Укажите промокод:</label>
-                                <div class="cinema__form__input-ico">
-                                    <div class="btn-group">
-                                        <div class="position-relative flex-grow-1">
-                                            <input type="text" name="promoCodOrder" id="promoCodOrder"
-                                                   class="cinema__form__input-ico__value" autocomplete="off"
-                                                   placeholder="X X X X - X X X X - X X X X" inputmode="text">
-                                            <div class="cinema__form__input-ico__box">
-                                                <svg width="18" height="15">
-                                                    <use xlink:href="#svg-promo"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <button class="btn-yellow w-17">Применить</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <label class="cinema__form__chekbox cinema__form__chekbox--politika mb-3">
-                                <input id="orderSert" name="orderSert" type="checkbox" class="d-none">
-                                <span class="cinema__form__chekbox__value">У меня есть сертификат</span>
-                            </label>
-                            <div class="cinema__form__row d-none" id="orderSertBox">
-                                <label for="orderSertBoxInp" class="cinema__form__label">Укажите промокод:</label>
-                                <div class="cinema__form__input-ico">
-                                    <div class="btn-group">
-                                        <div class="position-relative flex-grow-1">
-                                            <input type="text" name="orderSertBoxInp" id="orderSertBoxInp"
-                                                   class="cinema__form__input-ico__value" autocomplete="off"
-                                                   placeholder="X X X X - X X X X - X X X X" inputmode="text">
-                                            <div class="cinema__form__input-ico__box">
-                                                <svg width="18" height="14">
-                                                    <use xlink:href="#svg-card"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <button class="btn-yellow w-17">Применить</button>
-                                    </div>
-                                </div>
-                            </div>
+
                             <label class="cinema__form__chekbox cinema__form__chekbox--politika mb-3">
                                 <input id="orderDogovor" name="orderDogovor" type="checkbox" class="d-none">
                                 <span class="cinema__form__chekbox__value">Я согласен(а) с условиями <a href="">договора оферты</a></span>
@@ -165,7 +147,7 @@
                                                             Ряд 10, Место 9
                                                         </div>
                                                         <div class="col-lg-6">
-                                                            Взрослый
+                                                            Пушкинская карта
                                                         </div>
                                                     </div>
                                                 </div>
@@ -182,7 +164,7 @@
                                                             Ряд 10, Место 19
                                                         </div>
                                                         <div class="col-lg-6">
-                                                            Взрослый
+                                                            Пушкинская карта
                                                         </div>
                                                     </div>
                                                 </div>
@@ -194,43 +176,13 @@
                                     </ul>
                                 </div>
 
-                                <div class="cinema__orders__item__body__section">
-                                    <h3>3D - очки</h3>
-                                    <ul class="nav d-block cinema__orders__item__tickets">
-                                        <li class="cinema__orders__item__tickets__item">
-                                            <div class="row align-items-center">
-                                                <div class="col-lg-9 col-7">
-                                                    Очки 3D
-                                                </div>
-                                                <div class="col-lg-3 col-5 cinema__orders__item__tickets__cost">
-                                                    3 х 100 ₽
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
 
-                                <div class="cinema__orders__item__body__section">
-                                    <h3>Онлайн меню</h3>
-                                    <ul class="nav d-block cinema__orders__item__tickets">
-                                        <li class="cinema__orders__item__tickets__item">
-                                            <div class="row align-items-center">
-                                                <div class="col-lg-9 col-7">
-                                                    Комбо BIG с соленым попкорном
-                                                </div>
-                                                <div class="col-lg-3 col-5 cinema__orders__item__tickets__cost">
-                                                    300 ₽
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
 
                                 <div class="cinema__orders__item__body__result">
                                     <span>Итого:</span>
                                     <span>792 ₽</span>
                                 </div>
-                                <button class="btn-yellow w-100" disabled><b>ОПЛАТИТЬ</b></button>
+                                <button class="btn-yellow w-100"><b>ОПЛАТИТЬ ПУШКИНСКОЙ КАРТОЙ</b></button>
                             </div>
 
                         </div>

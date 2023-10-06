@@ -230,15 +230,23 @@ body {
     padding: 5px 22px;
     background: var(--bg-active);
     color: #1b1b1b;
+
   }
 }
-
+.cinema__form__chekbox input:checked+.cinema__form__chekbox__value:after {
+  border-color: var(--color-border-is-valid) !important;
+}
 .fpad40 {
   padding-bottom: 40px;
 }
 
 .air-datepicker-global-container {
   z-index: 9999;
+}
+.cinema__orders__item__body__section {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .cinema__film {
@@ -3828,6 +3836,9 @@ body.cinema-white .button-border.button-border--black {
     background-size: auto 5px;
     background-image: url("../images/dist/ticket-bg.png");
   }
+  .cinema__form__title {
+    font-size: 26px;
+  }
 }
 .cinema__shop-top__title h1 {
   white-space: nowrap;
@@ -3855,4 +3866,27 @@ body.cinema-white .button-border.button-border--black {
     margin-right: 15px;
     color: #2dcc70;
   }
+}
+.cinema__orders__bonus-info {
+  font-size: 12px;
+  padding-bottom: 10px;
+  b {
+    display: block;
+    color: #f5a735;
+    font-weight: bold;
+  }
+}
+
+.cinema__orders__bonus-chekbox {
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--color-text);
+  .cinema__form__chekbox__value {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.color-yellow {
+  color: #f5a735;
 }

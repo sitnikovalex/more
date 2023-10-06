@@ -79,23 +79,48 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <button class="btn-yellow w-17" disabled>Подтвердить номер</button>
+                                    <button class="btn-yellow w-17">Подтвердить номер</button>
                                 </div>
-
                             </div>
+                        </div>
+
+                        <div class="cinema__form__row">
+                            <label for="phoneOrder" class="cinema__form__label">Последние 4 цифры входящего звонка:</label>
+                            <div class="cinema__form__input-ico">
+                                <div class="btn-group">
+                                    <div class="position-relative flex-grow-1">
+                                        <input type="text" required="" name="phoneNumber" id="phoneNumber"
+                                               class="cinema__form__input-ico__value" autocomplete="off"
+                                               placeholder="_ _ _ _">
+                                        <div class="cinema__form__input-ico__box">
+                                            <svg width="18" height="18">
+                                                <use xlink:href="#svg-code-phone"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <button class="btn-yellow w-17">Применить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cinema__form__auth-complited">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-complited"></use>
+                            </svg>
+                            Авторизация пройдена!
                         </div>
 
                         <div class="cinema__form__footer">
                             <label class="cinema__form__chekbox cinema__form__chekbox--politika mb-3">
-                                <input id="orderPromo" name="orderPromo" type="checkbox" class="d-none">
+                                <input id="orderPromo" name="orderPromo" type="checkbox" class="d-none" checked>
                                 <span class="cinema__form__chekbox__value">У меня есть промокод</span>
                             </label>
-                            <div class="cinema__form__row d-none" id="promoCardBox">
+                            <div class="cinema__form__row" id="promoCardBox">
                                 <label for="promoCodOrder" class="cinema__form__label">Укажите промокод:</label>
                                 <div class="cinema__form__input-ico">
                                     <div class="btn-group">
                                         <div class="position-relative flex-grow-1">
-                                            <input type="text" name="promoCodOrder" id="promoCodOrder"
+                                            <input type="text" name="promoCodOrder" id="promoCodOrder" checked
                                                    class="cinema__form__input-ico__value" autocomplete="off"
                                                    placeholder="X X X X - X X X X - X X X X" inputmode="text">
                                             <div class="cinema__form__input-ico__box">
@@ -109,10 +134,10 @@
                                 </div>
                             </div>
                             <label class="cinema__form__chekbox cinema__form__chekbox--politika mb-3">
-                                <input id="orderSert" name="orderSert" type="checkbox" class="d-none">
+                                <input id="orderSert" name="orderSert" type="checkbox" class="d-none" checked>
                                 <span class="cinema__form__chekbox__value">У меня есть сертификат</span>
                             </label>
-                            <div class="cinema__form__row d-none" id="orderSertBox">
+                            <div class="cinema__form__row" id="orderSertBox">
                                 <label for="orderSertBoxInp" class="cinema__form__label">Укажите промокод:</label>
                                 <div class="cinema__form__input-ico">
                                     <div class="btn-group">
@@ -226,11 +251,56 @@
                                     </ul>
                                 </div>
 
+                                <div class="cinema__orders__item__body__section">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="cinema__orders__bonus-info">
+                                                <span>Ваша карта</span>
+                                                <b>MoriBonus Silver 10%</b>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="cinema__orders__bonus-info">
+                                                <span>Будет начислено</span>
+                                                <b>100 бонусов</b>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="cinema__orders__bonus-info">
+                                                <span>На карте</span>
+                                                <b>100 бонусов</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label class="cinema__form__chekbox cinema__orders__bonus-chekbox" >
+                                        <input type="checkbox" name="bonus" value="1" checked class="d-none">
+                                        <span class="cinema__form__chekbox__value">Использовать 499 бонусов при оплате</span>
+                                    </label>
+                                </div>
+
+                                <div class="cinema__orders__item__body__section">
+                                    <ul class="nav d-block cinema__orders__item__tickets">
+                                        <li class="cinema__orders__item__tickets__item">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-9 col-9 d-flex align-items-center">
+                                                    <svg width="18" height="15" class="me-2 color-yellow">
+                                                        <use xlink:href="#svg-promo"></use>
+                                                    </svg>
+                                                    Скидка по промокоду
+                                                </div>
+                                                <div class="col-lg-3 col-3 cinema__orders__item__tickets__cost">
+                                                    10%
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
                                 <div class="cinema__orders__item__body__result">
                                     <span>Итого:</span>
                                     <span>792 ₽</span>
                                 </div>
-                                <button class="btn-yellow w-100" disabled><b>ОПЛАТИТЬ</b></button>
+                                <button class="btn-yellow w-100"><b>ОПЛАТИТЬ</b></button>
                             </div>
 
                         </div>

@@ -325,7 +325,7 @@
     .cinema__top-filter__date-inp {
       width: 65px;
       overflow: hidden;
-      padding: 0 0 5px 20px;
+      padding: 2px 0 5px 20px;
       height: 30px;
       white-space: nowrap;
       font-size: 12px;
@@ -774,6 +774,17 @@
       }
     }
   }
+  .cinema__form.cinema__form--ticket .cinema__form__title {
+    font-size: 18px;
+  }
+  .cinema__form__header {
+    padding: 15px 0;
+  }
+  .cinema__orders__bonus-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 574px) {
@@ -1107,6 +1118,23 @@
       width: 100%;
     }
   }
+
+  .cinema__orders__bonus-chekbox {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .cinema__form__chekbox__value {
+      min-height: 32px;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      line-height: 16px;
+      &::after {
+        top: 50%;
+        margin-top: -9px;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 343px) {
