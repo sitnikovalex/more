@@ -1,5 +1,6 @@
 @media screen and (max-width: 1200px) {
-  .cinema__header__col-menu {
+  .cinema__header__col-menu,
+  .cinema-order__hall-layout__nav-session {
     display: none;
   }
   .modal-dialog.modal-xl {
@@ -10,6 +11,7 @@
   }
   .cinema__account-menu__mob {
     display: block;
+
     .cinema__account-menu__list {
       padding-left: 30px;
     }
@@ -19,6 +21,7 @@
   }
   .cinema__account-menu__mob__top {
     padding-bottom: 5px;
+
     li {
       border-bottom: 1px solid var(--color-border);
     }
@@ -29,10 +32,12 @@
     padding: 10px 0;
     color: var(--color-link);
     text-decoration: none;
+
     &__ico {
       width: 30px;
       color: var(--color-link);
     }
+
     span {
       font-size: 12px;
       line-height: 1.2;
@@ -145,14 +150,17 @@
   .card-body.cinema__shop__item__row {
     flex-direction: column;
     padding: 0 !important;
+
     .cinema__shop__item__img {
       width: 100%;
       min-width: 100%;
+
       img {
         width: 100%;
         border-radius: 5px 5px 0 0;
       }
     }
+
     .cinema__shop__item__desc {
       width: 100%;
       padding: 20px;
@@ -170,6 +178,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+
     &__ico {
       position: relative;
       top: auto;
@@ -179,16 +188,19 @@
       height: 40px;
 
       margin-right: 20px;
+
       img {
         width: 18px;
         height: 24px;
       }
     }
+
     h1 {
       font-size: 24px;
       line-height: 40px;
       margin-bottom: 0;
     }
+
     p {
       padding-top: 15px;
       width: 100%;
@@ -255,11 +267,12 @@
     padding-right: 20px;
     padding-bottom: 15px;
   }
-  .cinema__text  {
+  .cinema__text {
     p {
       font-size: 12px;
       line-height: 18px;
     }
+
     ul {
       li {
         font-size: 12px;
@@ -322,6 +335,7 @@
   }
   .cinema__top-filter__date__item__val--date {
     padding-top: 0 !important;
+
     .cinema__top-filter__date-inp {
       width: 65px;
       overflow: hidden;
@@ -329,6 +343,7 @@
       height: 30px;
       white-space: nowrap;
       font-size: 12px;
+
       &::placeholder {
         color: transparent;
         font-size: 0;
@@ -343,6 +358,7 @@
     padding: 0;
     top: 3px;
     left: 0;
+
     svg {
       width: 16px;
       height: 16px;
@@ -522,6 +538,7 @@
     position: relative;
     padding: 5px 0 0 100px;
     min-height: 80px;
+
     &__year {
       position: absolute;
       z-index: 10;
@@ -534,11 +551,13 @@
       font-size: 16px;
       background: var(--bg-wrapp);
     }
+
     &__city {
       padding: 0 0 15px 0;
       font-size: 14px;
       width: 100%;
     }
+
     &__halls,
     &__places {
       width: 100%;
@@ -550,6 +569,7 @@
 
     position: relative;
     overflow: hidden;
+
     &::after {
       left: 39.5px;
       height: 100%;
@@ -572,6 +592,7 @@
       width: 180px;
       margin: 0 auto;
     }
+
     .cinema__film__tags {
       display: flex !important;
     }
@@ -603,23 +624,27 @@
 
   .cinema__session-schedule__mob {
     display: flex;
+
     &__img {
       width: 100px;
       min-width: 100px;
       padding-right: 20px;
       display: block;
       padding-bottom: 15px;
+
       img {
         display: block;
         border-radius: 6px;
       }
     }
+
     .cinema__film__tags {
       display: flex;
     }
   }
   .cinema__session-schedule__group {
     display: flex;
+
     .cinema__session-schedule__item__hall {
       width: 100px;
       min-width: 100px;
@@ -637,15 +662,17 @@
     min-width: 24px;
     margin-bottom: 18px;
   }
-  .cabinet__send-options .btn-yellow  {
+  .cabinet__send-options .btn-yellow {
     display: block;
     max-width: 220px;
     margin: 0 auto;
   }
-  .nav-tabs__list{
+  .nav-tabs__list {
     flex-wrap: nowrap;
+
     .nav-tabs__list__item {
       padding-right: 0;
+
       .nav-link {
         white-space: nowrap;
       }
@@ -657,8 +684,10 @@
   }
   .cinema__form__nav-edit {
     padding-top: 20px;
+
     li {
       width: calc(50% - 10px);
+
       .btn-yellow {
         width: 100%;
         text-align: center;
@@ -679,10 +708,12 @@
 
   .cinema__cabinet__sidebar__box-nav {
     order: -1;
+
     .cinema__cabinet__body__nav {
       flex-direction: row;
       flex-wrap: nowrap;
       padding: 0;
+
       a span {
         white-space: nowrap;
       }
@@ -697,9 +728,11 @@
   }
   .cinema__cabinet__sidebar__nav__caption {
     font-size: 12px;
+
     .row {
       margin-left: -5px;
       margin-right: -5px;
+
       & > * {
         padding-left: 5px;
         padding-right: 5px;
@@ -709,9 +742,11 @@
   .cinema__orders__item__header {
     display: block;
     padding-left: 20px;
+
     &__status {
       padding-top: 5px;
     }
+
     &__ico {
       top: 20px;
       margin-top: 0;
@@ -734,6 +769,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
     .button-border {
       margin-left: auto !important;
       margin-right: auto !important;
@@ -743,7 +779,7 @@
     width: 110px;
     min-width: 110px;
   }
-  .cinema__shop{
+  .cinema__shop {
     padding-bottom: 15px;
   }
   .cinema__shop-order__caption {
@@ -755,20 +791,24 @@
     flex-wrap: wrap;
     position: relative;
     padding: 20px;
+
     .cinema__shop-order__item__name {
       width: 100%;
       padding-right: 40px;
       padding-bottom: 10px;
     }
+
     .cinema__shop-order__item__remove {
       position: absolute;
       z-index: 1;
       top: 25px;
       right: 20px;
     }
+
     .cinema__shop-order__item__price {
       width: auto;
       margin-left: auto;
+
       span {
         margin-right: 0;
       }
@@ -784,6 +824,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .cinema__shop-order__item__type {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .cinema-page__order-finish {
+    img {
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    &__label {
+      font-size: 14px;
+    }
+    &__number {
+      font-size: 24px;
+    }
+    &__desc {
+      p {
+        font-size: 12px;
+      }
+    }
   }
 }
 
@@ -816,6 +880,7 @@
     flex-direction: column;
     align-items: flex-start !important;
     justify-content: center;
+
     span {
       font-size: 18px;
       line-height: 20px;
@@ -865,9 +930,9 @@
       padding-right: 10px;
     }
   }
- /* .cinema__action-slider__wrap .swiper__nav {
-    top: 195px;
-  }*/
+  /* .cinema__action-slider__wrap .swiper__nav {
+     top: 195px;
+   }*/
   .cinema__action-slider__header {
     padding-bottom: 25px;
   }
@@ -1018,7 +1083,7 @@
     padding: 0 0 5px;
   }
   .cinema__map {
-   border-radius: 0;
+    border-radius: 0;
     margin: 0 -20px 30px;
   }
   .cinema__action-slider__wrap .swiper {
@@ -1028,6 +1093,7 @@
   .cinema__cookies__box {
     padding-left: 70px;
     display: block;
+
     &__btn {
       min-width: 140px;
       width: 140px;
@@ -1041,6 +1107,7 @@
 
   .film-info__metadate__item {
     padding-bottom: 25px;
+
     & .film-info__metadate__item__label {
       padding-bottom: 10px;
     }
@@ -1071,6 +1138,7 @@
   .cinema__orders__item__body__result {
     padding-top: 15px;
     padding-bottom: 15px;
+
     span {
       font-size: 16px;
     }
@@ -1080,6 +1148,7 @@
   }
   .cinema-order__film-top__info {
     padding-left: 0;
+
     .film-info__title {
       padding-top: 0;
     }
@@ -1093,10 +1162,12 @@
   }
   .cinema__form__row .btn-group {
     flex-direction: column;
+
     .cinema__form__input-ico__value {
       border-radius: 5px;
       border: 1px solid var(--color-border-not-active);
     }
+
     .btn-yellow {
       border-radius: 5px;
       margin-top: 20px;
@@ -1111,23 +1182,37 @@
 @media screen and (max-width: 440px) {
   .field__file-wrapper {
     flex-direction: column;
+
     .field__file-fake {
       margin: 0 0 20px;
     }
+
     .field__file-button {
       width: 100%;
+    }
+  }
+  .cinema__shop-order__item__places {
+    width: 100%;
+  }
+  .cinema__shop-order__item__choice {
+    width: calc(100% - 60px);
+
+    .choices__item--selectable {
+      line-height: 20px;
     }
   }
 
   .cinema__orders__bonus-chekbox {
     padding-top: 5px;
     padding-bottom: 5px;
+
     .cinema__form__chekbox__value {
       min-height: 32px;
       display: flex;
       align-items: center;
       font-size: 12px;
       line-height: 16px;
+
       &::after {
         top: 50%;
         margin-top: -9px;

@@ -1,0 +1,137 @@
+<!--#set var="title" value="Выбор мест" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="cinema__wrapper cinema-page cinema-order">
+    <div class="cinema-page__body  pt-0">
+
+        <div class="cinema-order__bg lazy"
+             data-bg="./images/dist/bg-film.jpg"
+             data-bg-hidpi="./images/dist/bg-film@2.jpg"
+        >
+            <div class="container">
+                <article class="cinema__news-detail">
+                    <div class="cinema-order__film-top">
+
+                        <div class="cinema__film__img  cinema-order__film-top__poster">
+                            <picture>
+                                <source
+                                        data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
+                                <img alt="" class="lazy" data-src="images/dist/film.jpg"
+                                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                     width="270" height="385"/>
+                            </picture>
+                        </div>
+
+                        <div class="cinema-order__film-top__info">
+                            <ul class="nav cinema__film__tags cinema__film__tags--v2">
+                                <li>
+                                    <span class="cinema__film__tags__item">12+</span>
+                                </li>
+                                <li>
+                                    <span class="cinema__film__badge">2D</span>
+                                </li>
+                            </ul>
+
+                            <div class="film-info__title">Вызов</div>
+                            <div class="film-info__params">
+                                Санкт-Петербург, Индустриальный просп., д. 24, литера А, ТРЦ «ИЮНЬ»
+                            </div>
+                            <div class="film-info__params">
+                                2023 | Россия | Драма | 2 часа 43 мин.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cinema-order__hall-layout">
+                <img src="images/dist/zal1.png" alt="" class="zal1">
+                <img src="images/dist/zal2.png" alt="" class="zal2">
+
+                <a href="" class="cinema-order__hall-layout__nav-session cinema-order__hall-layout__nav-session--prev">
+                    <div class="cinema-order__hall-layout__nav-session__ico">
+                        <svg width="15" height="28">
+                            <use xlink:href="#svg-prev"></use>
+                        </svg>
+                    </div>
+                    <span>Предыдущий<br> сеанс</span>
+                </a>
+                <a href="" class="cinema-order__hall-layout__nav-session cinema-order__hall-layout__nav-session--next">
+                    <div class="cinema-order__hall-layout__nav-session__ico">
+                        <svg width="15" height="28">
+                            <use xlink:href="#svg-next"></use>
+                        </svg>
+                    </div>
+                    <span>Следующий <br>сеанс</span>
+                </a>
+            </div>
+
+            <div class="cinema__shop-order">
+                <div class="cinema__shop-order__caption">Ваш выбор</div>
+                <div class="cinema__shop-order__item d-flex align-items-center">
+                    <div class="cinema__shop-order__item__places">
+                        <svg width="18" height="14" >
+                            <use xlink:href="#svg-orders"></use>
+                        </svg>
+                        Ряд 3&emsp;|&emsp;Место 13
+                    </div>
+                    <div class="cinema__shop-order__item__type">
+                        Стандарт
+                    </div>
+                    <div class="cinema__shop-order__item__choice">
+                        <select name="dd" class="js-select">
+                            <option selected>Детский до 12 лет</option>
+                            <option >Взрослый</option>
+                            <option >Пенсионный</option>
+                        </select>
+                    </div>
+                    <div class="cinema__shop-order__item__price">
+                        <span>499 ₽</span>
+                    </div>
+                    <a href="" class="cinema__shop-order__item__remove">
+                        <svg width="12" height="12">
+                            <use xlink:href="#svg-close"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="cinema__shop-order__item d-flex align-items-center">
+                    <div class="cinema__shop-order__item__places">
+                        <svg width="18" height="14">
+                            <use xlink:href="#svg-orders"></use>
+                        </svg>
+                        Ряд 3&emsp;|&emsp;Место 13
+                    </div>
+                    <div class="cinema__shop-order__item__type">
+                        Стандарт
+                    </div>
+                    <div class="cinema__shop-order__item__choice">
+                        <select name="dd" class="js-select">
+                            <option selected>Детский до 12 лет</option>
+                            <option >Взрослый</option>
+                            <option >Пенсионный</option>
+                        </select>
+                    </div>
+                    <div class="cinema__shop-order__item__price">
+                        <span>499 ₽</span>
+                    </div>
+                    <a href="" class="cinema__shop-order__item__remove">
+                        <svg width="12" height="12">
+                            <use xlink:href="#svg-close"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="cinema__shop-order__footer d-flex justify-content-end">
+                    <button class="btn-yellow">
+                        <b>ПРОДОЛЖИТЬ: 699 ₽</b>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
