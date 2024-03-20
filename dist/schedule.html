@@ -23,6 +23,20 @@
 </head>
 <body>
 <div class="cinema">
+    <div class="cinema__preloader">
+        <div class="cinema__preloader__wrapp">
+            <span class="cinema__loader"></span>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 5000);
+        }
+    </script>
 
     <header class="cinema__header">
         <div class="cinema__header__wrap">
