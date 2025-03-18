@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/vendor.css">
 
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/overrides.css">
 </head>
 <body>
 <div class="cinema">
@@ -33,7 +34,7 @@
             window.setTimeout(function () {
                 document.body.classList.add('loaded');
                 document.body.classList.remove('loaded_hiding');
-            }, 5000);
+            }, 1000);
         }
     </script>
 
@@ -78,9 +79,12 @@
                         </label>
                         <a data-bs-toggle="modal" data-bs-target="#regModal" href="#regModal"
                            class="cinema__header__col-right__link">
-                            <svg width="24" height="24">
+                            <!--svg width="24" height="24">
                                 <use xlink:href="#svg-account"></use>
-                            </svg>
+                            </svg-->
+                            <div class="cinema__header__user">
+                                ЖЖ
+                            </div>
                         </a>
                         <a href="" class="cinema__header__col-right__link" data-bs-toggle="modal"
                            data-bs-target="#menuAccount">

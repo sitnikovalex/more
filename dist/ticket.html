@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/vendor.css">
 
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/overrides.css">
 </head>
 <body>
 <div class="cinema">
@@ -34,7 +35,7 @@
             window.setTimeout(function () {
                 document.body.classList.add('loaded');
                 document.body.classList.remove('loaded_hiding');
-            }, 5000);
+            }, 1000);
         }
     </script>
 
@@ -79,9 +80,12 @@
                         </label>
                         <a data-bs-toggle="modal" data-bs-target="#regModal" href="#regModal"
                            class="cinema__header__col-right__link">
-                            <svg width="24" height="24">
+                            <!--svg width="24" height="24">
                                 <use xlink:href="#svg-account"></use>
-                            </svg>
+                            </svg-->
+                            <div class="cinema__header__user">
+                                ЖЖ
+                            </div>
                         </a>
                         <a href="" class="cinema__header__col-right__link" data-bs-toggle="modal"
                            data-bs-target="#menuAccount">
@@ -308,7 +312,7 @@
                 <div class="cinema__shop-order__caption">Ваш выбор</div>
                 <div class="cinema__shop-order__item d-flex align-items-center">
                     <div class="cinema__shop-order__item__places">
-                        <svg width="18" height="14" >
+                        <svg width="18" height="14">
                             <use xlink:href="#svg-orders"></use>
                         </svg>
                         Ряд 3&emsp;|&emsp;Место 13
@@ -317,11 +321,11 @@
                         Стандарт
                     </div>
                     <div class="cinema__shop-order__item__choice">
-                        <select name="dd" class="js-select">
-                            <option selected>Детский до 12 лет</option>
-                            <option >Взрослый</option>
-                            <option >Пенсионный</option>
-                        </select>
+                        <div class="choices" data-type="select-one" data-bs-toggle="modal" data-bs-target="#ticketTypeModal">
+                            <div class="choices__inner">
+                                Детский до 12 лет
+                            </div>
+                        </div>
                     </div>
                     <div class="cinema__shop-order__item__price">
                         <span>499 ₽</span>
@@ -343,11 +347,11 @@
                         Стандарт
                     </div>
                     <div class="cinema__shop-order__item__choice">
-                        <select name="dd" class="js-select">
-                            <option selected>Детский до 12 лет</option>
-                            <option >Взрослый</option>
-                            <option >Пенсионный</option>
-                        </select>
+                        <div class="choices" data-type="select-one" data-bs-toggle="modal" data-bs-target="#ticketTypeModal">
+                            <div class="choices__inner">
+                                Детский
+                            </div>
+                        </div>
                     </div>
                     <div class="cinema__shop-order__item__price">
                         <span>499 ₽</span>
@@ -365,6 +369,85 @@
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ticketTypeModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    Выбор типа билета
+                </div>
+                <div class="btn-close2" data-bs-dismiss="modal">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <ul class="nav ticket-type-list">
+                    <li>
+                        <label class="ticket-type-list__item">
+                            <input type="radio" value="Взрослый " name="ticket_type">
+
+                            <div class="ticket-type-list__item__wrap">
+                                <div class="ticket-type-list__item__ico">
+                                    <svg width="18" height="14">
+                                        <use xlink:href="#svg-orders"></use>
+                                    </svg>
+                                </div>
+                                <div class="ticket-type-list__item__caption">
+                                Взрослый
+                                </div>
+                                <div class="ticket-type-list__item__price">
+                                    499 ₽
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="ticket-type-list__item">
+                            <input type="radio" value="Детский" name="ticket_type">
+
+                            <div class="ticket-type-list__item__wrap">
+                                <div class="ticket-type-list__item__ico">
+                                    <svg width="18" height="14">
+                                        <use xlink:href="#svg-orders"></use>
+                                    </svg>
+                                </div>
+                                <div class="ticket-type-list__item__caption">
+                                    Детский до 12 лет
+                                </div>
+                                <div class="ticket-type-list__item__price">
+                                    199 ₽
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="ticket-type-list__item">
+                            <input type="radio" value="Пенсионный" name="ticket_type">
+
+                            <div class="ticket-type-list__item__wrap">
+                                <div class="ticket-type-list__item__ico">
+                                    <svg width="18" height="14">
+                                        <use xlink:href="#svg-orders"></use>
+                                    </svg>
+                                </div>
+                                <div class="ticket-type-list__item__caption">
+                                    Пенсионный до 12 лет
+                                </div>
+                                <div class="ticket-type-list__item__price">
+                                    499 ₽
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </div>

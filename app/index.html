@@ -46,9 +46,28 @@
             </div>
             <div class="swiper-pagination" id="indexSliderPag">
             </div>
+            <button id="indexSliderNext" class="swiper__nav swiper__nav--next">
+                <svg width="15" height="28">
+                    <use xlink:href="#svg-next"></use>
+                </svg>
+            </button>
+            <button id="indexSliderPrev" class="swiper__nav swiper__nav--prev">
+                <svg width="15" height="28">
+                    <use xlink:href="#svg-prev"></use>
+                </svg>
+            </button>
         </div>
     </div>
     <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="cinema__alert-18">
+                    Уважаемые зрители! Фильм относится к категории 18+. Лица моложе 18 лет не будут допущены на сеанс даже в сопровождении взрослых. В случае сомнения в достижении зрителем соответствующего возраста сотрудники вправе попросить документ, удостоверяющий личность (оригинал).
+                </div>
+            </div>
+        </div>
+
+
         <div class="cinema__top-filter">
             <div class="cinema__top-filter__row">
                 <ul class="nav cinema__top-filter__date flex-grow-1">
@@ -546,7 +565,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         var myModal = new bootstrap.Modal(document.getElementById('alertModal'), {});
-        myModal.show();
+        //myModal.show();
     });
 </script>
 <!--#include virtual="/parts/footer.html" -->
