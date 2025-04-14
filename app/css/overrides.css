@@ -121,6 +121,59 @@
     color: #fccb36;
 }
 
+.cinema__film__pl-block--right .cinema__film__hit_status, .cinema__film__pl-block--right .cinema__film__date {
+    border-radius: 5px 0 0 5px;
+}
+.cinema__film__pl-block--right {
+    left: auto;
+    right: 0;
+    align-items: flex-end;
+}
+
+.cinema__film__hit_status {
+    text-transform: none !important;
+}
+
+.cinema__film__pl-block:not(.cinema__film__pl-block--right) {
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.cinema__film__pl-block:not(.cinema__film__pl-block--right) .cinema__film__hit_status {
+    background: transparent !important;
+    padding: 0 !important;
+}
+.cinema__film__hit_status__ico {
+    position: relative;
+    z-index: 16;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+}
+.cinema__film__hit_status__caption {
+    padding: 0 15px 0 6px;
+    height: 28px;
+    font-size: 10px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+    margin-left: -6px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    border-radius: 0 5px 5px 0;
+}
+.cinema__film:hover .cinema__film__hit_status__caption {
+    visibility: visible;
+    transform: translateX(0);
+}
+
 @media screen and (max-width: 991px) {
     .index-slider .swiper__nav {
         margin-left: 15px;
