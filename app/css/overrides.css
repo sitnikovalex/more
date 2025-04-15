@@ -135,6 +135,7 @@
 }
 
 .cinema__film__pl-block:not(.cinema__film__pl-block--right) {
+    border-radius: 5px;
     margin-left: 10px;
     overflow: hidden;
 }
