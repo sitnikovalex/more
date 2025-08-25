@@ -135,6 +135,7 @@
 }
 
 .cinema__film__pl-block:not(.cinema__film__pl-block--right) {
+    border-radius: 5px;
     margin-left: 10px;
     overflow: hidden;
 }
@@ -172,6 +173,12 @@
 .cinema__film:hover .cinema__film__hit_status__caption {
     visibility: visible;
     transform: translateX(0);
+}
+
+.cinema__shop-order__footer__conditions {
+    flex-grow: 1;
+    padding-right: 30px;
+    padding-left: 20px;
 }
 
 @media screen and (max-width: 991px) {

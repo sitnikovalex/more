@@ -175,6 +175,12 @@
     transform: translateX(0);
 }
 
+.cinema__shop-order__footer__conditions {
+    flex-grow: 1;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
 @media screen and (max-width: 991px) {
     .index-slider .swiper__nav {
         margin-left: 15px;
